@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PITAAWN テクノロジー株式会社</title>
+    <!-- タケイチ -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -34,11 +36,22 @@
     <!-- 実績紹介 -->
     <section id="works" class="section">
       <h2>実績紹介</h2>
+
+      <!-- https://b-risk.jp/blog/2022/04/swiper/ -->
       <div class="works-slider">
-        <div class="work-item active">
-          <h3>ホテル ビパイン</h3>
-          <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
-          <p class="desc">サイト詳細説明</p>
+        <div class="works-slider-track">
+          <div class="work-item active">
+            <h3>ホテル ビバイン</h3>
+            <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
+            <p class="desc">サイト詳細説明</p>
+          </div>
+
+          <div class="work-item">
+            <h3>GavTec美唄</h3>
+            <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
+            <p class="desc">サイト詳細説明</p>
+          </div>
+          <!-- スライドを増やす場合はここに追加 -->
         </div>
         <div class="slider-controls">
           <button id="prevBtn">← 前へ</button>
@@ -47,7 +60,7 @@
         <div class="dots">
           <span class="dot active"></span>
           <span class="dot"></span>
-          <span class="dot"></span>
+          <!-- スライド数に応じて増やす -->
         </div>
         <button class="btn-view">実績一覧を見る</button>
       </div>

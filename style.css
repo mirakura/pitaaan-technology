@@ -45,16 +45,30 @@ body {
 }
 
 /* 実績紹介 */
+/* works-slider 横並びスライダー用 */
 .works-slider {
-  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
-.work-item {
-  display: none;
+
+.works-slider-track {
+  display: flex;
+  transition: transform 0.5s;
+  will-change: transform;
 }
-.work-item.active {
+
+.work-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  /* 必要に応じてpaddingやborderを調整 */
   display: block;
 }
+
+/* ...既存コード... */
 .slider-controls button {
   margin: 10px;
 }
