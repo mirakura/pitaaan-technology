@@ -242,3 +242,78 @@ body {
     text-align: left;
   }
 }
+/* ===========================
+   🍔 ハンバーガーメニュー
+   =========================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* メニュー開閉アニメーション */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* スマホ時のメニュー非表示・開閉動作 */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    background: #f9f9f9;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .btn-contact {
+    display: none; /* スマホではヘッダーの右側ボタンを非表示に */
+  }
+}

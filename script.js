@@ -18,3 +18,14 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   slides[current].classList.add("active");
   dots[current].classList.add("active");
 });
+
+// ===========================
+// 🍔 ハンバーガーメニュー開閉制御
+// ===========================
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
