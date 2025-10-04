@@ -3,8 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>top page</title>
-    <!-- takeichi -->
+    <title>PITAAWN テクノロジー株式会社</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="logo">会社ロゴ</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">事業内容</a></li>
+          <li><a href="#">メンバー紹介</a></li>
+          <li><a href="#">採用情報</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn-contact">お問い合わせ</a>
+    </header>
+
+    <!-- 実績紹介 -->
+    <section id="works" class="section">
+      <h2>実績紹介</h2>
+      <div class="works-slider">
+        <div class="work-item active">
+          <h3>ホテル ビパイン</h3>
+          <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
+          <p class="desc">サイト詳細説明</p>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn">← 前へ</button>
+          <button id="nextBtn">次へ →</button>
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="btn-view">実績一覧を見る</button>
+      </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section id="about" class="section">
+      <h2>会社概要</h2>
+      <div class="about-container">
+        <div class="about-photo">代表・メンバー写真</div>
+        <div class="about-text">
+          <h3>代表挨拶</h3>
+          <p>
+            「あなたがいることで支え、お客様一人ひとりに寄り添ったきめ細かなサービスを心がけております」
+          </p>
+          <ul>
+            <li>所在地: 北海道美唄市</li>
+            <li>設立: 2020年4月</li>
+            <li>従業員数: 20名</li>
+          </ul>
+          <button class="btn-view">詳細を見る</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 事業内容 -->
+    <section id="business" class="section">
+      <h2>事業内容</h2>
+      <div class="business-container">
+        <div class="business-item">
+          <h3>01<br />Webサイト制作</h3>
+          <p>企画から運用まで一貫サポート<br />レスポンシブ・SEO対応</p>
+        </div>
+        <div class="business-item">
+          <h3>02<br />パンフレット制作</h3>
+          <p>企画・デザイン・印刷<br />豊富なデザインパターン</p>
+        </div>
+        <div class="business-item">
+          <h3>03<br />建築模型・CAD制作</h3>
+          <p>高精度な3D建築模型<br />図面作成・修正</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="section contact">
+      <h2>お問い合わせ</h2>
+      <p>お気軽にお問い合わせください</p>
+      <p>あなたのプロジェクトを形にするお手伝いをいたします</p>
+      <button class="btn-contact-large">お問い合わせはこちら</button>
+      <p>TEL: 0126-XX-XXXX<br />Email: info@pitech.co.jp</p>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>会社情報</h4>
+          <p>
+            PITAAWN テクノロジー株式会社<br />〒072-0000 北海道美唄市中町 0-0-0
+          </p>
+          <p>TEL: 0126-XX-XXXX<br />Email: info@pitech.co.jp</p>
+        </div>
+        <div class="footer-col">
+          <h4>メニューリンク</h4>
+          <ul>
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">メンバー紹介</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SNSリンク</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">
+        © 2025 PITAAWN テクノロジー株式会社. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
