@@ -45,46 +45,11 @@ body {
 }
 
 /* 実績紹介 */
-/* works-slider 横並びスライダー用 */
-.works-slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px;
+.swiper {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.works-slider-track {
-  display: flex;
-  transition: transform 0.5s;
-  will-change: transform;
-}
-
-.work-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  /* 必要に応じてpaddingやborderを調整 */
-  display: block;
-}
-
-.slider-controls button {
-  margin: 10px;
-}
-.dots {
-  margin: 10px 0;
-}
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50%;
-  margin: 0 4px;
-}
-.dot.active {
-  background: #333;
-}
 .btn-view {
   border: 1px solid #333;
   padding: 8px 20px;
@@ -196,15 +161,9 @@ body {
   }
 
   /* 実績紹介 */
-  .works-slider {
+  .swiper {
     width: 100%;
     padding: 0 10px;
-  }
-
-  .slider-controls {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   /* 会社概要 */

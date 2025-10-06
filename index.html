@@ -7,6 +7,10 @@
     <!-- タケイチ -->
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- ヘッダー -->
@@ -38,9 +42,9 @@
       <h2>実績紹介</h2>
 
       <!-- https://b-risk.jp/blog/2022/04/swiper/ -->
-      <div class="works-slider">
-        <div class="works-slider-track">
-          <div class="work-item bibain">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide work-item bibain">
             <img
               src="images/top/consa-dolls-102 信太梨里碧.JPG"
               alt="bibain"
@@ -51,7 +55,7 @@
             <p class="desc">サイト詳細説明</p>
           </div>
 
-          <div class="work-item gavtec">
+          <div class="swiper-slide work-item gavtec">
             <img
               src="images/top/consa-dolls-102 信太梨里碧.JPG"
               alt="gavtec"
@@ -61,7 +65,7 @@
             <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
             <p class="desc">サイト詳細説明</p>
           </div>
-          <div class="work-item melody">
+          <div class="swiper-slide work-item melody">
             <img
               src="images/top/consa-dolls-102 信太梨里碧.JPG"
               alt="gavtec"
@@ -74,17 +78,14 @@
 
           <!-- スライドを増やす場合はここに追加 -->
         </div>
-        <div class="slider-controls">
-          <button id="prevBtn">← 前へ</button>
-          <button id="nextBtn">次へ →</button>
-        </div>
-        <div class="dots">
-          <span class="dot bibain"></span>
-          <span class="dot gavtec"></span>
-          <span class="dot melody"></span>
+        <div class="swiper-pagination"></div>
 
-          <!-- スライド数に応じて増やす -->
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
         <button class="btn-view">実績一覧を見る</button>
       </div>
     </section>
@@ -176,6 +177,7 @@
       </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,39 +1,24 @@
-// シンプルなスライダー制御
-const track = document.querySelector(".works-slider-track");
-const slides = document.querySelectorAll(".work-item");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const dots = document.querySelectorAll(".dot");
-let currentIndex = 0;
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
-function updateSlider() {
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === currentIndex);
-  });
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === currentIndex);
-  });
-}
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
 
-prevBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateSlider();
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });
-
-nextBtn.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlider();
-});
-
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => {
-    currentIndex = i;
-    updateSlider();
-  });
-});
-
-updateSlider();
 
 // ===========================
 // 🍔 ハンバーガーメニュー開閉制御
