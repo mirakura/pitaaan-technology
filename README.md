@@ -11,12 +11,12 @@
 
 ### ページごとにそれぞれのページ名をメッセージに含める
 
-例)
+トップページの例)
 
-- `add/header: 変更内容`
-- `fix/header: 変更内容`
-- `remove/header: 変更内容`
-- `change/header: 変更内容`
+- `add/top: 変更内容`
+- `fix/top: 変更内容`
+- `remove/top: 変更内容`
+- `change/top: 変更内容`
 
 ## 画像ファイル
 
