@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "mhutchie.git-graph",
+    "ritwickdey.liveserver",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode"
+  ]
+}
