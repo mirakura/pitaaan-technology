@@ -45,9 +45,36 @@ body {
 }
 
 /* 実績紹介 */
+/* works-slider 横並びスライダー用 */
 .swiper {
-  max-width: 900px;
+  /* background-color: #0044cc; */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+.swiper-slide {
+  /* background-color: brown; */
+  min-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  /* 必要に応じてpaddingやborderを調整 */
+  display: block;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .btn-view {
