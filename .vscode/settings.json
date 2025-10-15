@@ -1,0 +1,98 @@
+{
+  // エディタ設定
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.rulers": [80],
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // ファイル設定
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+
+  // Prettier設定
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": true,
+  "prettier.singleQuote": false,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+
+  // Code Spell Checker設定
+  "cSpell.enabled": true,
+  "cSpell.language": "en,ja",
+  "cSpell.words": [
+    "pitaaan",
+    "html",
+    "css",
+    "javascript",
+    "prettier",
+    "eslint"
+  ],
+  "cSpell.ignoreWords": ["lorem", "ipsum"],
+
+  // Live Server設定
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "--incognito",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts"
+  ],
+
+  // HTML設定
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.wrapLineLength": 80,
+  "html.format.wrapAttributes": "auto",
+  "html.suggest.html5": true,
+
+  // CSS設定
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
+  "scss.validate": true,
+  "less.validate": true,
+
+  // JavaScript設定
+  "javascript.validate.enable": true,
+  "javascript.format.enable": true,
+  "javascript.preferences.quoteStyle": "double",
+
+  // ファイル関連付け
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "css",
+    "*.js": "javascript"
+  },
+
+  // 検索設定
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+
+  // ファイル監視除外
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  }
+}
