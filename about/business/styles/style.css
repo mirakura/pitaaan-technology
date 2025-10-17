@@ -1,0 +1,313 @@
+/* Reset & base */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #111;
+  background-color: #fff;
+  font-family: 'Noto Sans JP', system-ui, -apple-system, 'Segoe UI', Roboto, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+  line-height: 1.7;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1440px; /* 指定の横幅 */
+  margin: 0 auto;
+  padding: 0 40px; /* 端の詰まり防止用の左右余白 */
+}
+
+.section {
+  padding: 80px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 32px;
+  letter-spacing: 0.02em;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #eee;
+  padding: 32px 0;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-subtitle {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+  background: #000;
+}
+
+.button-primary {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+/* 1) services */
+.section-services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.service-desc {
+  margin: 0 0 16px;
+  color: #333;
+}
+
+.service-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.service-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  border-radius: 50%;
+}
+
+/* 2) portfolio */
+.section-portfolio .portfolio-title,
+.section-portfolio2 .portfolio-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px 0 16px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.work-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  border-bottom: 1px solid #eee;
+  border-radius: 10px 10px 0 0;
+  background:
+    linear-gradient(90deg, transparent 10px, transparent 10px),
+    #fafafa;
+  /* 破線枠 */
+  border: 2px dashed #999;
+  margin: 16px;
+}
+
+.image-placeholder span {
+  color: #666;
+  font-size: 14px;
+}
+
+.work-meta {
+  padding: 16px 20px;
+}
+
+.work-meta.only-text {
+  padding: 20px;
+}
+
+.work-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.work-desc {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* 3) portfolio2 */
+.section-portfolio2 .cards-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 4) flow */
+.section-flow .flow-steps {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.step-circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 2px solid #111;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  background: #fff;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.step-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Pricing */
+.pricing {
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+.pricing-desc {
+  margin: 0 0 16px;
+  color: #333;
+}
+
+/* Contact */
+.section-contact .contact-desc {
+  margin: 0 0 24px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 800px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-row label {
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #111;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .section-flow .flow-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .section-services .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-flow .flow-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    padding: 0 24px;
+  }
+}
