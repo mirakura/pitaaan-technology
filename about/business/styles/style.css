@@ -1,313 +1,187 @@
-/* Reset & base */
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html, body {
-  height: 100%;
-}
-
+/* ================================
+   ベース
+================================ */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
 body {
   margin: 0;
-  color: #111;
-  background-color: #fff;
-  font-family: 'Noto Sans JP', system-ui, -apple-system, 'Segoe UI', Roboto, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
-  line-height: 1.7;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Layout */
-.container {
-  width: 100%;
-  max-width: 1440px; /* 指定の横幅 */
-  margin: 0 auto;
-  padding: 0 40px; /* 端の詰まり防止用の左右余白 */
+/* 固定幅ラッパー（1440px） */
+.page { display: block; }
+.section-box {
+  width: 1440px;
+  margin: 48px auto;
+  padding: 48px 64px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-.section {
-  padding: 80px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.section:last-of-type {
-  border-bottom: none;
-}
-
+/* 共通見出し */
 .section-title {
   font-size: 28px;
   font-weight: 700;
-  margin: 0 0 32px;
-  letter-spacing: 0.02em;
-}
-
-/* Header */
-.site-header {
-  border-bottom: 1px solid #eee;
-  padding: 32px 0;
-}
-
-.site-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.site-subtitle {
-  margin: 8px 0 0;
-  color: #555;
-  font-size: 14px;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  padding: 12px 20px;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.button:hover {
-  background: #000;
-}
-
-.button-primary {
-  border-color: #111;
-  background: #111;
-  color: #fff;
-}
-
-/* 1) services */
-.section-services .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.service-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 24px;
-}
-
-.service-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 12px;
-}
-
-.service-desc {
-  margin: 0 0 16px;
-  color: #333;
-}
-
-.service-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.service-list li {
-  position: relative;
-  padding-left: 20px;
-  margin: 8px 0;
-}
-
-.service-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  width: 8px;
-  height: 8px;
-  background: #111;
-  border-radius: 50%;
-}
-
-/* 2) portfolio */
-.section-portfolio .portfolio-title,
-.section-portfolio2 .portfolio-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 24px 0 16px;
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.work-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.image-placeholder {
-  display: grid;
-  place-items: center;
-  min-height: 180px;
-  border-bottom: 1px solid #eee;
-  border-radius: 10px 10px 0 0;
-  background:
-    linear-gradient(90deg, transparent 10px, transparent 10px),
-    #fafafa;
-  /* 破線枠 */
-  border: 2px dashed #999;
-  margin: 16px;
-}
-
-.image-placeholder span {
-  color: #666;
-  font-size: 14px;
-}
-
-.work-meta {
-  padding: 16px 20px;
-}
-
-.work-meta.only-text {
-  padding: 20px;
-}
-
-.work-name {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 6px;
-}
-
-.work-desc {
-  margin: 0;
-  color: #444;
-  font-size: 14px;
-}
-
-/* 3) portfolio2 */
-.section-portfolio2 .cards-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-/* 4) flow */
-.section-flow .flow-steps {
-  list-style: none;
-  margin: 0 0 40px;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
-}
-
-.flow-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
+  color: #222;
   text-align: center;
+  margin: 0 0 28px 0;
 }
 
-.step-circle {
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
-  border: 2px solid #111;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 18px;
-  background: #fff;
-}
-
-.step-title {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 6px;
-}
-
-.step-desc {
-  margin: 0;
-  font-size: 14px;
-  color: #444;
-}
-
-/* Pricing */
-.pricing {
-  border-top: 1px solid #eee;
-  padding-top: 40px;
-}
-
-.pricing-desc {
-  margin: 0 0 16px;
-  color: #333;
-}
-
-/* Contact */
-.section-contact .contact-desc {
-  margin: 0 0 24px;
-  color: #333;
-}
-
-.contact-form {
-  max-width: 800px;
-}
-
-.form-row {
+/* ================================
+   Services
+================================ */
+.services-container {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.service-box {
+  flex: 1;
+  background: #fbfbfb;
+  border: 1px solid #e6e6e6;
+  padding: 28px;
+  border-radius: 6px;
+}
+
+.service-box h3 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  line-height: 1.1;
+}
+
+.service-box .service-name {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.service-box .lead {
+  color: #555;
   margin-bottom: 16px;
 }
 
-.form-row label {
-  font-weight: 600;
+.service-box h4 {
+  font-size: 15px;
+  margin: 18px 0 8px 0;
+  display: inline-block;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 6px;
 }
 
-.form-row input,
-.form-row textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+.service-box ul { padding-left: 18px; margin: 0; color:#555; }
+.service-box li { margin-bottom: 8px; font-size: 14px; }
+
+/* ================================
+   Portfolio
+================================ */
+.sub-title { font-size: 20px; font-weight: 600; text-align:center; color:#444; margin-bottom: 28px; }
+
+.portfolio-category { margin-bottom: 36px; }
+
+.portfolio-category h4 {
+  font-size: 18px;
+  margin: 0 0 18px 0;
+  padding-left: 8px;
+  border-left: 4px solid #333;
 }
 
-.form-row input:focus,
-.form-row textarea:focus {
-  outline: none;
-  border-color: #111;
+.portfolio-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-/* Footer */
-.site-footer {
-  border-top: 1px solid #eee;
-  padding: 24px 0;
-  text-align: center;
-  color: #666;
-  font-size: 13px;
+.portfolio-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fbfbfb;
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+  width: calc(50% - 12px); /* 2列レイアウト */
+  border-radius: 6px;
 }
 
-/* Responsiveness */
+.thumb {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border: 1px dashed #bbb;
+  background: #f2f2f2;
+  flex-shrink: 0;
+}
+
+.portfolio-text h5 { font-size: 16px; margin: 0 0 6px 0; font-weight:700; }
+.portfolio-text p { margin: 0; color: #666; font-size: 14px; }
+
+.portfolio-more-note { margin-top: 18px; color:#777; font-size:13px; text-align:center; }
+
+/* ================================
+   Flow
+================================ */
+.flow-steps {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: nowrap;
+}
+
+.step { width: 180px; text-align: center; }
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.step-title { font-weight:700; margin-bottom:6px; }
+.step-text { color:#666; font-size:13px; margin:0; }
+
+/* SVG 矢印ラッパー */
+.svg-arrow { display:flex; align-items:center; justify-content:center; }
+
+/* ================================
+   Pricing
+================================ */
+.pricing { margin-top: 10px; text-align:center; padding: 28px; background:#fbfbfb; border:1px solid #e6e6e6; border-radius:6px; }
+.pricing .section-title.small { font-size:20px; margin-bottom:18px; }
+.price-text { font-size:15px; margin-bottom:8px; color:#444; }
+.price-sub { color:#666; font-size:13px; margin-bottom:18px; font-style:italic; }
+
+.contact-btn {
+  border: 1px solid #333;
+  background: #fff;
+  padding: 12px 28px;
+  font-weight:700;
+  cursor:pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-btn:hover { background:#333; color:#fff; }
+
+/* ================================
+   レスポンシブ（簡易）
+================================ */
 @media (max-width: 1200px) {
-  .section-flow .flow-steps {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .section-box { width: 100%; margin: 20px 12px; padding: 28px; }
+  .flow-steps { overflow-x: auto; gap: 12px; padding-bottom: 8px; }
+  .portfolio-item { width: 100%; }
+  .services-container { flex-direction: column; }
 }
-
-@media (max-width: 900px) {
-  .section-services .services-grid {
-    grid-template-columns: 1fr;
-  }
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-  .section-flow .flow-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .container {
-    padding: 0 24px;
-  }
+@media (max-width: 600px) {
+  .service-box h4, .portfolio-category h4 { font-size: 16px; }
+  .service-box h3 { font-size: 16px; }
 }
