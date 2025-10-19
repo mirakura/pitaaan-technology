@@ -151,8 +151,11 @@ body {
 .step-title { font-weight:700; margin-bottom:6px; }
 .step-text { color:#666; font-size:13px; margin:0; }
 
-/* SVG 矢印ラッパー */
-.svg-arrow { display:flex; align-items:center; justify-content:center; }
+.arrow {
+  font-size: 1.5rem;
+  color: #555;
+}
+
 
 /* ================================
    Pricing
