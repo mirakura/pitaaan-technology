@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ja">
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- ikuko -->
-</head>
-<body>
-    
-</body>
+    <title>お問い合わせフォーム</title>
+
+    <!-- 外部CSSの読み込み -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- フォーム全体を囲むコンテナ -->
+    <div class="form-container">
+      <h1>お問い合わせ</h1>
+
+      <!-- お問い合わせフォーム本体 -->
+      <form id="contact-form">
+        <!-- 名前 -->
+        <div class="form-group">
+          <label for="name">お名前 <span class="required">(必須)</span></label>
+          <input type="text" id="name" placeholder="【テキスト入力欄】" required>
+        </div>
+
+        <!-- ふりがな -->
+        <div class="form-group">
+          <label for="furigana">ふりがな <span class="required">(必須)</span></label>
+          <input type="text" id="furigana" placeholder="【テキスト入力欄】" required>
+        </div>
+
+        <!-- メールアドレス -->
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="required">(必須)</span></label>
+          <input type="email" id="email" placeholder="【メールアドレス入力欄】" required>
+        </div>
+
+        <!-- 電話番号 -->
+        <div class="form-group">
+          <label for="phone">電話番号</label>
+          <input type="tel" id="phone" placeholder="【電話番号入力欄】">
+        </div>
+
+        <!-- 会社・団体名 -->
+        <div class="form-group">
+          <label for="company">会社名・団体名</label>
+          <input type="text" id="company" placeholder="【テキスト入力欄】">
+        </div>
+
+        <!-- お問い合わせ種別 -->
+        <div class="form-group">
+          <label for="category">お問い合わせ種別 <span
+              class="required">(必須)</span></label>
+          <select id="category" required>
+            <option value="">【選択してください ▼】</option>
+            <option>Webサイト制作について</option>
+            <option>パンフレット制作について</option>
+            <option>建築図面・CAD作成について</option>
+            <option>採用について</option>
+            <option>その他</option>
+          </select>
+        </div>
+
+        <!-- お問い合わせ内容 -->
+        <div class="form-group">
+          <label for="message">お問い合わせ内容 <span
+              class="required">(必須)</span></label>
+          <textarea id="message" rows="5" placeholder="【詳細をご記入ください】"
+            required></textarea>
+        </div>
+
+        <!-- 送信ボタン -->
+        <div class="form-group">
+          <button type="submit" class="submit-button">送信する</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- 外部JavaScriptの読み込み -->
+    <script src="script.js"></script>
+  </body>
+
 </html>
