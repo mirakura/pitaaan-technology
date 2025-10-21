@@ -81,6 +81,7 @@ body {
   border: 1px solid #333;
   padding: 8px 20px;
   background: #fff;
+  border-radius: 5px;
 }
 
 /* 会社概要 */
