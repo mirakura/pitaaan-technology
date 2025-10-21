@@ -1,0 +1,79 @@
+/* 全体の基本スタイル設定 */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* フォーム全体のレイアウト */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* タイトル */
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+/* 各入力ブロック */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* ラベル（項目名） */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 必須マーク */
+.required {
+  color: #c00;
+  font-size: 13px;
+}
+
+/* 入力欄（テキスト・メール・電話） */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* テキストエリアのリサイズ禁止 */
+textarea {
+  resize: none;
+}
+
+/* 送信ボタン */
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 送信ボタンのホバー時 */
+.submit-button:hover {
+  background-color: #555;
+  transition: 0.3s;
+}
