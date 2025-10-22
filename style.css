@@ -43,6 +43,10 @@ body {
   font-size: 1.6rem;
   margin-bottom: 40px;
 }
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
@@ -81,7 +85,6 @@ body {
   border: 1px solid #333;
   padding: 8px 20px;
   background: #fff;
-  border-radius: 5px;
 }
 
 /* 会社概要 */
