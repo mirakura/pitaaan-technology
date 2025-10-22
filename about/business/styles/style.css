@@ -45,15 +45,15 @@ body {
   flex: 1;
   background: #fbfbfb;
   border: 1px solid #e6e6e6;
-  padding: 28px;
+  padding: 14px;       /* 28px -> 36px: 内側の余白を広げる */
   border-radius: 6px;
-}
-
-/* カード内を縦方向の flex コンテナにして下揃えを可能にする */
-.service-box {
+  min-height: 540px;   /* カードの最低高さを確保（調整可） */
   display: flex;
   flex-direction: column;
 }
+
+/* カード内を縦方向の flex コンテナにして下揃えを可能にする */
+  // 
 
 .service-box h3 {
   font-size: 18px;
@@ -230,4 +230,11 @@ body {
 @media (max-width: 600px) {
   .service-box h4, .portfolio-category h4 { font-size: 16px; }
   .service-box h3 { font-size: 16px; }
+}
+
+@media (max-width: 1200px) {
+  .service-box {
+    min-height: auto;  /* モバイル時は高さ固定を解除 */
+    padding: 28px;     /* 元の余白に戻す */
+  }
 }
