@@ -49,10 +49,30 @@ body {
   border-radius: 6px;
 }
 
+/* カード内を縦方向の flex コンテナにして下揃えを可能にする */
+.service-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .service-box h3 {
   font-size: 18px;
   margin: 0 0 12px 0;
   line-height: 1.1;
+}
+
+/* サービスタイトル下の区切り線 */
+.service-box h3 {
+  position: relative;
+  padding-bottom: 10px;
+}
+.service-box h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #e0e0e0; /* 薄いグレー */
+  margin: 8px auto 0;
 }
 
 .service-box .service-name {
@@ -69,10 +89,23 @@ body {
 
 .service-box h4 {
   font-size: 15px;
-  margin: 18px 0 8px 0;
-  display: inline-block;
-  border-bottom: 1px solid #e8e8e8;
+  margin: 0 0 8px 0; /* 上の余白は auto にして下揃え */
+  display: block;
   padding-bottom: 6px;
+  margin-top: auto; /* この見出し以降をカード下部に揃える */
+}
+
+/* h4（特徴）の上に中央揃えの区切り線を追加 */
+.service-box h4 {
+  position: relative;
+}
+.service-box h4::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #e0e0e0;
+  margin: 0 auto 8px;
 }
 
 .service-box ul { padding-left: 18px; margin: 0; color:#555; }
@@ -81,12 +114,22 @@ body {
 /* ================================
    Portfolio
 ================================ */
-.sub-title { font-size: 20px; font-weight: 600; text-align:center; color:#444; margin-bottom: 28px; }
+.sub-title h3{ 
+  height: 34px;
+  font-size: 20px;
+  font-weight: 600;
+  color:#333;
+  background-color: #ddd;
+  margin-bottom: 28px;
+  padding-left: 8px;
+  border-left: 6px solid #333; 
+}
 
 .portfolio-category { margin-bottom: 36px; }
 
 .portfolio-category h4 {
   font-size: 18px;
+  background-color: #eee;
   margin: 0 0 18px 0;
   padding-left: 8px;
   border-left: 4px solid #333;
@@ -149,7 +192,7 @@ body {
 }
 
 .step-title { font-weight:700; margin-bottom:6px; }
-.step-text { color:#666; font-size:13px; margin:0; }
+.step-text { color:#666; font-size:13px; margin:0; font-style: italic; }
 
 .arrow {
   font-size: 1.5rem;
@@ -160,7 +203,7 @@ body {
 /* ================================
    Pricing
 ================================ */
-.pricing { margin-top: 10px; text-align:center; padding: 28px; background:#fbfbfb; border:1px solid #e6e6e6; border-radius:6px; }
+.pricing { margin-top: 10px; text-align:center; padding: 28px; background:#fff; border:1px solid #e6e6e6; border-radius:6px; }
 .pricing .section-title.small { font-size:20px; margin-bottom:18px; }
 .price-text { font-size:15px; margin-bottom:8px; color:#444; }
 .price-sub { color:#666; font-size:13px; margin-bottom:18px; font-style:italic; }
