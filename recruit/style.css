@@ -17,7 +17,7 @@ body {
   background: #fff;
 }
 
-/* 見出しラベル */
+/* 見出しラベル(共通） */
 .section-label {
   border: 2px solid #000;
   display: inline-block;
@@ -26,7 +26,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* セクションタイトル */
+/* セクションタイトル(共通） */
 .section-title {
   text-align: center;
   font-size: 28px;
@@ -49,27 +49,27 @@ body {
   background: #fff;
 }
 
-/* ブロックの番号 */
+/* ブロックの番号（ｓ01） */
 .item-number {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* ブロックのタイトル */
+/* ブロックのタイトル（ｓ01） */
 .item-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* テキストの場合 */
+/* テキストの場合（ｓ01） */
 .item-text {
   font-size: 16px;
   line-height: 1.6;
 }
 
-/* リストの場合 */
+/* リストの場合（ｓ01） */
 .item-list {
   font-size: 16px;
   line-height: 1.8;
@@ -78,4 +78,28 @@ body {
 
 .item-list li {
   margin-bottom: 6px;
+}
+
+/*  */
+.job-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.job-subtitle {
+  font-weight: 700;
+  margin: 18px 0 6px;
+}
+
+.grid-item ul {
+  list-style-type: "• ";
+  padding-left: 1em;
+  margin: 0;
+}
+
+.grid-item li {
+  line-height: 1.8;
+  font-size: 14px;
 }
