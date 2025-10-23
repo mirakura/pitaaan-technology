@@ -35,13 +35,13 @@ body {
 }
 
 /* グリッド */
-.grid-container {
+.appeal-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
-.grid-item {
+.appeal-box {
   border: 2px solid #000;
   padding: 24px;
   box-sizing: border-box;
@@ -50,33 +50,33 @@ body {
 }
 
 /* ブロックの番号（ｓ01） */
-.item-number {
+.appeal-number {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
 /* ブロックのタイトル（ｓ01） */
-.item-title {
+.appeal-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
 /* テキストの場合（ｓ01） */
-.item-text {
+.appeal-text {
   font-size: 16px;
   line-height: 1.6;
 }
 
 /* リストの場合（ｓ01） */
-.item-list {
+.appeal-list {
   font-size: 16px;
   line-height: 1.8;
   padding-left: 20px;
 }
 
-.item-list li {
+.appeal-list li {
   margin-bottom: 6px;
 }
 
@@ -93,25 +93,25 @@ body {
   margin: 18px 0 6px;
 }
 
-.grid-item ul {
+.job-box ul {
   list-style-type: "• ";
   padding-left: 1em;
   margin: 0;
 }
 
-.grid-item li {
+.job-box li {
   line-height: 1.8;
   font-size: 14px;
 }
 
 /*　応募ボックス内の各設定　*/
-.application-flow {
+.flow-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.flow-card {
+.flow-box {
   border: 1px solid #000;
   padding: 40px 30px;
   text-align: center;
