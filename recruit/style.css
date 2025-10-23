@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* セクションのレイアウト */
+/* セクションのレイアウト(共通） */
 .section {
   width: 1100px;
   margin: 40px auto;
@@ -34,7 +34,7 @@ body {
   font-weight: bold;
 }
 
-/* グリッド */
+/* セクション 01 の各種設定 */
 .appeal-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,27 +49,23 @@ body {
   background: #fff;
 }
 
-/* ブロックの番号（ｓ01） */
 .appeal-number {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* ブロックのタイトル（ｓ01） */
 .appeal-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* テキストの場合（ｓ01） */
 .appeal-text {
   font-size: 16px;
   line-height: 1.6;
 }
 
-/* リストの場合（ｓ01） */
 .appeal-list {
   font-size: 16px;
   line-height: 1.8;
@@ -80,7 +76,7 @@ body {
   margin-bottom: 6px;
 }
 
-/* 募集ボックス内の各設定 */
+/* セクション 02 の各種設定 */
 .job-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,7 +114,7 @@ body {
   font-size: 14px;
 }
 
-/*　応募ボックス内の各設定　*/
+/* セクション 03 の各種設定 */
 .flow-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -165,7 +161,7 @@ body {
   margin-left: 20px;
 }
 
-/*　雇用条件ボックス内の各設定　*/
+/* セクション 04 の各種設定 */
 .conditions-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
