@@ -81,6 +81,20 @@ body {
 }
 
 /* 募集ボックス内の各設定 */
+.job-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.job-box {
+  border: 2px solid #000;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 200px;
+  background: #fff;
+}
+
 .job-title {
   font-size: 18px;
   font-weight: 700;
@@ -152,6 +166,20 @@ body {
 }
 
 /*　雇用条件ボックス内の各設定　*/
+.conditions-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.conditions-box {
+  border: 2px solid #000;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 200px;
+  background: #fff;
+}
+
 .conditions-title {
   font-size: 18px;
   font-weight: 700;
