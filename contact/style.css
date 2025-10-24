@@ -1,79 +1,111 @@
-/* 全体の基本スタイル設定 */
+/* 共通設定 */
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  background-color: #ffffff;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* フォーム全体のレイアウト */
-.form-container {
-  max-width: 600px;
+/* セクション共通 */
+section {
+  width: 80%;
+  max-width: 800px;
   margin: 50px auto;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
-/* タイトル */
-.form-container h1 {
+/* 見出し */
+h2 {
   text-align: center;
+  font-weight: bold;
   margin-bottom: 30px;
-  font-size: 22px;
-  border-bottom: 2px solid #000;
-  padding-bottom: 10px;
 }
 
-/* 各入力ブロック */
+/* ---------- お問い合わせフォーム ---------- */
+
+.contact-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 4px;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
 
-/* ラベル（項目名） */
 label {
   display: block;
   font-weight: bold;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
-/* 必須マーク */
 .required {
-  color: #c00;
-  font-size: 13px;
+  color: red;
+  font-weight: normal;
 }
 
-/* 入力欄（テキスト・メール・電話） */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
+input,
+textarea,
+select {
   width: 100%;
-  padding: 10px;
-  font-size: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 
-/* テキストエリアのリサイズ禁止 */
 textarea {
-  resize: none;
+  height: 120px;
+  resize: vertical;
 }
 
-/* 送信ボタン */
-.submit-button {
-  background-color: #333;
+.submit-btn {
+  background: #333;
   color: #fff;
   border: none;
   padding: 12px 0;
-  font-size: 16px;
   width: 100%;
-  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* 送信ボタンのホバー時 */
-.submit-button:hover {
-  background-color: #555;
-  transition: 0.3s;
+.submit-btn:hover {
+  background: #555;
+}
+
+/* ---------- よくある質問（FAQ） ---------- */
+
+.faq {
+  margin-top: 80px;
+}
+
+.faq-section {
+  margin-bottom: 30px;
+}
+
+.faq-section h3 {
+  background-color: #ddd;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.faq-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-section li {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+}
+
+.faq-section li:hover {
+  background-color: #f1f1f1;
 }
