@@ -1,0 +1,27 @@
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.ico
+
+# Fonts
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
