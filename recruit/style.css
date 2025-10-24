@@ -1,0 +1,192 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: #222;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* セクションのレイアウト(共通） */
+.section {
+  width: 1100px;
+  margin: 40px auto;
+  border: 4px solid #000;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* 見出しラベル(共通） */
+.section-label {
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 8px 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* セクションタイトル(共通） */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* セクション 01 の各種設定 */
+.appeal-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.appeal-box {
+  border: 2px solid #000;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 200px;
+  background: #fff;
+}
+
+.appeal-number {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.appeal-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.appeal-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.appeal-list {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.appeal-list li {
+  margin-bottom: 6px;
+}
+
+/* セクション 02 の各種設定 */
+.job-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.job-box {
+  border: 2px solid #000;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 200px;
+  background: #fff;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.job-subtitle {
+  font-weight: 700;
+  margin: 18px 0 6px;
+}
+
+.job-box ul {
+  list-style-type: disc;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.job-box li {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* セクション 03 の各種設定 */
+.flow-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.flow-box {
+  border: 1px solid #000;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.flow-number {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+
+.flow-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.flow-text {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.flow-list {
+  text-align: left;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.flow-list li {
+  margin-left: 20px;
+}
+
+/* セクション 04 の各種設定 */
+.conditions-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.conditions-box {
+  border: 2px solid #000;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 200px;
+  background: #fff;
+}
+
+.conditions-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.conditions-list {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+  list-style-type: disc;
+}
