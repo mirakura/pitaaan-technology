@@ -13,3 +13,7 @@
 ## DUB DESIGN
 
 - https://dubdesign.net/
+
+## iframe 要素を使ってヘッダー、フッターを共通管理する
+
+- https://wand.witchserver.jp/archives/46
