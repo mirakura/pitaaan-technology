@@ -1,0 +1,152 @@
+/* ================================
+   メンバー紹介ページ専用 CSS
+================================ */
+
+/* 全体 */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* ---------- 役員 ---------- */
+#executives .executive-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.executive {
+  width: 45%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.executive img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.executive h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.executive .position {
+  text-align: center;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.executive .label {
+  font-weight: bold;
+}
+
+/* ---------- チームメンバー ---------- */
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.member {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.member .position {
+  text-align: center;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.member p {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.member .label {
+  font-weight: bold;
+}
+
+/* ---------- チームの特徴 ---------- */
+#features .feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* ---------- CTA ---------- */
+#cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
