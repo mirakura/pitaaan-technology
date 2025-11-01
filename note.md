@@ -10,6 +10,14 @@
 - https://jito-site.com/swiper-loop/
 - https://blog.knis.jp/swiper_pause/
 
+## Swiper
+
+- https://make-web.jp/blog/about-swiper/
+- https://roronto.jp/business-efficiency/it/swiper/
+
+- https://junpei-sugiyama.com/category/web-production/slider/swiper/
+- https://junpei-sugiyama.com/category/web-production/slider/slick/
+
 ## DUB DESIGN
 
 - https://dubdesign.net/

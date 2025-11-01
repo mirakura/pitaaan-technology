@@ -11,36 +11,17 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
   <body>
     <!-- ヘッダー -->
-    <header class="header">
-      <div class="logo">会社ロゴ</div>
+    <div id="header-placeholder"></div>
 
-      <!-- ▼ ハンバーガーボタンを追加 -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <!-- ▲ -->
-
-      <nav class="nav" id="navMenu">
-        <ul>
-          <li><a href="index.html">トップページ</a></li>
-          <li><a href="about/index.html">会社概要</a></li>
-          <li><a href="about/business/index.html">事業内容</a></li>
-          <li><a href="about/members/index.html">メンバー紹介</a></li>
-          <li><a href="recruit/index.html">採用情報</a></li>
-        </ul>
-      </nav>
-      <a href="contact/index.html" class="btn-contact">お問い合わせ</a>
-    </header>
-    <!-- 実績紹介 -->
-    <section id="works" class="section">
-      <h2>実績紹介</h2>
+    <!-- Buisiness 実績紹介 -->
+    <section id="business" class="section">
+      <h2 class="section-title">実績紹介</h2>
+      <p class="section-subtitle">実績紹介</p>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide work-item bibain">
@@ -78,14 +59,21 @@
         <div class="swiper-scrollbar"></div>
       </div>
       <!-- Swiper -->
-      <button class="swiper-play">再生</button>
-      <button class="swiper-stop">停止</button>
-      <button class="btn-view">実績一覧を見る</button>
+      <div>
+        <button class="swiper-button-prev-custom">前へ</button>
+        <button class="swiper-play">再生</button>
+        <button class="swiper-stop">停止</button>
+        <button class="swiper-button-next-custom">次へ</button>
+      </div>
+      <div class="more-btn">
+        <a href="#">詳細を見る<span class="arrow">→</span></a>
+      </div>
     </section>
 
-    <!-- 会社概要 -->
+    <!-- About 会社概要 -->
     <section id="about" class="section">
-      <h2>会社概要</h2>
+      <h2 class="section-title">About</h2>
+      <p class="section-subtitle">会社概要</p>
       <div class="about-container">
         <img
           class="about-photo"
@@ -93,83 +81,48 @@
           alt="代表・メンバー写真"
         />
         <div class="about-text">
-          <h3>代表挨拶</h3>
           <p>
-            「地方だからこそできる、お客様一人ひとりに寄り添ったきめ細かなサービスを心がけております。」
+            地方だからこそできる、お客様ひとりひとりに寄り添ったきめ細かなサービスを心がけております。
           </p>
-          <ul>
-            <li>所在地: 北海道美唄市</li>
-            <li>設立: 2020年4月</li>
-            <li>従業員数: 20名</li>
-          </ul>
-          <button class="btn-view">詳細を見る</button>
+
+          <div class="more-btn">
+            <a href="#">詳細を見る<span class="arrow">→</span></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 事業内容 -->
-    <section id="business" class="section">
-      <h2>事業内容</h2>
-      <div class="business-container">
-        <div class="business-item">
+    <!-- Service 事業内容 -->
+    <section id="service" class="section">
+      <h2 class="section-title">Service</h2>
+      <p class="section-subtitle">事業内容</p>
+      <div class="service-container">
+        <div class="service-item">
           <h3>01<br />Webサイト制作</h3>
           <p>企画から運用まで一貫サポート<br />レスポンシブ・SEO対応</p>
         </div>
-        <div class="business-item">
+        <div class="service-item">
           <h3>02<br />パンフレット制作</h3>
           <p>企画・デザイン・印刷<br />豊富なデザインパターン</p>
         </div>
-        <div class="business-item">
+        <div class="service-item">
           <h3>03<br />建築模型・CAD制作</h3>
           <p>高精度な3D建築模型<br />図面作成・修正</p>
         </div>
       </div>
     </section>
 
-    <!-- お問い合わせ -->
+    <!-- Contact お問い合わせ -->
     <section id="contact" class="section contact">
-      <h2>お問い合わせ</h2>
-      <p>お気軽にお問い合わせください</p>
-      <p>あなたのプロジェクトを形にするお手伝いをいたします</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">お問い合わせ</p>
       <a href="contact/index.html">
         <button class="btn-contact-large">お問い合わせはこちら</button>
       </a>
-      <p>TEL: 0126-XX-XXXX<br />Email: info@pitech.co.jp</p>
     </section>
 
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4>会社情報</h4>
-          <p>
-            PITAAAN テクノロジー株式会社<br />〒072-0000 北海道美唄市中町 0-0-0
-          </p>
-          <p>TEL: 0126-XX-XXXX<br />Email: info@pitech.co.jp</p>
-        </div>
-        <div class="footer-col">
-          <h4>メニューリンク</h4>
-          <ul>
-            <li><a href="index.html">トップページ</a></li>
-            <li><a href="about/index.html">会社概要</a></li>
-            <li><a href="about/business/index.html">事業内容</a></li>
-            <li><a href="about/members/index.html">メンバー紹介</a></li>
-            <li><a href="recruit/index.html">採用情報</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>SNSリンク</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="copy">
-        © 2025 PITAAWN テクノロジー株式会社. All Rights Reserved.
-      </p>
-    </footer>
+    <!-- フッターを挿入 -->
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

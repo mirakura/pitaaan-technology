@@ -35,14 +35,21 @@ body {
 
 /* 共通セクション */
 .section {
-  padding: 60px 20px;
-  border-bottom: 1px solid #ccc;
   text-align: center;
+  padding: 80px 20px;
+  border-bottom: 1px solid #ccc;
 }
-.section h2 {
-  font-size: 1.6rem;
+.section-title {
+  font-size: 48px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.section-subtitle {
+  font-size: 14px;
+  color: #666;
   margin-bottom: 40px;
 }
+
 button {
   cursor: pointer;
   border-radius: 5px;
@@ -59,12 +66,6 @@ button {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 12px;
-}
-
-.swiper-wrapper {
-  /* display: flex; */
-  /* transition: transform 0.5s; */
-  /* will-change: transform; */
 }
 
 .swiper-slide {
@@ -112,6 +113,26 @@ button {
   background: #fff;
 }
 
+.more-btn {
+  margin-top: 40px;
+}
+
+.more-btn a {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #333;
+  border-radius: 999px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.more-btn a:hover {
+  background-color: #333;
+  color: white;
+}
+
 /* 会社概要 */
 .about-container {
   display: flex;
@@ -134,13 +155,13 @@ button {
 }
 
 /* 事業内容 */
-.business-container {
+.service-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-.business-item {
+.service-item {
   border: 1px solid #ccc;
   padding: 20px;
   width: 250px;
@@ -239,12 +260,12 @@ button {
   }
 
   /* 事業内容 */
-  .business-container {
+  .service-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .business-item {
+  .service-item {
     width: 90%;
   }
 
