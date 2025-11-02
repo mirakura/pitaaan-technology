@@ -150,3 +150,72 @@ h2 {
   max-width: 1000px;
   margin: 0 auto 60px;
 }
+
+/* ================================
+   スマホ対応（幅600px以下）
+================================ */
+@media (max-width: 600px) {
+
+  /* 全体 */
+  section {
+    margin-bottom: 50px;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  /* ---------- 役員 ---------- */
+  .executive {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .executive img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* ---------- チームメンバー ---------- */
+  .team-list {
+    grid-template-columns: 1fr;
+    /* 1列表示 */
+    gap: 20px;
+  }
+
+  .member {
+    padding: 15px;
+  }
+
+  .member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .member h3 {
+    font-size: 1rem;
+  }
+
+  .member p {
+    font-size: 0.85rem;
+  }
+
+  /* ---------- チームの特徴 ---------- */
+  #features .feature-list {
+    grid-template-columns: 1fr;
+    /* 縦並び */
+  }
+
+  .feature {
+    padding: 15px;
+  }
+
+  /* ---------- CTA ---------- */
+  #cta {
+    font-size: 1rem;
+    padding: 30px 10px;
+    border-radius: 8px;
+  }
+}
