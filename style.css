@@ -156,24 +156,41 @@ button {
 .swiper-button-next,
 .swiper-button-prev,
 #autoplay-toggle {
-  background-color: white;
-  border: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   font-size: 16px;
-  z-index: 10;
-  margin: 0 5px;
-  position: static;
-  margin-top: initial;
+  transition: all 0.3s ease;
+  /* position: absolute; */
+  /* z-index: 10; */
+  /* margin: 0 5px; */
+  /* position: static; */
+  /* margin-top: initial; */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+#autoplay-toggle:hover {
+  background-color: #0044cc;
+  color: white;
+  border-color: #0044cc;
 }
 
 .swiper-controls-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   margin-top: 20px;
+}
+
+.swiper-scrollbar {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto 0;
 }
 
 #autoplay-toggle.active {
