@@ -5,34 +5,6 @@ body {
   background: #fff;
 }
 
-/* header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-  background: #f5f5f5;
-}
-.header .logo {
-  font-weight: bold;
-}
-.nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-.nav a {
-  text-decoration: none;
-  color: #333;
-}
-.btn-contact {
-  background: #0044cc;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
 /* 共通セクション */
 .section {
   text-align: center;
@@ -50,37 +22,111 @@ body {
   margin-bottom: 40px;
 }
 
+.icon {
+  font-size: 2rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.contact-btn:hover .arrow,
+.more-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
 button {
   cursor: pointer;
-  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #333;
+}
+
+.more-btn {
+  /* display: inline-block; */
+  border-radius: 999px;
+  color: #333;
+}
+
+.more-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 999px;
+}
+
+.contact-btn:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.btn-medium {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  gap: 10px;
+}
+
+.btn-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 30px 90px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  gap: 10px;
+}
+
+#business {
+  background: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+}
+
+#about,
+#contact {
+  background-color: #ffffff;
+}
+
+#service {
+  background-color: #f5f5f5;
 }
 
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
-.swiper {
+.swiper-container {
   /* background-color: #0044cc; */
   /* position: relative; */
   /* overflow: hidden; */
-  /* width: 100%; */
-  /* height: auto; */
+  width: 100%;
+  height: auto;
   max-width: 800px;
+  padding: 0 10px;
   margin: 0 auto;
   border-radius: 12px;
 }
 
 .swiper-slide {
-  background-color: brown;
-  min-width: 100%;
-  box-sizing: border-box;
-  flex-shrink: 0;
+  /* background-color: brown; */
+  /* min-width: 100%; */
+  /* box-sizing: border-box; */
+  /* flex-shrink: 0; */
+  height: fit-content;
   /* 必要に応じてpaddingやborderを調整 */
   display: block;
 }
 
 .swiper-slide img {
   width: 100%;
-  height: auto;
-  /* display: block; */
+  height: 100%;
+  display: block;
   border-radius: 12px;
 }
 
@@ -107,33 +153,38 @@ button {
   font-size: 0.9rem;
 }
 
-.btn-view {
-  border: 1px solid #333;
-  padding: 8px 20px;
-  background: #fff;
+.swiper-button-next,
+.swiper-button-prev,
+#autoplay-toggle {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10;
+  margin: 0 5px;
+  position: static;
+  margin-top: initial;
 }
 
-.more-btn {
-  margin-top: 40px;
+.swiper-controls-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.more-btn a {
-  display: inline-block;
-  padding: 10px 24px;
-  border: 1px solid #333;
-  border-radius: 999px;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
+#autoplay-toggle.active {
+  background-color: #0044cc;
+  color: white;
 }
-
-.more-btn a:hover {
-  background-color: #333;
+#autoplay-toggle:hover {
+  background-color: #0044cc;
   color: white;
 }
 
-/* 会社概要 */
 .about-container {
   display: flex;
   justify-content: center;
@@ -154,6 +205,7 @@ button {
   text-align: left;
 }
 
+/* 実績紹介 */
 /* 事業内容 */
 .service-container {
   display: flex;
@@ -161,45 +213,25 @@ button {
   justify-content: center;
   gap: 20px;
 }
+
 .service-item {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  text-align: left;
   padding: 20px;
   width: 250px;
 }
 
-/* お問い合わせ */
-.contact .btn-contact-large {
-  background: #333;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  margin: 20px 0;
+.service-item h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.service-item p {
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-/* footer */
-.footer {
-  background: #222;
-  color: #ccc;
-  padding: 40px 20px;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-.footer-col a {
-  color: #ccc;
-  text-decoration: none;
-}
-.copy {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.8rem;
-}
+/* お問い合わせ */
 
 /* ===========================
    📱 スマホ対応
@@ -210,23 +242,6 @@ button {
     font-size: 14px;
   }
 
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-
-  .btn-contact {
-    align-self: center;
-    margin-top: 10px;
-  }
-
   /* セクション共通 */
   .section {
     padding: 40px 10px;
@@ -235,12 +250,6 @@ button {
   .section h2 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-  }
-
-  /* 実績紹介 */
-  .swiper {
-    width: 100%;
-    padding: 0 10px;
   }
 
   /* 会社概要 */
@@ -274,84 +283,13 @@ button {
     margin: 0 0 10px;
   }
 
-  .btn-contact-large {
+  .contact-btn {
     width: 90%;
   }
-
-  /* フッター */
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-col {
-    margin-bottom: 20px;
-  }
-
-  .copy {
-    text-align: left;
-  }
-}
-/* ===========================
-   🍔 ハンバーガーメニュー
-   =========================== */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 18px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #333;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-
-/* メニュー開閉アニメーション */
-.hamburger.active span:nth-child(1) {
-  transform: translateY(7.5px) rotate(45deg);
-}
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /* スマホ時のメニュー非表示・開閉動作 */
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav {
-    display: none;
-    width: 100%;
-    background: #f9f9f9;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  .nav.active {
-    display: block;
-    animation: fadeIn 0.3s ease;
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -361,9 +299,5 @@ button {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  .btn-contact {
-    display: none; /* スマホではヘッダーの右側ボタンを非表示に */
   }
 }

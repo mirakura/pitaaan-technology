@@ -1,3 +1,4 @@
+/*
 const playButton = document.querySelector(".swiper-play");
 const stopButton = document.querySelector(".swiper-stop");
 
@@ -8,6 +9,9 @@ playButton.addEventListener("click", () => {
 stopButton.addEventListener("click", () => {
   swiper.autoplay.stop();
 });
+
+
+
 
 const swiper = new Swiper(".swiper", {
   autoplay: {
@@ -24,22 +28,55 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+*/
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+// ===========================
+// 🚀 Swiper自動再生制御
+// ===========================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mySwiper = new Swiper(".swiper-container", {
+    loop: true,
+    centeredSlides: true,
+    slidepreview: 1,
+
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    //スクロールバー表示の設定
+    scrollbar: {
+      el: ".swiper-scrollbar", //要素の指定
+    },
+  });
+
+  const autoplayToggleButton = document.getElementById("autoplay-toggle");
+  let isAutoplayPlaying = true;
+
+  autoplayToggleButton.addEventListener("click", () => {
+    if (isAutoplayPlaying) {
+      mySwiper.autoplay.stop();
+      autoplayToggleButton.textContent = "▶";
+    } else {
+      mySwiper.autoplay.start();
+      autoplayToggleButton.textContent = "⏸";
+    }
+    isAutoplayPlaying = !isAutoplayPlaying;
+  });
 });
+
+// ===========================
+// 🚚 ヘッダー・フッター読み込み
+// ===========================
 
 document.addEventListener("DOMContentLoaded", () => {
   // ヘッダーを読み込み、挿入する要素を指定

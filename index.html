@@ -22,26 +22,28 @@
     <section id="business" class="section">
       <h2 class="section-title">実績紹介</h2>
       <p class="section-subtitle">実績紹介</p>
-      <div class="swiper">
+      <!-- Swiper -->
+      <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide work-item bibain">
-            <img src="images/exec1.jpg" alt="bibain" sizes="80w" />
+          <div class="swiper-slide">
+            <!-- <img src="images/exec1.jpg" alt="bibain" sizes="80w" /> -->
+            <img src="images/exec1.jpg" alt="bibain" />
             <div class="slide-caption">
               <h3>ホテル ビバイン</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
               <p class="desc">サイト詳細説明</p>
             </div>
           </div>
-          <div class="swiper-slide work-item gavtec">
-            <img src="images/exec1.jpg" alt="gavtec" sizes="80w" />
+          <div class="swiper-slide">
+            <img src="images/exec1.jpg" alt="gavtec" />
             <div class="slide-caption">
               <h3>GavTec美唄</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
               <p class="desc">サイト詳細説明</p>
             </div>
           </div>
-          <div class="swiper-slide work-item melody">
-            <img src="images/exec1.jpg" alt="gavtec" sizes="80w" />
+          <div class="swiper-slide">
+            <img src="images/exec1.jpg" alt="gavtec" />
             <div class="slide-caption">
               <h3>音楽教室 メロディ</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
@@ -50,24 +52,23 @@
           </div>
           <!-- スライドを増やす場合はここに追加 -->
         </div>
-        <!-- swiper-wrapper -->
-        <div class="swiper-pagination"></div>
+      </div>
+      <!-- swiper-wrapper -->
+      <div>
+        <!-- <div class="swiper-pagination"></div> -->
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <button class="swiper-button-prev">前へ</button>
+        <button id="autoplay-toggle" class="swiper-button-pause">⏸</button>
+        <button class="swiper-button-next">次へ</button>
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
-      <!-- Swiper -->
-      <div>
-        <button class="swiper-button-prev-custom">前へ</button>
-        <button class="swiper-play">再生</button>
-        <button class="swiper-stop">停止</button>
-        <button class="swiper-button-next-custom">次へ</button>
-      </div>
-      <div class="more-btn">
-        <a href="#">詳細を見る<span class="arrow">→</span></a>
-      </div>
+
+      <button class="more-btn">
+        <a href="#" class="btn-medium"
+          >実績一覧を見る<span class="arrow">→</span></a
+        >
+      </button>
     </section>
 
     <!-- About 会社概要 -->
@@ -85,9 +86,11 @@
             地方だからこそできる、お客様ひとりひとりに寄り添ったきめ細かなサービスを心がけております。
           </p>
 
-          <div class="more-btn">
-            <a href="#">詳細を見る<span class="arrow">→</span></a>
-          </div>
+          <button class="more-btn">
+            <a href="#" class="btn-medium"
+              >詳細を見る<span class="arrow">→</span></a
+            >
+          </button>
         </div>
       </div>
     </section>
@@ -98,27 +101,59 @@
       <p class="section-subtitle">事業内容</p>
       <div class="service-container">
         <div class="service-item">
-          <h3>01<br />Webサイト制作</h3>
+          <img
+            src="images/exec1.jpg"
+            alt="Webサイト制作"
+            sizes="320w"
+            srcset="images/exec1.jpg"
+          />
+          <h3>Webサイト制作</h3>
           <p>企画から運用まで一貫サポート<br />レスポンシブ・SEO対応</p>
         </div>
         <div class="service-item">
-          <h3>02<br />パンフレット制作</h3>
+          <img
+            src="images/exec1.jpg"
+            alt="パンフレット制作"
+            sizes="320w"
+            srcset="images/exec1.jpg"
+          />
+
+          <h3>パンフレット制作</h3>
           <p>企画・デザイン・印刷<br />豊富なデザインパターン</p>
         </div>
         <div class="service-item">
-          <h3>03<br />建築模型・CAD制作</h3>
+          <img
+            src="images/exec1.jpg"
+            alt="建築模型"
+            sizes="320w"
+            srcset="images/exec1.jpg"
+          />
+
+          <h3>建築模型・CAD制作</h3>
           <p>高精度な3D建築模型<br />図面作成・修正</p>
         </div>
       </div>
+
+      <button class="more-btn">
+        <a href="#" class="btn-medium">
+          事業詳細紹介へ
+          <span class="arrow">→</span>
+        </a>
+      </button>
     </section>
 
     <!-- Contact お問い合わせ -->
     <section id="contact" class="section contact">
       <h2 class="section-title">Contact</h2>
       <p class="section-subtitle">お問い合わせ</p>
-      <a href="contact/index.html">
-        <button class="btn-contact-large">お問い合わせはこちら</button>
-      </a>
+
+      <button class="contact-btn">
+        <a href="contact/index.html" class="btn-large">
+          <span class="icon">✉️</span>
+          お問い合わせをする
+          <span class="arrow">→</span>
+        </a>
+      </button>
     </section>
 
     <!-- フッターを挿入 -->
