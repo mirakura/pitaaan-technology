@@ -102,25 +102,33 @@ button {
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
 .swiper-container {
+  margin: 0 auto;
   /* background-color: #0044cc; */
   /* position: relative; */
   /* overflow: hidden; */
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding: 0 10px;
-  margin: 0 auto;
+  /* padding: 0 10px; */
   border-radius: 12px;
+  /* margin: 0 15px; */
+}
+.swiper-wrapper {
+  display: flex;
+  height: fit-content;
+  transition: transform 0.3s ease-in-out;
+  /* height: 300px; */
 }
 
 .swiper-slide {
   /* background-color: brown; */
-  /* min-width: 100%; */
+  min-width: 100%;
   /* box-sizing: border-box; */
   /* flex-shrink: 0; */
-  height: fit-content;
+  /* width: 80%; */
+  height: 100%;
   /* 必要に応じてpaddingやborderを調整 */
-  display: block;
+  /* display: block; */
 }
 
 .swiper-slide img {
@@ -153,6 +161,24 @@ button {
   font-size: 0.9rem;
 }
 
+.swiper-controls-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.swiper-container .swiper-pagination {
+  position: static;
+  width: auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
 .swiper-button-next,
 .swiper-button-prev,
 #autoplay-toggle {
@@ -165,10 +191,10 @@ button {
   font-size: 16px;
   transition: all 0.3s ease;
   /* position: absolute; */
-  /* z-index: 10; */
-  /* margin: 0 5px; */
-  /* position: static; */
-  /* margin-top: initial; */
+  z-index: 10;
+  margin: 0 5px;
+  position: static;
+  margin-top: initial;
 }
 
 .swiper-button-next:hover,
@@ -179,18 +205,14 @@ button {
   border-color: #0044cc;
 }
 
-.swiper-controls-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-}
-
 .swiper-scrollbar {
-  position: relative;
-  max-width: 800px;
-  margin: 20px auto 0;
+  position: static;
+  width: 100%;
+  /* max-width: 200px; スクロールバーの最大幅を調整 */
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin-top: initial;
 }
 
 #autoplay-toggle.active {

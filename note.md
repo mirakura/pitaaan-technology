@@ -15,8 +15,16 @@
 - https://make-web.jp/blog/about-swiper/
 - https://roronto.jp/business-efficiency/it/swiper/
 
-- https://junpei-sugiyama.com/category/web-production/slider/swiper/
+- https://naeco.jp/js-swiper
 - https://junpei-sugiyama.com/category/web-production/slider/slick/
+
+- https://junpei-sugiyama.com/category/web-production/slider/swiper/
+- https://junpei-sugiyama.com/swiper-option/
+- https://junpei-sugiyama.com/swiper-pagination/
+
+### 【Swiper】スライダーページネーションの左右にボタンを配置する方法
+
+- https://masa-traveller.site/swiper-pagination-prev-next-button/
 
 ## DUB DESIGN
 
