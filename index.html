@@ -6,13 +6,13 @@
     <title>PITAAAN テクノロジー株式会社</title>
     <!-- タケイチ -->
 
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- ヘッダー -->
@@ -27,23 +27,25 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <!-- <img src="images/exec1.jpg" alt="bibain" sizes="80w" /> -->
-            <img src="images/exec1.jpg" alt="bibain" />
+            <img src="images/exec1.jpg" alt="bibain" class="slide-image" />
             <div class="slide-caption">
               <h3>ホテル ビバイン</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
               <p class="desc">サイト詳細説明</p>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/exec1.jpg" alt="gavtec" />
+            <img src="images/exec1.jpg" alt="gavtec" class="slide-image" />
             <div class="slide-caption">
               <h3>GavTec美唄</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
               <p class="desc">サイト詳細説明</p>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <img src="images/exec1.jpg" alt="gavtec" />
+            <img src="images/exec1.jpg" alt="melody" class="slide-image" />
             <div class="slide-caption">
               <h3>音楽教室 メロディ</h3>
               <p>宿泊予約システム付きサイト<br />[実績範囲:エリア・80w幅]</p>
@@ -53,13 +55,13 @@
           <!-- スライドを増やす場合はここに追加 -->
         </div>
         <!-- swiper-controls-wrapper -->
-        <div class="swiper-scrollbar"></div>
         <div class="swiper-pagination"></div>
         <div class="swiper-controls-bottom">
           <button class="swiper-button-prev">前へ</button>
           <button id="autoplay-toggle" class="swiper-button-pause">⏸</button>
           <button class="swiper-button-next">次へ</button>
         </div>
+        <div class="swiper-scrollbar"></div>
       </div>
 
       <button class="more-btn">

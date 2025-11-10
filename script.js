@@ -5,11 +5,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mySwiper = new Swiper(".swiper-container", {
     loop: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
+    spacebetween: 10,
+    slidesPerView: 1,
+    speed: 800,
+
+    // centeredSlides: true,
+    // slidesPerView: "auto",
 
     autoplay: {
-      delay: 4000,
+      delay: 2000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -23,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //スクロールバー表示の設定
     scrollbar: {
       el: ".swiper-scrollbar", //要素の指定
+      draggable: true, //ドラッグ可能にする
     },
   });
 

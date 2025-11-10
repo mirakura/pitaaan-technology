@@ -1,3 +1,8 @@
+/* スクロールバーを常に表示 */
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -102,40 +107,30 @@ button {
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
 .swiper-container {
-  margin: 0 auto;
-  /* background-color: #0044cc; */
-  /* position: relative; */
-  /* overflow: hidden; */
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  /* padding: 0 10px; */
-  border-radius: 12px;
-  /* margin: 0 15px; */
+  height: 700px;
 }
+
 .swiper-wrapper {
-  display: flex;
-  height: fit-content;
-  transition: transform 0.3s ease-in-out;
-  /* height: 300px; */
+  /* background-color: seagreen; */
+  height: 95%;
+  width: 80%;
 }
 
 .swiper-slide {
+  height: 95%;
   /* background-color: brown; */
-  min-width: 100%;
-  /* box-sizing: border-box; */
-  /* flex-shrink: 0; */
-  /* width: 80%; */
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* 必要に応じてpaddingやborderを調整 */
-  /* display: block; */
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 100%;
   display: block;
-  border-radius: 12px;
+  /* width: 100%; */
+  height: 100%;
+  /* border-radius: 12px; */
+  object-fit: cover;
 }
 
 .slide-caption {
@@ -155,23 +150,20 @@ button {
 .slide-caption p {
   font-size: 14px;
   line-height: 1.4;
-}
-.slide-caption p {
   margin: 0;
   font-size: 0.9rem;
 }
 
 .swiper-controls-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-top: 20px;
-}
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 
-.swiper-container .swiper-pagination {
-  position: static;
-  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-button-prev::after,
@@ -181,7 +173,8 @@ button {
 
 .swiper-button-next,
 .swiper-button-prev,
-#autoplay-toggle {
+.swiper-button-pause,
+.swiper-button-pause {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -199,29 +192,21 @@ button {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover,
-#autoplay-toggle:hover {
+.swiper-button-pause:hover {
   background-color: #0044cc;
   color: white;
   border-color: #0044cc;
 }
 
 .swiper-scrollbar {
-  position: static;
-  width: 100%;
+  /* position: static; */
+  justify-content: center;
+  /* width: 90%; */
   /* max-width: 200px; スクロールバーの最大幅を調整 */
   height: 6px;
   background: #eee;
   border-radius: 3px;
   margin-top: initial;
-}
-
-#autoplay-toggle.active {
-  background-color: #0044cc;
-  color: white;
-}
-#autoplay-toggle:hover {
-  background-color: #0044cc;
-  color: white;
 }
 
 .about-container {
