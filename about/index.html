@@ -39,6 +39,13 @@
         margin-top: 20px;
       }
 
+      /* About*/
+      .about {
+        max-width: 1000px;
+        text-align: center;
+        height: 45px;
+      }
+
       /* 代表挨拶 */
       .president {
         display: flex;
@@ -54,9 +61,14 @@
 
       .president-text {
         flex: 1;
+        margin-left: 50px;
         min-width: 250px;
+        max-width: 500px;
       }
 
+      .president-name {
+        text-align: right;
+      }
       /* テーブル要素共通 */
       table {
         border-collapse: collapse;
@@ -178,16 +190,17 @@
 
   <body>
     <div class="container">
-      <h2>代表挨拶</h2>
+      <div class="about"><h1>About</h1></div>
+      <div class="about">会社概要</div>
       <div class="president">
-        <img src="president.png" alt="代表写真">
+        <img src="../images/exec1.jpg" alt="代表写真">
         <div class="president-text">
-          <h3>代表取締役社長　八重樫蓮太郎</h3>
           <p>私たちPITAAANテクノロジー株式会社は、北海道美唄市を拠点に、デジタル技術と創造性を融合させたサービスを提供する会社です。</p>
           <p>
             地方だからこそできる、お客様一人ひとりに寄り添ったきめ細かなサービスを心がけています。Webサイト制作から建築模型まで、幅広い分野でお客様のビジョンを形にすることが私たちの使命です。
           </p>
           <p>美唄から全国へ、そして世界へ。地域に根ざしながらも、常に新しい技術と発想で挑戦し続けます。</p>
+          <div class="president-name"><h3>代表取締役社長　八重樫蓮太郎</h3></div>
         </div>
       </div>
 
