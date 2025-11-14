@@ -1,111 +1,111 @@
-/* 共通設定 */
+/* -----------------------------------------------------
+   ページ全体
+----------------------------------------------------- */
 body {
   font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  /* 白背景 */
+  color: #333;
 }
 
-/* セクション共通 */
-section {
-  width: 80%;
-  max-width: 800px;
-  margin: 50px auto;
+/* -----------------------------------------------------
+   フォーム外枠のレイアウト
+----------------------------------------------------- */
+.contact-wrapper {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
 }
 
-/* 見出し */
-h2 {
+/* タイトル */
+.contact-wrapper h1 {
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin-bottom: 35px;
 }
 
-/* ---------- お問い合わせフォーム ---------- */
-
+/* フォーム本体（薄いグレーで囲む） */
 .contact-form {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 30px;
+  background: #f5f5f5;
+  /* 薄いグレー背景 */
+  border: 1px solid #dcdcdc;
+  /* 外枠の薄いグレー */
+  padding: 25px 30px;
   border-radius: 4px;
 }
 
+/* -----------------------------------------------------
+   各入力項目
+----------------------------------------------------- */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-label {
-  display: block;
+/* ラベル */
+.form-group label {
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  display: block;
 }
 
-.required {
-  color: red;
-  font-weight: normal;
+/* -----------------------------------------------------
+   入力欄（枠線なし → グレーの枠ボックスで囲う）
+----------------------------------------------------- */
+.field-box {
+  background: #ffffff;
+  /* 完全白 */
+  border: 1px solid #cccccc;
+  /* グレーの外枠（PDF風） */
+  padding: 10px 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
+/* テキストエリア用（高さ調整） */
+.textarea-box {
+  padding: 8px 12px;
+}
+
+/* 実際の入力欄（内側） */
 input,
 textarea,
 select {
   width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 3px;
+  border: none;
+  /* ← 枠線なし */
+  background: transparent;
+  /* ← 背景透明（field-box の白を利用） */
+  outline: none;
+  /* フォーカス時の青枠も消す */
+  font-size: 15px;
+  padding: 6px 0;
   box-sizing: border-box;
 }
 
+/* テキストエリア高さ */
 textarea {
-  height: 120px;
+  height: 140px;
   resize: vertical;
 }
 
+/* -----------------------------------------------------
+   送信ボタン
+----------------------------------------------------- */
 .submit-btn {
-  background: #333;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #333;
   color: #fff;
   border: none;
-  padding: 12px 0;
-  width: 100%;
-  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .submit-btn:hover {
-  background: #555;
-}
-
-/* ---------- よくある質問（FAQ） ---------- */
-
-.faq {
-  margin-top: 80px;
-}
-
-.faq-section {
-  margin-bottom: 30px;
-}
-
-.faq-section h3 {
-  background-color: #ddd;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.faq-section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.faq-section li {
-  border: 1px solid #e0e0e0;
-  padding: 10px;
-  margin-top: 5px;
-  background-color: #f9f9f9;
-}
-
-.faq-section li:hover {
-  background-color: #f1f1f1;
+  background-color: #555;
 }

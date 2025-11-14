@@ -2,119 +2,97 @@
 <html lang="ja">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせフォーム & よくある質問</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせフォーム</title>
+
     <!-- CSSファイルの読み込み -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
 
-    <!-- お問い合わせフォーム -->
-    <section class="contact-form">
-      <h2>お問い合わせフォーム</h2>
+    <!-- ▼ お問い合わせフォーム全体のコンテナ ▼ -->
+    <section class="contact-wrapper">
 
-      <form id="contactForm">
+      <!-- タイトル -->
+      <h1>お問い合わせフォーム</h1>
+
+      <!-- ▼ フォーム本体 ▼ -->
+      <form id="contactForm" class="contact-form">
+
         <!-- お名前 -->
         <div class="form-group">
-          <label>お名前 <span class="required">（必須）</span></label>
-          <input type="text" placeholder="[テキスト入力欄]" required>
+          <label>お名前</label>
+          <div class="field-box">
+            <input type="text" placeholder="名字 名前" required />
+          </div>
         </div>
 
         <!-- ふりがな -->
         <div class="form-group">
-          <label>ふりがな <span class="required">（必須）</span></label>
-          <input type="text" placeholder="[テキスト入力欄]" required>
+          <label>ふりがな</label>
+          <div class="field-box">
+            <input type="text" placeholder="みょうじ なまえ" required />
+          </div>
         </div>
 
         <!-- メールアドレス -->
         <div class="form-group">
-          <label>メールアドレス <span class="required">（必須）</span></label>
-          <input type="email" placeholder="[メールアドレス入力欄]" required>
+          <label>メールアドレス</label>
+          <div class="field-box">
+            <input type="email" placeholder="name@example.com" required />
+          </div>
         </div>
 
         <!-- 電話番号 -->
         <div class="form-group">
-          <label>電話番号</label>
-          <input type="tel" placeholder="[電話番号入力欄]">
+          <label>電話番号（任意）</label>
+          <div class="field-box">
+            <input type="tel" placeholder="000-0000-0000" />
+          </div>
         </div>
 
         <!-- 会社名・団体名 -->
         <div class="form-group">
-          <label>会社名・団体名</label>
-          <input type="text" placeholder="[テキスト入力欄]">
+          <label>会社名・団体名（任意）</label>
+          <div class="field-box">
+            <input type="text" placeholder="PITAAANテクノロジー株式会社" />
+          </div>
         </div>
 
         <!-- お問い合わせ種別 -->
         <div class="form-group">
-          <label>お問い合わせ種別 <span class="required">（必須）</span></label>
-          <select required>
-            <option value="">[選択してください ▼]</option>
-            <option>Webサイト制作について</option>
-            <option>パンフレット制作について</option>
-            <option>撮影・画像加工・CAD制作について</option>
-            <option>採用について</option>
-            <option>その他</option>
-          </select>
+          <label>お問い合わせ種別</label>
+          <div class="field-box">
+            <select required>
+              <option value="">選択してください ▼</option>
+              <option>Web制作について</option>
+              <option>システム開発について</option>
+              <option>デザインについて</option>
+              <option>採用について</option>
+              <option>その他</option>
+            </select>
+          </div>
         </div>
 
         <!-- お問い合わせ内容 -->
         <div class="form-group">
-          <label>お問い合わせ内容 <span class="required">（必須）</span></label>
-          <textarea placeholder="[詳細をご記入ください]" required></textarea>
+          <label>お問い合わせ内容</label>
+          <div class="field-box textarea-box">
+            <textarea placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </div>
         </div>
 
         <!-- 送信ボタン -->
         <button type="submit" class="submit-btn">送信する</button>
+
       </form>
-    </section>
-
-    <!-- よくある質問（FAQ） -->
-    <section class="faq">
-      <h2>よくある質問（FAQ）</h2>
-
-      <!-- サービス全般 -->
-      <div class="faq-section">
-        <h3>サービス全般について</h3>
-        <ul>
-          <li>Q. 個人用ホームページの制作も可能ですか？</li>
-          <li>Q. 美唄市以外でも対応していますか？</li>
-          <li>Q. 制作期間はどのくらいかかりますか？</li>
-        </ul>
-      </div>
-
-      <!-- 料金について -->
-      <div class="faq-section">
-        <h3>料金について</h3>
-        <ul>
-          <li>Q. 見積もりは無料ですか？</li>
-          <li>Q. 分割払いは可能ですか？</li>
-        </ul>
-      </div>
-
-      <!-- 制作について -->
-      <div class="faq-section">
-        <h3>制作について</h3>
-        <ul>
-          <li>Q. 途中で仕様変更は可能ですか？</li>
-          <li>Q. 制作後の修正・更新は依頼できますか？</li>
-          <li>Q. スマートフォン対応は標準で含まれていますか？</li>
-        </ul>
-      </div>
-
-      <!-- その他 -->
-      <div class="faq-section">
-        <h3>その他</h3>
-        <ul>
-          <li>Q. 急ぎの案件にも対応できますか？</li>
-          <li>Q. 他社で制作したサイトの修正・リニューアルも可能ですか？</li>
-        </ul>
-      </div>
     </section>
 
     <!-- JSファイルの読み込み -->
     <script src="script.js"></script>
+
   </body>
 
 </html>
