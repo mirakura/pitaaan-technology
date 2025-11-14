@@ -1,8 +1,3 @@
-/* スクロールバーを常に表示 */
-html {
-  overflow-y: scroll;
-}
-
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -108,6 +103,8 @@ button {
 /* Swiper 横並びスライダー用 */
 .swiper-container {
   height: 700px;
+  overflow-y: visible;
+  position: relative;
 }
 
 .swiper-wrapper {
@@ -129,6 +126,7 @@ button {
   display: block;
   /* width: 100%; */
   height: 100%;
+  width: 100%;
   /* border-radius: 12px; */
   object-fit: cover;
 }
