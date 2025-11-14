@@ -6,6 +6,17 @@ body {
   max-width: 1440px;
 }
 
+/* セクション（共通） */
+.section {
+  width: 1152px;
+  margin: 0 auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /* セクションタイトル(共通） */
 .section-title {
   display: flex;
