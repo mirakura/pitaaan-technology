@@ -11,6 +11,7 @@ body {
 
 section {
   max-width: 1440px;
+  display: inline-block;
   padding: 0 144px;
 }
 
