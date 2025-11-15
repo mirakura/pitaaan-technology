@@ -11,27 +11,27 @@ body {
 }
 
 section {
-  max-width: 1000px;
-  margin: 0 auto 100px;
-  padding: 0 20px;
+  max-width: 1440px;
+  padding: 0 144px;
 }
 
 /* 上部 Members タイトル */
 .members-header {
+  height: 424px;
   text-align: center;
-  padding: 80px 20px 40px;
+  vertical-align: middle;
 }
 
 .members-header h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 76.8px;
+  font-weight: 400;
+  line-height: 77px;
 }
 
 .members-header .subtitle {
-  font-size: 14px;
-  color: #555;
-  letter-spacing: 0.15em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /* 見出し */
