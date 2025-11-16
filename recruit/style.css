@@ -8,13 +8,8 @@ body {
 
 /* セクション（共通） */
 .section {
-  width: 1152px;
+  width: 1440px;
   margin: 0 auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
 
 /* セクションタイトル(共通） */
