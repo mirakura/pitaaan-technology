@@ -148,54 +148,76 @@ body {
   line-height: 160%;
   letter-spacing: 0px;
   color: #333333;
+}
 
-  .job-list li {
-    margin-bottom: 20px;
-  }
+.job-list li {
+  margin-bottom: 20px;
+}
 
-  /* セクション 03 の各種設定 */
-  .flow-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
+/* セクション 03 の各種設定 */
+.flow {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #F5F5F5;
+}
 
-  .flow-box {
-    border: 1px solid #000;
-    padding: 40px 30px;
-    text-align: center;
-  }
+.flow-container {
+  width: 1152px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 144px;
+  margin-right: 144px;
+  padding-left: 161px;
+  padding-right: 161px;
+}
 
-  .flow-number {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    font-weight: bold;
-  }
+.flow-box {
+  width: 250px;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+}
 
-  .flow-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.flow-number {
+  width: 64px;
+  height: 64px;
+  line-height: 50px;
+  background-color: #CC4100;
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Inter";
+  padding: 12.5px 14.5px;
+  text-align: center;
+}
 
-  .flow-text {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+.flow-title {
+  font-size: 16px;
+  font-weight: 400;
+  height: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+}
 
-  .flow-list {
-    text-align: left;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 1.8;
-    list-style-type: disc;
-  }
+.flow-text {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 
-  .flow-list li {
-    margin-left: 20px;
-  }
+}
+
+.flow-list {
+  text-align: left;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.flow-list li {
+  margin-left: 20px;
+}
