@@ -83,86 +83,119 @@ body {
 }
 
 /* セクション 02 の各種設定 */
+.job {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
 .job-container {
+  width: 1152px;
+  margin-left: 144px;
+  margin-right: 144px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: start;
 }
 
 .job-box {
-  border: 2px solid #000;
-  padding: 24px;
+  width: 550px;
+  margin-bottom: 80px;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #333333;
   box-sizing: border-box;
-  min-height: 200px;
-  background: #fff;
 }
 
 .job-title {
-  font-size: 18px;
+  background: #F5F5F5;
+  padding: 8px 8px;
+  margin: 0 0 24px 0;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #e2e2e2;
+  line-height: 1;
 }
 
-.job-subtitle {
-  font-weight: 700;
-  margin: 18px 0 6px;
+.job-item {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333333;
 }
 
-.job-box ul {
-  list-style-type: disc;
-  padding-left: 1em;
+.job-box .job-item:first-of-type {
+  border-top: 1px solid #333;
+}
+
+.job-label {
+  width: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -1px;
+  color: #333333;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.job-list {
   margin: 0;
-}
+  padding-left: 20px;
+  list-style: disc;
+  list-style-position: outside;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: #333333;
 
-.job-box li {
-  line-height: 1.8;
-  font-size: 14px;
-}
+  .job-list li {
+    margin-bottom: 20px;
+  }
 
-/* セクション 03 の各種設定 */
-.flow-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+  /* セクション 03 の各種設定 */
+  .flow-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 
-.flow-box {
-  border: 1px solid #000;
-  padding: 40px 30px;
-  text-align: center;
-}
+  .flow-box {
+    border: 1px solid #000;
+    padding: 40px 30px;
+    text-align: center;
+  }
 
-.flow-number {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  font-weight: bold;
-}
+  .flow-number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-weight: bold;
+  }
 
-.flow-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+  .flow-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
-.flow-text {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
+  .flow-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
 
-.flow-list {
-  text-align: left;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 1.8;
-  list-style-type: disc;
-}
+  .flow-list {
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.8;
+    list-style-type: disc;
+  }
 
-.flow-list li {
-  margin-left: 20px;
-}
+  .flow-list li {
+    margin-left: 20px;
+  }
