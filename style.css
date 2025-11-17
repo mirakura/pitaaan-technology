@@ -105,6 +105,7 @@ button {
   height: 700px;
   overflow-y: visible;
   position: relative;
+  padding: 25px 0;
 }
 
 .swiper-wrapper {
@@ -129,18 +130,20 @@ button {
   width: 100%;
   /* border-radius: 12px; */
   object-fit: cover;
+  /* margin-top: 50px; */
 }
 
 .slide-caption {
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   left: 20px;
   color: white;
   text-align: left;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
+
 .slide-caption h3 {
   font-size: 20px;
   margin-bottom: 4px;
@@ -162,6 +165,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-bottom: 20 px 0; */
 }
 
 .swiper-button-prev::after,
@@ -169,8 +173,8 @@ button {
   display: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev,
+.swiper-controls-bottom .swiper-button-next,
+.swiper-controls-bottom .swiper-button-prev,
 .swiper-button-pause {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -187,8 +191,8 @@ button {
   margin-top: initial;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover,
+.swiper-controls-bottom .swiper-button-next:hover,
+.swiper-controls-bottom .swiper-button-prev:hover,
 .swiper-button-pause:hover {
   background-color: #0044cc;
   color: white;
@@ -205,6 +209,53 @@ button {
   border-radius: 3px;
   margin-top: initial;
 }
+
+/* ↓↓ フェードイン ↓↓ */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swiper-container {
+  /* width: 100%; */
+  /* height: 100vh; */
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .slide-caption {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        /* color: #ffffff; */
+        /* font-size: 14px; */
+        /* font-weight: bold; */
+      }
+    }
+
+    .swiper-slide-active {
+      .slide-caption {
+        animation-name: fade-in;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+/* ↑↑ フェードイン ↑↑ */
 
 .about-container {
   display: flex;

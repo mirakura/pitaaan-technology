@@ -22,6 +22,11 @@
 - https://junpei-sugiyama.com/swiper-option/
 - https://junpei-sugiyama.com/swiper-pagination/
 
+## Swiper フェードイン
+
+- https://into-the-program.com/swiper-slide-text-fadein/
+- https://junpei-sugiyama.com/swiper-fadein-text/
+
 ### 【Swiper】スライダーページネーションの左右にボタンを配置する方法
 
 - https://masa-traveller.site/swiper-pagination-prev-next-button/

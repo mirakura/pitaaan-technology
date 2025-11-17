@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // slidesPerView: "auto",
 
     autoplay: {
-      delay: 2000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -45,3 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
     isAutoplayPlaying = !isAutoplayPlaying;
   });
 });
+
+// ===========================
+// 🚀 swiper-slide-text-fadein
+// ===========================
+/*
+var mySwiper = new Swiper(".swiper-container", {
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  speed: 2000,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+*/
