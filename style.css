@@ -102,7 +102,7 @@ button {
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
 .swiper-container {
-  height: 700px;
+  height: 500px;
   overflow-y: visible;
   position: relative;
   padding: 25px 0;
@@ -125,24 +125,62 @@ button {
 
 .swiper-slide img {
   display: block;
-  /* width: 100%; */
-  height: 100%;
-  width: 100%;
-  /* border-radius: 12px; */
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 12px; */
   /* margin-top: 50px; */
 }
 
-.slide-caption {
-  position: absolute;
-  bottom: 100px;
-  left: 20px;
-  color: white;
-  text-align: left;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  /* border-radius: 8px; */
+/* ↓↓ フェードイン ↓↓ */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
+
+.swiper-container {
+  /* width: 100%; */
+  /* height: 100vh; */
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .slide-caption {
+        position: absolute;
+        color: white;
+        /* background: rgba(0, 0, 0, 0.5); */
+        text-align: left;
+        padding: 10px;
+
+        top: 75%;
+        left: 10%;
+        bottom: 95%;
+      }
+    }
+
+    .swiper-slide-active {
+      .slide-caption {
+        animation-name: fade-in;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+/* ↑↑ フェードイン ↑↑ */
 
 .slide-caption h3 {
   font-size: 20px;
@@ -157,7 +195,7 @@ button {
 
 .swiper-controls-bottom {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -209,53 +247,6 @@ button {
   border-radius: 3px;
   margin-top: initial;
 }
-
-/* ↓↓ フェードイン ↓↓ */
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.swiper-container {
-  /* width: 100%; */
-  /* height: 100vh; */
-
-  .swiper-wrapper {
-    .swiper-slide {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-
-      .slide-caption {
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        /* color: #ffffff; */
-        /* font-size: 14px; */
-        /* font-weight: bold; */
-      }
-    }
-
-    .swiper-slide-active {
-      .slide-caption {
-        animation-name: fade-in;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-fill-mode: both;
-      }
-    }
-  }
-}
-
-/* ↑↑ フェードイン ↑↑ */
 
 .about-container {
   display: flex;
