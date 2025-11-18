@@ -53,60 +53,83 @@ section {
   line-height: 24px;
 }
 
+/* ========================================
+   役員 & メンバーセクション（背景色つき）
+======================================== */
+#executives,
+#team {
+  background-color: #f5f5f5;
+  /* ★背景色 */
+  padding: 60px 10%;
+  /* ★上下:60px / 左右:10%（あなたの指定） */
+  margin: 0;
+  /* セクション間の隙間をなくす */
+}
+
+/* =========================================
+   セクション共通
+   （左右10%の余白あり → デザイン仕様）
+========================================= */
+.section-block {
+  padding: 0 10%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* 見出し */
-h2 {
-  font-size: 2.4rem;
-  text-align: center;
+.section-block h2 {
+  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 30px;
+  text-align: left;
+  /* デザイン通り左揃え */
+  margin: 40px 0 30px;
 }
 
-.section-subtitle {
-  text-align: center;
-  color: #777;
-  margin-bottom: 60px;
-  font-size: 0.95rem;
-}
 
-/* =====================
-   役員
-===================== */
 
+/* =========================================
+   役員 3列（スマホでも3列固定）
+========================================= */
 #executives .executive-list {
-  display: flex;
-  justify-content: center;
-  gap: 120px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 20px;
 }
 
 .executive {
-  width: 320px;
   text-align: center;
 }
 
+.executive.empty {
+  visibility: hidden;
+  /* デザイン通り1枠空白にする */
+}
+
 .executive img {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
+  margin-bottom: 12px;
 }
 
 .executive h3 {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .executive .position {
+  font-size: 13px;
   font-weight: bold;
+  margin-bottom: 12px;
   color: #555;
-  margin-bottom: 20px;
 }
 
 .executive p {
-  font-size: 0.9rem;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.45;
   margin-bottom: 4px;
 }
 
@@ -114,14 +137,16 @@ h2 {
   font-weight: bold;
 }
 
-/* =====================
-   メンバー
-===================== */
 
+
+/* =========================================
+   メンバー — 3列固定（スマホでも3列）
+========================================= */
 .team-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px 40px;
+  grid-template-columns: repeat(3, 1fr);
+  /* ★常に3列レイアウト */
+  gap: 50px 20px;
 }
 
 .member {
@@ -129,28 +154,30 @@ h2 {
 }
 
 .member img {
-  width: 140px;
-  height: 140px;
+  width: 94px;
+  height: 94px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .member h3 {
-  font-size: 1.1rem;
-  margin-bottom: 4px;
+  font-size: 14px;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .member .position {
+  font-size: 12px;
   font-weight: bold;
+  margin-bottom: 12px;
   color: #555;
-  margin-bottom: 16px;
 }
 
-/* プロフィール詳細 */
 .member p {
-  font-size: 0.9rem;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.45;
   margin-bottom: 4px;
 }
 
