@@ -1,0 +1,179 @@
+body {
+  font-family: "Segoe UI", "ヒラギノ角ゴ ProN", "メイリオ", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #003366;
+}
+
+h3 {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* About*/
+.about {
+  max-width: 1000px;
+  text-align: center;
+  height: 45px;
+}
+
+/* 代表挨拶 */
+.president {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.president img {
+  max-width: 320px;
+  height: auto;
+}
+
+.president-text {
+  flex: 1;
+  margin-left: 50px;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.president-name {
+  text-align: right;
+}
+
+/* テーブル要素共通 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 8px;
+  vertical-align: top;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.2em;
+}
+
+.philosophy ul {
+  padding-left: 1.2em;
+}
+
+.philosophy ol {
+  padding-left: 1.6em;
+}
+
+.value li {
+  margin-top: 0.6em;
+}
+
+/* 会社沿革 */
+.history-table tr {
+  border: 0px solid #000;
+  height: 43px;
+  /* 行の高さはこれ以上小さくならない */
+}
+
+.history-table th {
+  border: 0px solid #000;
+  font-weight: bold;
+  width: 100px;
+  text-align: left;
+}
+
+/* 会社プロフィール */
+.profile-table th {
+  border: 1px solid #888;
+  background-color: #d0d0d0;
+  font-weight: bold;
+  width: 150px;
+  text-align: left
+}
+
+.profile-table td {
+  border: 1px solid #888;
+}
+
+.profile-table tr:nth-child(odd) td:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.profile-table tr:nth-child(even) td:nth-child(2) {
+  background-color: #f0f0f0;
+}
+
+/* アクセス */
+.access {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1em;
+  align-items: flex-start;
+}
+
+.access-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* モバイル調整 */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .president img {
+    width: 40%;
+  }
+
+  .history-table th:first-child {
+    font-size: 40%;
+    width: 40%;
+  }
+
+  .profile-table td:first-child {
+    font-size: 40%;
+    width: 40%;
+  }
+
+  .profile-table th {
+    font-size: 40%;
+    width: 40%;
+  }
+
+  .profile-table td {
+    font-size: 40%;
+    width: 40%;
+  }
+}
