@@ -86,7 +86,6 @@ section {
 }
 
 
-
 /* =========================================
    役員 3列（スマホでも3列固定）
 ========================================= */
@@ -123,20 +122,26 @@ section {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 12px;
-  color: #555;
 }
 
 .executive p {
   font-size: 12px;
+  display: flex;
+  /* ← ラベルと内容を横並びにする */
+  align-items: flex-start;
   text-align: left;
   line-height: 1.45;
   margin-bottom: 4px;
 }
 
+/* 項目ラベル（出身地: , 経歴: など） */
 .label {
-  font-weight: bold;
+  font-weight: 600;
+  width: 6em;
+  /* 項目名の幅を統一 */
+  flex-shrink: 0;
+  /* ラベルの幅を固定 */
 }
-
 
 
 /* =========================================
@@ -170,15 +175,36 @@ section {
 .member .position {
   font-size: 12px;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 12px;
   color: #555;
 }
 
 .member p {
   font-size: 12px;
+  display: flex;
+  /* ← ラベルと内容を横並びにする */
+  align-items: flex-start;
   text-align: left;
   line-height: 1.45;
   margin-bottom: 4px;
+}
+
+.member p span:not(.label),
+.executive p span:not(.label) {
+  flex: 1;
+  /* 内容部分だけ折り返し可能に */
+  display: inline-block;
+}
+
+/* ポジション行だけ中央寄せ（重要） */
+.position {
+  display: block !important;
+  /* flexを解除 */
+  text-align: center !important;
+  /* 中央揃え */
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 /* =====================
