@@ -60,7 +60,7 @@ section {
 #team {
   background-color: #f5f5f5;
   /* ★背景色 */
-  padding: 60px 10%;
+  padding: 160px 10%;
   /* ★上下:60px / 左右:10%（あなたの指定） */
   margin: 0;
   /* セクション間の隙間をなくす */
@@ -78,11 +78,12 @@ section {
 
 /* 見出し */
 .section-block h2 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
   text-align: left;
   /* デザイン通り左揃え */
-  margin: 40px 0 30px;
+  margin-bottom: 24px;
 }
 
 
@@ -92,7 +93,7 @@ section {
 #executives .executive-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px 20px;
+  gap: 60px 40px;
 }
 
 .executive {
@@ -105,23 +106,25 @@ section {
 }
 
 .executive img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .executive h3 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 23px;
   margin-bottom: 4px;
 }
 
 .executive .position {
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 8px;
 }
 
 .executive p {
@@ -130,8 +133,8 @@ section {
   /* ← ラベルと内容を横並びにする */
   align-items: flex-start;
   text-align: left;
-  line-height: 1.45;
-  margin-bottom: 4px;
+  line-height: 23px;
+  margin-bottom: 8px;
 }
 
 /* 項目ラベル（出身地: , 経歴: など） */
@@ -151,7 +154,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* ★常に3列レイアウト */
-  gap: 50px 20px;
+  gap: 50px 40px;
 }
 
 .member {
@@ -159,25 +162,26 @@ section {
 }
 
 .member img {
-  width: 94px;
-  height: 94px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .member h3 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
   margin-bottom: 4px;
 }
 
 .member .position {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 17px;
   text-align: center;
-  margin-bottom: 12px;
-  color: #555;
+  margin-bottom: 8px;
 }
 
 .member p {
