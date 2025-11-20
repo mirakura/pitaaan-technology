@@ -60,8 +60,6 @@ section {
 #team {
   background-color: #f5f5f5;
   /* ★背景色 */
-  padding: 160px 10%;
-  /* ★上下:60px / 左右:10%（あなたの指定） */
   margin: 0;
   /* セクション間の隙間をなくす */
 }
@@ -83,6 +81,7 @@ section {
   line-height: 46px;
   text-align: left;
   /* デザイン通り左揃え */
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
@@ -90,6 +89,12 @@ section {
 /* =========================================
    役員 3列（スマホでも3列固定）
 ========================================= */
+
+#executives {
+  padding: 160px 10% 40px;
+  /* ★上:160px / 左右:10%（あなたの指定） */
+}
+
 #executives .executive-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -150,6 +155,12 @@ section {
 /* =========================================
    メンバー — 3列固定（スマホでも3列）
 ========================================= */
+
+#team {
+  padding: 0 10% 160px;
+  /* ★下:160px / 左右:10%（あなたの指定） */
+}
+
 .team-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
