@@ -11,6 +11,10 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* ▼ セクション共通（幅1440のデザインでもレスポンシブ対応） */
 section {
   max-width: 1440px;
@@ -78,7 +82,7 @@ section {
 .section-block h2 {
   font-size: 32px;
   font-weight: 700;
-  height: 46px;
+  height: 82px;
   text-align: left;
   /* デザイン通り左揃え */
   padding: 18px 0;
