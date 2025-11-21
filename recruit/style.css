@@ -1,42 +1,43 @@
 body {
-  font-family: "Zen Kaku Gothic New";
-  line-height: 1.3;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-feature-settings: "palt";
-  letter-spacing: 0;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1440px;
   color: #333333;
-}
-
-/* セクション（共通） */
-.section {
-  width: 1440px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+/* セクション（共通） */
+section {
+  margin: 0 auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
 /* セクションタイトル(共通） */
 .section-title {
-  display: flex;
-  align-items: center;
   margin-bottom: 24px;
   margin-left: 144px;
-  height: 46px;
+  display: flex;
+  align-items: center;
+  width: 1152px;
+  height: auto;
   font-size: 32px;
   font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 /* セクション 01 の各種設定 */
 .appeal {
-  padding-top: 160px;
-  padding-bottom: 160px;
   background-color: #F5F5F5;
 }
 
 .appeal-container {
   width: 1152px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,35 +52,42 @@ body {
 .appeal-title {
   font-size: 16px;
   font-weight: bold;
-  height: 23px;
+  height: auto;
   margin-bottom: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 .appeal-text {
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.4;
   letter-spacing: 0;
-  height: 69px;
-  display: flex;
-  align-items: center;
 }
 
 .appeal-list {
-  list-style-type: disc;
+  list-style-type: "・";
+  list-style-position: outside;
   padding-left: 0;
-  list-style-position: inside;
+  letter-spacing: 0;
 }
 
 .appeal-list li {
   font-size: 16px;
+  line-height: 1.4;
+  margin-left: 24px;
+  overflow-wrap: break-word;
 }
 
 .list-desc {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  margin-left: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
 }
 
 /* セクション 02 の各種設定 */
@@ -90,35 +98,44 @@ body {
 
 .job-container {
   width: 1152px;
+  height: auto;
   margin-left: 144px;
   margin-right: 144px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  align-items: start;
+  grid-auto-rows: 414px;
+  gap: 80px 52px;
+  justify-content: stretch;
+  align-content: space-between;
 }
 
 .job-box {
   width: 550px;
-  margin-bottom: 80px;
-  font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  height: auto;
   color: #333333;
   box-sizing: border-box;
+  margin: 0;
+}
+
+.job-box:nth-child(2n) {
+  justify-self: end;
 }
 
 .job-title {
+  height: auto;
   background: #F5F5F5;
-  padding: 8px 8px;
+  padding: 0 8px 0 8px;
   margin: 0 0 24px 0;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.4;
+  letter-spacing: 0;
+  align-items: center;
 }
 
 .job-item {
   display: flex;
-  gap: 24px;
-  padding: 20px 0;
+  height: auto;
   box-sizing: border-box;
   border-bottom: 1px solid #333333;
 }
@@ -129,29 +146,26 @@ body {
 
 .job-label {
   width: 100px;
+  height: auto;
   font-weight: 700;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
   letter-spacing: -1px;
   color: #333333;
-  padding-top: 2px;
-  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom: 72px;
 }
 
 .job-list {
-  margin: 0;
-  padding-left: 20px;
-  list-style: disc;
-  list-style-position: outside;
+  width: 422px;
+  height: auto;
+  list-style-type: none;
   font-size: 16px;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
   letter-spacing: 0px;
   color: #333333;
-}
-
-.job-list li {
-  margin-bottom: 20px;
+  margin: 20px 0 20px 28px;
 }
 
 /* セクション 03 の各種設定 */
@@ -163,6 +177,7 @@ body {
 
 .flow-container {
   width: 1152px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -174,23 +189,23 @@ body {
 
 .flow-box {
   width: 250px;
-  font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 .flow-number {
   width: 64px;
   height: 64px;
-  line-height: 50px;
+  line-height: 1.4;
+  letter-spacing: 0;
   background-color: #CC4100;
   color: white;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin: 0 auto 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
   font-weight: 400;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   padding: 12.5px 14.5px;
   text-align: center;
 }
@@ -198,24 +213,28 @@ body {
 .flow-title {
   font-size: 16px;
   font-weight: 400;
-  height: 30px;
-  margin-bottom: 8px;
+  line-height: 30px;
+  letter-spacing: 0;
+  height: auto;
+  margin: 0 auto 8px;
   text-align: center;
 }
 
 .flow-text {
   font-size: 12px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 
 .flow-list {
   text-align: left;
   display: inline-block;
   font-size: 12px;
-  line-height: 1.8;
-  list-style-type: disc;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  list-style-type: "・";
 }
 
 .flow-list li {
