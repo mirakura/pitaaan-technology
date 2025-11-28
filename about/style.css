@@ -1,179 +1,231 @@
 body {
-  font-family: "Segoe UI", "ヒラギノ角ゴ ProN", "メイリオ", sans-serif;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
   margin: 0;
   padding: 0;
-  line-height: 1.7;
-  color: #333;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+.about-container {
+  width: 80%;
+  width: 1400px padding: 40px 0;
 }
 
-h2 {
-  text-align: center;
-  margin-top: 40px;
-  color: #003366;
-}
-
-h3 {
-  margin-bottom: 5px;
-  color: #444;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* About*/
 .about {
-  max-width: 1000px;
   text-align: center;
-  height: 45px;
-}
-
-/* 代表挨拶 */
-.president {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: column;
+  height: 520px;
 }
 
-.president img {
-  max-width: 320px;
+.about-text-eng {
+  font-size: 48pt;
+  height: 76px;
+}
+
+.about-text-jpn {
+  margin-top: 10px;
+  font-size: 14pt;
+}
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  height: 700px;
+  background-color: #f0f0f0;
+}
+
+.intro-img {
+  width: 300px;
   height: auto;
+  padding: 50px;
+  border-radius: 6px;
 }
 
 .president-text {
   flex: 1;
+  margin-top: 50px;
   margin-left: 50px;
   min-width: 250px;
-  max-width: 500px;
+  max-width: 512px;
 }
 
 .president-name {
   text-align: right;
+  margin-top: 30px;
 }
 
-/* テーブル要素共通 */
-table {
-  border-collapse: collapse;
-  width: 100%;
+.theme {
+  height: 640px;
+  flex-direction: column;
+  /* 上から下へ並べる */
+  justify-content: center;
+  /* 上下中央に配置 */
+  gap: 40px;
+  /* 各ブロックの間隔 */
+  padding: 40px 40px;
 }
 
-td,
-th {
-  padding: 8px;
-  vertical-align: top;
+.mission-vision ul,
+.mission-vision ol {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 0.2em;
-}
-
-.philosophy ul {
-  padding-left: 1.2em;
-}
-
-.philosophy ol {
-  padding-left: 1.6em;
-}
-
-.value li {
-  margin-top: 0.6em;
-}
-
-/* 会社沿革 */
-.history-table tr {
-  border: 0px solid #000;
-  height: 43px;
-  /* 行の高さはこれ以上小さくならない */
-}
-
-.history-table th {
-  border: 0px solid #000;
-  font-weight: bold;
-  width: 100px;
-  text-align: left;
-}
-
-/* 会社プロフィール */
-.profile-table th {
-  border: 1px solid #888;
-  background-color: #d0d0d0;
-  font-weight: bold;
-  width: 150px;
-  text-align: left
-}
-
-.profile-table td {
-  border: 1px solid #888;
-}
-
-.profile-table tr:nth-child(odd) td:nth-child(2) {
-  background-color: #ffffff;
-}
-
-.profile-table tr:nth-child(even) td:nth-child(2) {
-  background-color: #f0f0f0;
-}
-
-/* アクセス */
-.access {
+.circle {
+  width: 130px;
+  height: 130px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #D0D0D0;
+  border-radius: 50%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  margin-top: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.circle-text-eng {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.circle-text-jpn {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+.mission {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mission-text {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 1.4em;
+}
+
+.vision {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vision-text {
+  margin-top: 10px;
+  margin-left: none;
+  font-size: 0.8em;
+}
+
+.value {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.value-text {
+  margin-top: 0px;
+  margin-left: none;
+  font-size: 1.0em;
+}
+
+/* history レイアウト */
+.history {
+  background-color: #F0F0F0;
+  height: 400px;
+  padding-top: 80px;
+}
+
+.history ul {
+  list-style: none;
+  /*     width: 80%; */
+  margin-left: 20px;
+}
+
+.history li {
+  position: relative;
+  display: flex;
   align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
 }
 
-.access-info {
+/* ●（丸マーク） */
+.history .separator {
+  position: relative;
+  width: 16px;
+  /* 行間調整のための横幅 */
+  height: 16px;
+  display: inline-block;
+}
+
+.history .separator::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  /* 丸の上下位置 */
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #e74c3c;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+/* ●の下に縦棒（最終行は付けない） */
+.history li:not(:last-child) .separator::after {
+  /* :not(:last-child)で最終行には付加しない */
+  content: "";
+  position: absolute;
+  top: 26px;
+  /* ●の(12pxで)すぐ下+14px=26pxから開始 */
+  left: 50%;
+  width: 2px;
+  /* 縦棒の太さ */
+  height: calc(100% + 6px);
+  /* 行間を調整可能 */
+  background: #e74c3c;
+  transform: translateX(-50%);
+}
+
+/* 各テキストの調整 */
+.history .date {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.history .desc {
   flex: 1;
-  min-width: 260px;
 }
 
-iframe {
-  width: 400px;
-  height: 300px;
-  border: 0;
-  border-radius: 8px;
+/* 会社情報 */
+.company-info {
+  height: 480px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-/* モバイル調整 */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.3em;
-  }
+.company-info table {
+  width: 90%;
+  margin: 50px;
+  border-collapse: collapse;
+}
 
-  .president img {
-    width: 40%;
-  }
-
-  .history-table th:first-child {
-    font-size: 40%;
-    width: 40%;
-  }
-
-  .profile-table td:first-child {
-    font-size: 40%;
-    width: 40%;
-  }
-
-  .profile-table th {
-    font-size: 40%;
-    width: 40%;
-  }
-
-  .profile-table td {
-    font-size: 40%;
-    width: 40%;
-  }
+.company-info th,
+.company-info td {
+  border-top: 1px solid #ccc;
+  /* 行の区切り線として水平線 */
+  border-bottom: 1px solid #ccc;
+  /* 行の区切り線として水平線 */
+  padding: 10px;
+  text-align: left;
 }
