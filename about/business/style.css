@@ -1,110 +1,157 @@
 body {
-  font-family: "Noto Sans JP", sans-serif;
   margin: 0;
   padding: 0;
-  background: #fafafa;
+  background: #ffffff;
   color: #333;
 }
 
+/* ページ全体のフォント指定: Zen Kaku Gothic New を優先、次に日本語系フォントをフォールバック */
+body {
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
 .section {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 80px 0;
+  max-width: 1440px;
+  padding: 0 144px;
 }
 
 /* main title */
 .main-visual {
+  height: 282px;
+  padding-top: 140px;
   text-align: center;
-  padding: 120px 0 80px;
+  vertical-align: middle;
 }
 
 .main-visual h1 {
-  font-size: 48px;
-  font-weight: 500;
-  color: #444;
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 6px;
+  margin-top: 48px;
 }
 
 .main-visual p {
-  margin-top: 10px;
-  color: #777;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0px;
 }
 
 /* サービス概要 */
+.services.section {
+  padding-top: 135px;
+  height: 730px;
+  background-color: #f5f5f5;
+}
+
 .section-title {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  color: #222;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 26px 40px 0;
+  margin-bottom: 24px;
 }
 
 .service-grid {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center; /* 中央寄せして3つ並べる */
+}
+
+/* 各サービスを制作実績カードと同じ幅に固定（360px）して横並びにする */
+.service-item {
+  flex: 0 0 360px; /* 固定幅 */
+  width: 360px;
+  box-sizing: border-box;
 }
 
 .service-item img {
   width: 360px;
-  height: 240px;
+  height: 210px;
   object-fit: cover;
   background: #ccc;
 }
 
 .service-item h3 {
-  margin: 20px 0 10px;
+  margin: 16px 0 16px;
   font-weight: 600;
   font-size: 20px;
+  margin-bottom: -4px;
 }
 
 .service-item p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
 }
-
+/* 仕切り線 */
+.service-item p+ul::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background: #333;
+  margin: -8px 0 6px 0;
+}
 .service-item ul {
   margin-top: 10px;
-  padding-left: 20px;
-  font-size: 14px;
-  line-height: 1.8;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+
 /* 制作実績 */
+.portfolio.section {
+  padding-top: 136px;
+  height: 1862px;
+  }
+
 .category {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 50px 0 20px;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 24px 20px;
+  background-color: #F5F5F5;
 }
 
 .mt40 {
-  margin-top: 60px;
+  margin-top: 72px;
 }
 
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 4px;
 }
 
 .card img {
   width: 360px;
-  height: 240px;
+  height: 210px;
+  margin: 0 16px 24px;
   object-fit: cover;
   background: #ccc;
 }
 
 .card .title {
   margin-top: 12px;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 16px 12px;
 }
 
 .card .sub {
-  font-size: 13px;
-  color: #777;
+  font-size: 16px;
+  color: #333;
+  margin: 0 16px 32px;
 }
 
 /* 制作の流れ */
+.flow.section{
+  padding-top: 135px;
+  height: 394px;
+  background-color: #f5f5f5
+}
 .flow-steps {
   display: flex;
   justify-content: space-between;
@@ -112,54 +159,74 @@ body {
 }
 
 .flow-item {
-  width: 200px;
+  width: 300px;
 }
 
 .circle {
-  width: 68px;
-  height: 68px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  border: 2px solid #e36b2c;
-  color: #e36b2c;
+  border: 2px solid #CC4100;
+  background: #CC4100; /* 円の内部をオレンジに */
+  color: #ffffff;      /* 文字を白に */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
-  margin: 0 auto 20px;
-  font-weight: 500;
+  font-size: 32px;
+  margin: -6px auto 0;
+  font-weight: 700;
 }
 
 .flow-item h4 {
+  margin-top: 12px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .flow-item p {
-  font-size: 13px;
-  line-height: 1.8;
-  color: #666;
+  font-size: 12px;
+  line-height: 0.20;
+  margin-top: 16px;
 }
 
 /* 料金体系 */
+.price.section {
+  padding-top: 135px;
+  height: 484px;
+}
 .price-text {
-  text-align: center;
-  line-height: 1.8;
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  margin: 0 16px 32px;
 }
 
 .price-btn {
-  width: 480px;
-  height: 80px;
-  background: #222;
+  width: 720px;
+  height: 155px;
+  background: #333;
   color: #fff;
-  border-radius: 40px;
-  margin: 40px auto 0;
+  border-radius: 80px;
+  margin: -8px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  gap: 10px;
+  font-size: 16.9px;
+  gap: 20px;
   cursor: pointer;
+}
+
+.inner {
+  max-width: 1440px;        /* コンテンツの最大幅（必要なら1440や1100に調整） */
+  margin: 0 auto;           /* 中央寄せ */
+  padding: 0 24px;          /* 両端のガター */
+  box-sizing: border-box;
+}
+
+/* モバイルでガターを小さくする例 */
+@media (max-width: 600px) {
+  .inner { padding: 0 16px; }
+}
+
+@media (max-width: 900px) {
+  .service-item { flex: 0 1 100%; width: 100%; }
 }
