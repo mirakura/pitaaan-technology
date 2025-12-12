@@ -106,8 +106,10 @@ section {
 }
 
 .executive .position {
+  display: block;
   font-size: 12px;
   margin-bottom: 8px;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -169,7 +171,7 @@ section {
   font-size: 12px;
   margin-bottom: 8px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .member p {
@@ -249,6 +251,10 @@ section {
     padding: 12px 0;
   }
 
+  /* 役職名を中央に */
+  .position {
+    text-align: center;
+  }
 
   #cta {
     height: auto;
