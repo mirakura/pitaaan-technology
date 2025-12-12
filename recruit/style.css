@@ -1,6 +1,5 @@
 body {
   /* ↓いらないかも↓ */
-  max-width: 1440px;
   margin: 0 auto;
   display: block;
   /* ↑いらないかも↑ */
@@ -11,7 +10,7 @@ body {
 
 /* セクション（共通） */
 section {
-  width: 1440px;
+  width: 100%;
   padding: 160px 0;
 }
 
