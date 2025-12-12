@@ -39,6 +39,7 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 50.67px;
 }
 
 .appeal-box {
@@ -83,10 +84,6 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(auto, max-content);
   gap: 80px 52px;
-}
-
-.job-box {
-  width: 550px;
 }
 
 .job-box:nth-child(2n) {
@@ -138,12 +135,9 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
   padding-left: 161px;
   padding-right: 161px;
-}
-
-.flow-box {
-  width: 250px;
 }
 
 .flow-number {
