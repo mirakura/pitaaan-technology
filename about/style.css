@@ -7,16 +7,13 @@ body {
 }
 
 .about-container {
-  max-width: 1400px;
-  width: 80%;
   padding: 40px 0;
 }
 
 .about {
-  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 520px;
 }
 
 .about-text-eng {
@@ -26,28 +23,32 @@ body {
 
 .about-text-jpn {
   margin-top: 10px;
-  font-size: 14pt;
+  font-size: 18pt;
 }
 
 .intro {
+  align-items : center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+.intro-body{
   display: flex;
   align-items: flex-start;
-  height: 700px;
-  background-color: #f0f0f0;
 }
 
 .intro-img {
   width: 300px;
   height: auto;
-  padding: 50px;
+  padding: 30px;
   border-radius: 6px;
 }
 
 .president-text {
   flex: 1;
-  margin-top: 50px;
-  margin-left: 50px;
-  min-width: 250px;
+  margin-top: 30px;
+/*  margin-left: 30px; */
+  min-width: 200px;
   max-width: 512px;
 }
 
@@ -57,12 +58,13 @@ body {
 }
 
 .theme {
-  height: 640px;
+  align-items: center;
+  display: flex;
   flex-direction: column;
   /* 上から下へ並べる */
   justify-content: center;
   /* 上下中央に配置 */
-  gap: 40px;
+/*  gap: 40px; */
   /* 各ブロックの間隔 */
   padding: 40px 40px;
 }
@@ -141,6 +143,9 @@ body {
 
 /* history レイアウト */
 .history {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-color: #F0F0F0;
   height: 400px;
   padding-top: 80px;
@@ -210,9 +215,11 @@ body {
 
 /* 会社情報 */
 .company-info {
-  height: 480px;
   margin-top: 100px;
   margin-bottom: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .company-info table {
