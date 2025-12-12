@@ -1,5 +1,5 @@
 /* ================================
-   メンバー紹介ページ デザイン準拠版
+   メンバー紹介ページ デザイン準拠版（完全版）
 ================================ */
 
 /* ▼ ページ全体 */
@@ -15,102 +15,80 @@ body {
   box-sizing: border-box;
 }
 
-/* ▼ セクション共通（幅1440のデザインでもレスポンシブ対応） */
+/* ▼ セクション共通 */
 section {
   margin: 0;
   padding: 0;
 }
 
-/* ▼ ヘッダー領域（高さは固定424px・横幅は画面に応じて可変） */
+/* ▼ ページタイトル */
 .members-header {
   width: 100%;
   height: 424px;
-
   display: flex;
   justify-content: center;
-  /* 横中央 */
   align-items: center;
-  /* 縦中央 */
   flex-direction: column;
-  /* 上下に並べる */
-
   text-align: center;
-  /* 中央揃え */
-
 }
 
-/* ▼ “Members” */
 .members-header h1 {
   margin: 0;
   font-size: 76.8px;
   font-weight: 400;
-  line-height: 77px;
 }
 
-/* ▼ “メンバー紹介” */
 .members-header .subtitle {
-  margin: 0;
   margin-top: 4px;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
 }
 
 /* ========================================
-   役員 & メンバーセクション（背景色つき）
+   役員 & メンバー セクション背景
 ======================================== */
 #executives,
 #team {
   background-color: #f5f5f5;
-  /* ★背景色 */
-  margin: 0;
-  /* セクション間の隙間をなくす */
 }
 
-/* =========================================
-   セクション共通
-   （左右10%の余白あり → デザイン仕様）
-========================================= */
 .section-block {
   padding: 0 10%;
   margin: 0 auto;
 }
 
-/* 見出し */
 .section-block h2 {
   font-size: 32px;
   font-weight: 700;
   height: 82px;
   text-align: left;
-  /* デザイン通り左揃え */
   padding: 18px 0;
   margin: 0;
 }
 
-
 /* =========================================
-   役員 3列（スマホでも3列固定）
+   役員（auto-fitで可変）
 ========================================= */
 
 #executives {
   padding: 142px 10% 0;
-  /* ★上:160px / 左右:10%（あなたの指定） */
 }
 
 #executives .executive-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 60px 40px;
+  justify-items: center;
 }
 
 .executive {
-  padding-bottom: 80px;
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .executive.empty {
-  visibility: hidden;
-  /* デザイン通り1枠空白にする */
+  display: none;
+  /* 可変グリッドでは空要素は不要 */
 }
 
 .executive img {
@@ -124,55 +102,48 @@ section {
 .executive h3 {
   font-size: 16px;
   font-weight: 700;
-  line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .executive .position {
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17px;
-  margin-top: 0;
   margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .executive p {
   font-size: 16px;
-  font-weight: 400;
   display: flex;
-  /* ← ラベルと内容を横並びにする */
   align-items: flex-start;
   text-align: left;
   line-height: 26px;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
-/* 項目ラベル（出身地: , 経歴: など） */
 .label {
   font-weight: 600;
   width: 6em;
-  /* 項目名の幅を統一 */
   flex-shrink: 0;
-  /* ラベルの幅を固定 */
 }
 
+.executive p span:not(.label) {
+  flex: 1;
+  display: inline-block;
+}
 
 /* =========================================
-   メンバー — 3列固定（スマホでも3列）
+   メンバー（auto-fitで可変）
 ========================================= */
 
 #team {
   padding: 0 10% 160px;
-  /* ★下:160px / 左右:10%（あなたの指定） */
 }
 
 .team-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* ★常に3列レイアウト */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 50px 40px;
+  justify-items: center;
 }
 
 .member {
@@ -190,47 +161,29 @@ section {
 .member h3 {
   font-size: 16px;
   font-weight: 700;
-  line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .member .position {
+  display: block;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17px;
-  text-align: center;
-  margin-top: 0;
   margin-bottom: 8px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .member p {
   font-size: 16px;
-  font-weight: 400;
   display: flex;
-  /* ← ラベルと内容を横並びにする */
   align-items: flex-start;
   text-align: left;
   line-height: 26px;
-  margin-top: 0;
-  margin-bottom: 4px;
+  margin: 0 0 4px;
 }
 
-.member p span:not(.label),
-.executive p span:not(.label) {
+.member p span:not(.label) {
   flex: 1;
-  /* 内容部分だけ折り返し可能に */
   display: inline-block;
-}
-
-/* ポジション行だけ中央寄せ（重要） */
-.position {
-  display: block !important;
-  /* flexを解除 */
-  text-align: center !important;
-  /* 中央揃え */
-  font-weight: 600;
-  margin-bottom: 8px;
 }
 
 /* =====================
@@ -250,23 +203,18 @@ section {
 
 .feature {
   width: calc((100% - 150px) / 4);
-  /* gap 50px × 3 の調整 */
   min-width: 160px;
 }
 
 .feature h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 23px;
 }
 
 .feature p {
-  margin-top: 0;
+  margin: 0;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
 }
 
 /* =====================
@@ -277,20 +225,34 @@ section {
   margin: 18px 10% 160px;
   height: 63px;
   background-color: #cc4100;
-  padding: 0;
-
   display: flex;
   justify-content: center;
-  /* 横中央 */
   align-items: center;
-  /* 縦中央 */
 }
 
 #cta p {
-  margin: 0;
-  /* 余白は消しておく */
   color: #fff;
-  /* 白文字 */
   font-size: 16px;
   font-weight: 700;
+  margin: 0;
+}
+
+/* =========================================
+   ▼ スマホ最適化（追加）
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* 見出しの余白を調整 */
+  .section-block h2 {
+    height: auto;
+    padding: 12px 0;
+  }
+
+
+  #cta {
+    height: auto;
+    padding: 16px;
+    text-align: center;
+  }
 }
