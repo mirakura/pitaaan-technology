@@ -102,6 +102,7 @@ button {
 /* 実績紹介 */
 /* Swiper 横並びスライダー用 */
 .swiper-container {
+  max-width: 1152px;
   height: 500px;
   overflow-y: visible;
   position: relative;
@@ -176,6 +177,10 @@ button {
   /* text-align: left; */
   padding: 10px;
   height: auto;
+
+  /* top: 75%; */
+  /* left: 10%; */
+  /* bottom: 95%; */
 }
 
 .slide-caption h3 {
@@ -249,19 +254,25 @@ button {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .about-photo {
-  width: 300px;
-  height: 200px;
+  width: 50%;
+  /* height: 200px; */
   object-fit: cover;
   background: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .about-text {
-  max-width: 400px;
+  max-width: 40%;
   text-align: left;
+  font-size: 19px;
 }
 
 /* 実績紹介 */
@@ -319,6 +330,7 @@ button {
 
   /* 会社概要 */
   .about-container {
+    /* background-color: aqua; */
     flex-direction: column;
     align-items: center;
   }
