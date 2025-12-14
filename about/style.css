@@ -58,30 +58,26 @@ body {
 }
 
 .theme {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  /* 上から下へ並べる */
-  justify-content: center;
-  /* 上下中央に配置 */
-/*  gap: 40px; */
-  /* 各ブロックの間隔 */
-  padding: 40px 40px;
+  align-items : center;
+  padding: 40px;
 }
 
-.mission-vision ul,
-.mission-vision ol {
-  list-style: none;
-  padding-left: 20px;
-  position: relative;
+.mission,
+.vision,
+.value {
+  width: 610px;
+  display : flex;
+  align-items : center;
+  margin: 40px 0;
 }
 
+/* 円の表示 */
 .circle {
   width: 130px;
   height: 130px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 40px;
   background: #D0D0D0;
   border-radius: 50%;
   display: flex;
@@ -89,56 +85,41 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  flex-shrink: 0; /* 円の幅を固定(潰れない) */
 }
 
+/* 円内テキスト */
 .circle-text-eng {
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 .circle-text-jpn {
   font-size: 0.7em;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
-.mission {
-  margin: 40px auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+/* テキストラッパー(ここがポイント) */
+.text-block {
+  flex: 1; /* 残りの幅を全て使う */
 }
 
+/* テーマの各テキスト */
 .mission-text {
-  margin-top: 20px;
-  margin-left: 30px;
+  margin: 0;
   font-size: 1.4em;
 }
 
-.vision {
-  margin: 40px auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.vision-text {
-  margin-top: 10px;
-  margin-left: none;
-  font-size: 0.8em;
-}
-
-.value {
-  margin: 40px auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
+.vision-text,
 .value-text {
-  margin-top: 0px;
-  margin-left: none;
-  font-size: 1.0em;
+  margin: 0;
+  padding-left : 20px;
+  font-size: 1em;
+}
+
+.vision-text li,
+.value-text li {
+  margin-bottom: 6px;
 }
 
 /* history レイアウト */
