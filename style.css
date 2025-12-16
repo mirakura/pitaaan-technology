@@ -65,14 +65,37 @@ button {
 }
 
 .btn-medium {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  transition: 0.3s ease;
-  gap: 10px;
+  display: inline-block;
+  width: 190px; /* 横幅       */
+  height: 48px; /* 高さ       */
+  border-radius: 24px; /* 角丸       */
+
+  font-size: 15pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: #ffffff; /* 背景色     */
+  color: #333; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  /* box-shadow: 6px 6px 3px #666666; 影の設定 */
+  border: 1px solid #333; /* 枠の指定 */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-decoration: none; */
+  /* padding: 10px 20px; */
+  /* font-size: 1rem; */
+  /* transition: 0.3s ease; */
+  /* gap: 10px; */
+}
+
+.btn-medium:hover {
+  background: #333; /* 背景色     */
+  color: #ffffff; /* 文字色     */
+  box-shadow: none; /* 影の設定   */
+  border: 2px solid #000066; /* 枠の指定 */
 }
 
 .btn-large {

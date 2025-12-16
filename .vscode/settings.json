@@ -42,7 +42,7 @@
   "cSpell.ignoreWords": ["lorem", "ipsum"],
 
   // Live Server設定
-  "liveServer.settings.port": 5501,
+  "liveServer.settings.port": 5500,
   "liveServer.settings.root": "/",
   "liveServer.settings.CustomBrowser": "chrome",
   "liveServer.settings.ignoreFiles": [

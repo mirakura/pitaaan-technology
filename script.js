@@ -24,11 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    //スクロールバー表示の設定
-    scrollbar: {
-      el: ".swiper-scrollbar", //要素の指定
-      draggable: true, //ドラッグ可能にする
-    },
   });
 
   const autoplayToggleButton = document.getElementById("autoplay-toggle");
