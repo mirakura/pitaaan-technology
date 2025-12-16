@@ -1,8 +1,15 @@
 /* ================================
-   メンバー紹介ページ デザイン準拠版（完全版）
+   メンバー紹介ページ（最終確定版）
+   方針：
+   - PC：356px固定カード × 3列
+   - 左詰め、右側は空白OK
+   - スマホ：1列
 ================================ */
 
-/* ▼ ページ全体 */
+/* =================================
+   ページ全体
+================================= */
+
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #333;
@@ -11,24 +18,17 @@ body {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
+/* =================================
+   ページヘッダー
+================================= */
 
-/* ▼ セクション共通 */
-section {
-  margin: 0;
-  padding: 0;
-}
-
-/* ▼ ページタイトル */
 .members-header {
   width: 100%;
   height: 424px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
 }
 
@@ -44,51 +44,53 @@ section {
   font-weight: 500;
 }
 
-/* ========================================
-   役員 & メンバー セクション背景
-======================================== */
+/* =================================
+   共通セクション
+================================= */
+
 #executives,
 #team {
+  width: 100%;
   background-color: #f5f5f5;
 }
 
-.section-block {
-  padding: 0 10%;
-  margin: 0 auto;
-}
-
 .section-block h2 {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 18px 0;
   font-size: 32px;
   font-weight: 700;
-  height: 82px;
   text-align: left;
-  padding: 18px 0;
-  margin: 0;
 }
 
-/* =========================================
-   役員（auto-fitで可変）
-========================================= */
+/* =================================
+   固定3列グリッド（思想の共通化）
+================================= */
+
+.fixed-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 356px);
+  gap: 42px;
+  justify-content: start;
+}
+
+/* =================================
+   役員
+================================= */
 
 #executives {
-  padding: 142px 10% 0;
+  padding-top: 142px;
 }
 
 #executives .executive-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px 40px;
-  justify-items: center;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 .executive {
+  width: 356px;
   text-align: center;
   padding-bottom: 80px;
-}
-
-.executive.empty {
-  display: none;
-  /* 可変グリッドでは空要素は不要 */
 }
 
 .executive img {
@@ -99,57 +101,50 @@ section {
   margin-bottom: 8px;
 }
 
-.executive h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 16px;
-}
-
 .executive .position {
   display: block;
   font-size: 12px;
   margin-bottom: 8px;
-  text-align: center;
   font-weight: 400;
+  text-align: center;
+}
+
+.executive h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .executive p {
+  margin: 0 0 8px;
   font-size: 16px;
+  line-height: 26px;
   display: flex;
   align-items: flex-start;
   text-align: left;
-  line-height: 26px;
-  margin: 0 0 8px;
-}
-
-.label {
-  font-weight: 600;
-  width: 6em;
-  flex-shrink: 0;
 }
 
 .executive p span:not(.label) {
   flex: 1;
-  display: inline-block;
 }
 
-/* =========================================
-   メンバー（auto-fitで可変）
-========================================= */
+/* =================================
+   メンバー
+================================= */
 
 #team {
-  padding: 0 10% 160px;
+  padding-bottom: 160px;
 }
 
-.team-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px 40px;
-  justify-items: center;
+#team .team-list {
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 .member {
+  width: 356px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .member img {
@@ -160,52 +155,64 @@ section {
   margin-bottom: 8px;
 }
 
-.member h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 0 16px;
-}
-
 .member .position {
   display: block;
   font-size: 12px;
   margin-bottom: 8px;
-  text-align: center;
   font-weight: 400;
+  text-align: center;
+}
+
+.member h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .member p {
+  margin: 0 0 4px;
   font-size: 16px;
+  line-height: 26px;
   display: flex;
   align-items: flex-start;
   text-align: left;
-  line-height: 26px;
-  margin: 0 0 4px;
 }
 
 .member p span:not(.label) {
   flex: 1;
-  display: inline-block;
 }
 
-/* =====================
+/* =================================
+   ラベル
+================================= */
+
+.label {
+  width: 6em;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* =================================
    チームの特徴
-===================== */
+================================= */
 
 #features {
   padding-top: 142px;
 }
 
 #features .feature-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 1152px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
   gap: 18px 50px;
+  justify-content: center;
 }
 
 .feature {
-  width: calc((100% - 150px) / 4);
-  min-width: 160px;
+  width: 250px;
+  padding-bottom: 40px;
+  text-align: left;
 }
 
 .feature h3 {
@@ -219,12 +226,13 @@ section {
   font-size: 16px;
 }
 
-/* =====================
+/* =================================
    CTA
-===================== */
+================================= */
 
 #cta {
-  margin: 18px 10% 160px;
+  max-width: 1152px;
+  margin: 18px auto 160px;
   height: 63px;
   background-color: #cc4100;
   display: flex;
@@ -233,27 +241,49 @@ section {
 }
 
 #cta p {
+  margin: 0;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  margin: 0;
 }
 
-/* =========================================
-   ▼ スマホ最適化（追加）
-========================================= */
+/* =================================
+   PC狭幅対策（1200px未満）
+================================= */
 
-@media (max-width: 600px) {
-
-  /* 見出しの余白を調整 */
-  .section-block h2 {
-    height: auto;
-    padding: 12px 0;
+@media (max-width: 1199px) {
+  .fixed-grid-3 {
+    grid-template-columns: repeat(2, 356px);
+    justify-content: center;
   }
 
-  /* 役職名を中央に */
-  .position {
-    text-align: center;
+  #features .feature-list {
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+  }
+}
+
+/* =================================
+   スマホ対応
+================================= */
+
+@media (max-width: 600px) {
+  .fixed-grid-3 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .executive,
+  .member {
+    width: 100%;
+    max-width: 356px;
+    margin: 0 auto;
+  }
+
+  #features .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 16px;
   }
 
   #cta {
