@@ -156,19 +156,7 @@ button {
   /* margin-top: 50px; */
 }
 
-/* ↓↓ フェードイン ↓↓ */
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+/* ↓↓ スライドキャプションのフェードインアニメーション ↓↓ */
 
 .swiper-slide {
   background-repeat: no-repeat;
@@ -181,16 +169,25 @@ button {
   top: 75%;
   left: 10%;
   bottom: 20px;
+  opacity: 0; /* 初期状態では非表示 */
 }
 
-.slide-caption {
-  animation-name: fade-in;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+.slide-caption.fade-in-active {
+  animation: fade-in-caption 0.8s ease-out forwards;
 }
 
-/* ↑↑ フェードイン ↑↑ */
+@keyframes fade-in-caption {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ↑↑ スライドキャプションのフェードインアニメーション ↑↑ */
 
 .slide-caption {
   max-width: 300px;
