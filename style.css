@@ -23,17 +23,18 @@ body {
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .arrow {
-  font-size: 1.2rem;
+  /* color: #e11414; */
+  font-size: 1.2em;
   transition: transform 0.3s;
 }
 
 .btn-medium:hover .arrow,
 .btn-large:hover .arrow {
-  transform: translateX(10px);
+  transform: translateX(5px);
 }
 
 button {
@@ -66,7 +67,7 @@ button {
 
 .btn-medium {
   display: inline-block;
-  width: 200px; /* 横幅       */
+  width: 210px; /* 横幅       */
   height: 48px; /* 高さ       */
   border-radius: 24px; /* 角丸       */
 
