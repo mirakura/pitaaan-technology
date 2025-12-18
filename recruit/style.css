@@ -15,11 +15,11 @@ section {
 }
 
 /* ページタイトルのスタイル（仮） */
-section.x {
+section.page-title {
   padding: 64px 0 160.01px;
 }
 
-.x h1 {
+.english {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 76.8px;
@@ -28,7 +28,7 @@ section.x {
   text-align: center;
 }
 
-.x p {
+.japanese {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
   font-size: 20px;
