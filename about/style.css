@@ -47,7 +47,6 @@ body {
 .president-text {
   flex: 1;
   margin-top: 30px;
-/*  margin-left: 30px; */
   min-width: 200px;
   max-width: 512px;
 }
@@ -110,9 +109,18 @@ body {
   font-size: 1.4em;
 }
 
-.vision-text,
+.vision-text{
+  margin: 0;
+  list-style-type: disc;    /* ● を有効化 */
+  list-style-position: outside;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
 .value-text {
   margin: 0;
+  list-style-type: decimal;    /* 1. 2. 3. を有効化 */
+  list-style-position: outside;
   padding-left : 20px;
   font-size: 1em;
 }
@@ -134,7 +142,6 @@ body {
 
 .history ul {
   list-style: none;
-  /*     width: 80%; */
   margin-left: 20px;
 }
 
@@ -149,8 +156,7 @@ body {
 /* ●（丸マーク） */
 .history .separator {
   position: relative;
-  width: 16px;
-  /* 行間調整のための横幅 */
+  width: 16px;  /* 行間調整のための横幅 */
   height: 16px;
   display: inline-block;
 }
@@ -158,8 +164,7 @@ body {
 .history .separator::before {
   content: "";
   position: absolute;
-  top: 10px;
-  /* 丸の上下位置 */
+  top: 10px;  /* 丸の上下位置 */
   left: 50%;
   width: 8px;
   height: 8px;
@@ -173,13 +178,10 @@ body {
   /* :not(:last-child)で最終行には付加しない */
   content: "";
   position: absolute;
-  top: 26px;
-  /* ●の(12pxで)すぐ下+14px=26pxから開始 */
+  top: 26px;                 /* ●の(12pxで)すぐ下+14px=26pxから開始 */
   left: 50%;
-  width: 2px;
-  /* 縦棒の太さ */
-  height: calc(100% + 6px);
-  /* 行間を調整可能 */
+  width: 2px;                /* 縦棒の太さ */
+  height: calc(100% + 6px);  /* 行間を調整可能 */
   background: #e74c3c;
   transform: translateX(-50%);
 }
@@ -289,16 +291,45 @@ body {
   .text-block {
     width: 100%;
   }
+/* ====================================
+   Mission / Vision / Value のリスト修正
+   ==================================== */
+
+/* 共通 */
 
   .mission-text {
+    text-align: center;  /* 中央寄せ */
     font-size: 1.1em;
+  }
+
+  .mission-text br {
+    display: none; /* スマートフォン対応時 <br> を無効化 */
   }
 
   .vision-text,
   .value-text {
-    padding-left: 20px;
-    text-align: left;
+    list-style-position: outside;  /* マーカーを内側に */
+    margin: 0 auto;                /* 中央配置 */
+    padding-left: 1.4em;           /* 行頭を揃えるための余白 */
+    text-align: left;              /* テキスト中央寄せ */
+    display: inline-block;         /* 中央寄せのため */
     font-size: 0.95em;
+  }
+
+  /* Vision（・） */
+  .vision-text {
+    list-style-type: disc;  /* ● を表示 */
+  }
+
+  /* Value（番号） */
+  .value-text {
+    list-style-type: decimal;  /* 1. 2. 3. を表示 */
+  }
+
+  /* li の微調整 */
+  .vision-text li,
+  .value-text li {
+    margin-bottom: 8px;
   }
 
   /* ===== History ===== */
@@ -333,7 +364,7 @@ body {
   .company-info tr,
   .company-info th,
   .company-info td {
-/*    display: block; */ /* 縦並び化 */
+  /*    display: block; */ /* 縦並び化 */
     width: 100%;
   }
 
@@ -350,12 +381,12 @@ body {
     vertical-align: top;
   }
 
-    .company-info th {
-      white-space: nowrap;  /* 見出しを1行に */
-      width: 35%;
-    }
+  .company-info th {
+    white-space: nowrap;  /* 見出しを1行に */
+    width: 35%;
+  }
 
-    .company-info td {
+  .company-info td {
     width: 65%;
   }
 
@@ -363,42 +394,4 @@ body {
   .map-section iframe {
     height: 300px;
   }
-}
-
-/* ====================================
-   Mission / Vision / Value のリスト修正
-   ==================================== */
-
-/* 共通 */
-.mission-text{
-  text-align: center; /* 中央寄せ */
-}
-
-.mission-text br {
-   display: none; /* スマートフォン対応時 <br> を無効化 */
-}
-
-.vision-text,
-.value-text {
-  list-style-position: outside; /* マーカーを内側に */
-  margin: 0 auto;               /* 中央配置 */
-  padding-left: 1.4em;          /* 行頭を揃えるための余白 */
-  text-align: left;             /* テキスト中央寄せ */
-  display: inline-block;        /* 中央寄せのため */
-}
-
-/* Vision（・） */
-.vision-text {
-  list-style-type: disc;  /* ● を表示 */
-}
-
-/* Value（番号） */
-.value-text {
-  list-style-type: decimal;  /* 1. 2. 3. を表示 */
-}
-
-/* li の微調整 */
-.vision-text li,
-.value-text li {
-  margin-bottom: 8px;
 }
