@@ -114,7 +114,7 @@ body {
   list-style-type: disc;    /* ● を有効化 */
   list-style-position: outside;
   padding-left: 20px;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .value-text {
@@ -123,6 +123,11 @@ body {
   list-style-position: outside;
   padding-left : 20px;
   font-size: 1em;
+}
+
+/* ===== Value-text 内の <b> を有効化 ===== */
+.value-text b {
+  font-weight: bold;
 }
 
 .vision-text li,
