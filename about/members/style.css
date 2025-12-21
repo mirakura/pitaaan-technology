@@ -11,7 +11,7 @@
 ================================= */
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   color: #333;
   background-color: #fff;
   margin: 0;
@@ -24,11 +24,7 @@ body {
 
 .members-header {
   width: 100%;
-  height: 424px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 159px 0 160.01px;
   text-align: center;
 }
 
@@ -36,12 +32,14 @@ body {
   margin: 0;
   font-size: 76.8px;
   font-weight: 400;
+  line-height: 77px;
 }
 
 .members-header .subtitle {
-  margin-top: 4px;
+  margin-top: 3.99px;
   font-size: 20px;
   font-weight: 500;
+  line-height: 24px;
 }
 
 /* =================================
