@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       // スライドが切り替わる前に、すべてのアニメーションクラスをリセット
       slideChange: function () {
-        this.slides.forEach((slide) => {
+        this.slides.forEach(slide => {
           const caption = slide.querySelector(".slide-caption");
           if (caption) {
             caption.classList.remove("fade-in-active");
@@ -70,21 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
     isAutoplayPlaying = !isAutoplayPlaying;
   });
 });
-
-// ===========================
-// 🚀 swiper-slide-text-fadein
-// ===========================
-/*
-var mySwiper = new Swiper(".swiper-container", {
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
-  speed: 2000,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-*/
