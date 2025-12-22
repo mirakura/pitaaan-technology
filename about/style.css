@@ -35,6 +35,7 @@ body {
 .intro-body{
   display: flex;
   align-items: flex-start;
+  padding: 40px;
 }
 
 .intro-img {
@@ -54,6 +55,7 @@ body {
 .president-name {
   text-align: right;
   margin-top: 30px;
+  font-weight: bold;
 }
 
 .theme {
@@ -218,10 +220,8 @@ body {
 
 .company-info th,
 .company-info td {
-  border-top: 1px solid #ccc;
-  /* 行の区切り線として水平線 */
-  border-bottom: 1px solid #ccc;
-  /* 行の区切り線として水平線 */
+  border-top: 1px solid #ccc;    /* 行の区切り線として水平線 */
+  border-bottom: 1px solid #ccc; /* 行の区切り線として水平線 */
   padding: 10px;
   text-align: left;
 }
@@ -269,7 +269,7 @@ body {
   }
 
   .president-name {
-    text-align: left;
+    text-align: right;
   }
 
   /* ===== Mission / Vision / Value ===== */
