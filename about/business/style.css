@@ -103,10 +103,9 @@ body {
 }
 
 .category {
-  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
-  margin: 10px 24px 20px;
+  margin: 22px 0px 18px 8px;
   background-color: #F5F5F5;
 }
 
@@ -117,20 +116,20 @@ body {
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 13px 6px;
 }
 
 .card img {
-  width: 360px;
+  width: 354px;
   height: 210px;
-  margin: 0 16px 24px;
+  margin: 0 13px 23px;
   object-fit: cover;
   background: #ccc;
 }
 
 .card .title {
   margin-top: 12px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   margin: 0 16px 12px;
 }
