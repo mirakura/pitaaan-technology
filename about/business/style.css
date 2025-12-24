@@ -12,19 +12,18 @@ body {
 
 .section {
   max-width: 1440px;
-  padding: 0 144px;
 }
 
 /* main title */
 .main-visual {
-  height: 282px;
   padding-top: 140px;
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 155px
 }
 
 .main-visual h1 {
-  font-size: 84px;
+  font-size: 78px;
   font-weight: 400;
   line-height: 6px;
   margin-top: 48px;
@@ -33,21 +32,19 @@ body {
 .main-visual p {
   font-size: 20px;
   font-weight: 500;
-  line-height: 0px;
+  margin-top: 45px;
 }
 
 /* サービス概要 */
 .services.section {
-  padding-top: 135px;
-  height: 730px;
+  padding-top: 134px;
   background-color: #f5f5f5;
 }
 
 .section-title {
-  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  margin: 26px 40px 0;
+  margin: 26px 144px 0;
   margin-bottom: 24px;
 }
 
@@ -76,7 +73,6 @@ body {
   margin: 16px 0 16px;
   font-weight: 600;
   font-size: 20px;
-  margin-bottom: -4px;
 }
 
 .service-item p {
