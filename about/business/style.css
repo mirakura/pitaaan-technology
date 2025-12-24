@@ -71,14 +71,14 @@ body {
 }
 
 .service-item h3 {
-  margin: 16px 0 16px;
+  margin: 16px 0 13px 0;
   font-weight: 600;
   font-size: 20px;
 }
 
 .service-item p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 /* 仕切り線 */
 .service-item p+ul::before {
