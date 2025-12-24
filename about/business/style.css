@@ -7,11 +7,13 @@ body {
 
 /* ページ全体のフォント指定: Zen Kaku Gothic New を優先、次に日本語系フォントをフォールバック */
 body {
+  max-width: 1920px;
   font-family: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 .section {
   max-width: 1440px;
+  width: 100%;
 }
 
 /* main title */
@@ -36,7 +38,7 @@ body {
 
 /* サービス概要 */
 .services.section {
-  padding-top: 134px;
+  padding: 134px 0 155px 0;
   background-color: #f5f5f5;
 }
 
