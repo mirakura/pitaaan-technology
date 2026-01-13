@@ -53,7 +53,6 @@ body {
 /* 各サービスを制作実績カードと同じ幅に固定（360px）して横並びにする */
 .service-item {
   flex: 0 0 360px; /* 固定幅 */
-  width: 360px;
   box-sizing: border-box;
 }
 
