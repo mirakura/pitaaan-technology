@@ -188,7 +188,7 @@ body {
 }
 .price-text {
   font-size: 16px;
-  margin: 0 16px 32px;
+  margin: -5px 14px 30px 0px;
 }
 
 .price-btn {
