@@ -13,7 +13,7 @@ body {
 
 /* main title */
 .main-visual {
-  padding: 140px 0 155px 0;
+  padding: 137px 0 150px 0;
   text-align: center;
   vertical-align: middle;
 }
@@ -21,14 +21,12 @@ body {
 .main-visual h1 {
   font-size: 79px;
   font-weight: 400;
-  line-height: 4px;
-  margin-top: 48px;
 }
 
 .main-visual p {
   font-size: 20px;
   font-weight: 500;
-  margin-top: 45px;
+  margin-top: -11px;
 }
 
 /* サービス概要 */
