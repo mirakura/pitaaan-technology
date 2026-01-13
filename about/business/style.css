@@ -136,7 +136,7 @@ body {
 /* 制作の流れ */
 .flow.section{
   padding: 140px 0 166px 0;
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
 }
 .flow-steps {
   display: flex;
