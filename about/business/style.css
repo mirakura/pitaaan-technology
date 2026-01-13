@@ -1,14 +1,9 @@
 body {
+  max-width: 1920px;
   margin: 0;
   padding: 0;
   background: #ffffff;
   color: #333;
-}
-
-/* ページ全体のフォント指定: Zen Kaku Gothic New を優先、次に日本語系フォントをフォールバック */
-body {
-  max-width: 1920px;
-
 }
 
 .section {
