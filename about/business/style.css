@@ -40,8 +40,7 @@ body {
 .section-title {
   font-size: 32px;
   font-weight: 700;
-  margin: 26px 144px 0;
-  margin-bottom: 24px;
+  margin: 30px 144px 24px 144px;
 }
 
 .service-grid {
