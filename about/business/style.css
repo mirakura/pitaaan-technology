@@ -5,9 +5,12 @@ body {
   color: #333;
 }
 
-.section {
-  max-width: 1440px;
+.inner {
+  max-width: 1152px;        /* コンテンツの最大幅 */
   width: 100%;
+  margin: 0 auto;           /* 中央寄せ */
+  padding: 0;               /* 両端のガター */
+  box-sizing: border-box;
 }
 
 /* main title */
@@ -184,14 +187,6 @@ body {
   font-size: 16.9px;
   gap: 20px;
   cursor: pointer;
-}
-
-.inner {
-  max-width: 1152px;        /* コンテンツの最大幅 */
-  width: 100%;
-  margin: 0 auto;           /* 中央寄せ */
-  padding: 0;          /* 両端のガター */
-  box-sizing: border-box;
 }
 
 /* モバイルでガターを小さくする例 */
