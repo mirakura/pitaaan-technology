@@ -90,7 +90,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin: 24px 0px 25px 8px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* 当初は40pxだったが、調整の結果74pxに落ち着いた */
@@ -101,13 +101,13 @@ body {
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 6px;
+  gap: 9px 36px;
 }
 
 .card img {
-  width: 354px;
+  width: 360px;
   height: 210px;
-  margin: 0 13px 22px;
+  margin: 0 0px 22px;
   object-fit: cover;
   background: #ccc;
 }
@@ -115,13 +115,13 @@ body {
 .card .title {
   font-size: 19px;
   font-weight: 400;
-  margin: -2px 0 13px 15px;
+  margin: -2px 0 13px 2px;
 }
 
 .card .sub {
   font-size: 16px;
   color: #333;
-  margin: 0 16px 32px;
+  margin: -1px 16px 32px 2px;
 }
 
 /* 制作の流れ */
