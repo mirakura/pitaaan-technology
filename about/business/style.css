@@ -73,10 +73,10 @@ body {
 .service-item p+ul::before {
   content: "";
   display: block;
-  width: 360px;
+  width: 107%;
   height: 0.5px;
   background: #333;
-  margin: -8px 0 6px -28px;
+  margin: -6px 0px 6px -27px;
 }
 .service-item ul {
   margin-top: 10px;
