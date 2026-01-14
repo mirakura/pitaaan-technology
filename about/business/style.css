@@ -98,6 +98,7 @@ body {
   background-color: #F5F5F5;
 }
 
+/* 当初は40pxだったが、調整の結果74pxに落ち着いた */
 .mt40 {
   margin-top: 74px;
 }
