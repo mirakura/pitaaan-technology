@@ -147,7 +147,6 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 2px solid #CC4100;
   background: #CC4100; /* 円の内部をオレンジに */
   color: #ffffff;      /* 文字を白に */
   display: flex;
