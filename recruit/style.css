@@ -1,192 +1,202 @@
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.8;
-  color: #222;
-  background: #fff;
-  margin: 0;
-  padding: 0;
+  /* ↓いらないかも↓ */
+  margin: 0 auto;
+  display: block;
+  /* ↑いらないかも↑ */
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-feature-settings: "palt";
+  color: #333333;
 }
 
-/* セクションのレイアウト(共通） */
-.section {
-  width: 1100px;
-  margin: 40px auto;
-  border: 4px solid #000;
-  padding: 40px;
-  box-sizing: border-box;
-  background: #fff;
+/* セクション（共通） */
+section {
+  width: 100%;
+  padding: 160px 0;
 }
 
-/* 見出しラベル(共通） */
-.section-label {
-  border: 2px solid #000;
-  display: inline-block;
-  padding: 8px 16px;
-  font-weight: bold;
-  margin-bottom: 30px;
+/* ページタイトルのスタイル（仮） */
+section.page-title {
+  padding: 159px 0 160.01px;
+}
+
+.english {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 76.8px;
+  line-height: 76.8px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.japanese {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 /* セクションタイトル(共通） */
 .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
+  max-width: 1152px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
   font-weight: bold;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 144px;
 }
 
 /* セクション 01 の各種設定 */
-.appeal-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+.appeal {
+  background-color: #F5F5F5;
+}
+
+.appeal .container {
+  margin: 0 auto;
+  display: flex;
+  gap: 50.67px;
 }
 
 .appeal-box {
-  border: 2px solid #000;
-  padding: 24px;
-  box-sizing: border-box;
-  min-height: 200px;
-  background: #fff;
-}
-
-.appeal-number {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 16px;
+  flex: 1;
 }
 
 .appeal-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .appeal-text {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .appeal-list {
-  font-size: 16px;
-  line-height: 1.8;
-  padding-left: 20px;
-  list-style-type: disc;
+  list-style-type: "・";
+  padding-left: 0;
 }
 
 .appeal-list li {
-  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-left: 24px;
+  overflow-wrap: break-word;
+}
+
+.list-desc {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 /* セクション 02 の各種設定 */
-.job-container {
+.job .container {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.job-box {
-  border: 2px solid #000;
-  padding: 24px;
-  box-sizing: border-box;
-  min-height: 200px;
-  background: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, max-content);
+  gap: 80px 52px;
 }
 
 .job-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #e2e2e2;
+  background: #F5F5F5;
+  padding: 0 8px;
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-.job-subtitle {
-  font-weight: 700;
-  margin: 18px 0 6px;
+.job-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: clamp(16px, 2vw, 28px);
+  border-bottom: 1px solid #333333;
+  padding: 20px 0;
 }
 
-.job-box ul {
-  list-style-type: disc;
-  padding-left: 1em;
-  margin: 0;
+.job-box {
+  width: 100%;
 }
 
-.job-box li {
-  line-height: 1.8;
-  font-size: 14px;
+.job-box .job-item:first-of-type {
+  border-top: 1px solid #333333;
+}
+
+.job-label {
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -1px;
+}
+
+.job-list {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* セクション 03 の各種設定 */
-.flow-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.flow {
+  background-color: #F5F5F5;
+}
+
+.flow .container {
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding-left: 161px;
+  padding-right: 161px;
 }
 
 .flow-box {
-  border: 1px solid #000;
-  padding: 40px 30px;
-  text-align: center;
+  flex: 1;
 }
 
 .flow-number {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border: 1px solid #000;
+  width: 64px;
+  height: 64px;
+  line-height: 1.4;
+  background-color: #CC4100;
+  color: #FFFFFF;
   border-radius: 50%;
-  margin: 0 auto 20px;
-  font-weight: bold;
+  margin: 0 auto 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
 }
 
 .flow-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .flow-text {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .flow-list {
-  text-align: left;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 1.8;
-  list-style-type: disc;
+  font-size: 12px;
+  line-height: 1.4;
+  list-style-type: "・";
 }
 
 .flow-list li {
   margin-left: 20px;
-}
-
-/* セクション 04 の各種設定 */
-.conditions-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.conditions-box {
-  border: 2px solid #000;
-  padding: 24px;
-  box-sizing: border-box;
-  min-height: 200px;
-  background: #fff;
-}
-
-.conditions-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #e2e2e2;
-}
-
-.conditions-list {
-  font-size: 16px;
-  line-height: 1.8;
-  padding-left: 20px;
-  list-style-type: disc;
 }
