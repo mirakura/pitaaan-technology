@@ -22,4 +22,11 @@ fetch("/components/header/index.html")
         button.classList.add("current-page");
       }
     });
+
+    const menuButton = document.getElementById("menuButton");
+    const nav = document.querySelector(".nav");
+    menuButton.addEventListener("click", () => {
+      menuButton.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
   });

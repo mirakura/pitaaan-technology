@@ -1,3 +1,8 @@
+body {
+  background-color: #f5f5f5;
+}
+/* test */
+
 header {
   width: 100%;
   background-color: #ffffff;
@@ -7,11 +12,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-}
 
-.header-container {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,4 +61,120 @@ header {
 .nav-item .contact-button:hover {
   color: #ffffff;
   background-color: #cc4100;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 8px;
+    height: fit-content;
+
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+  }
+
+  .logo a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 16px;
+  }
+
+  .menu-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    cursor: pointer;
+
+    height: 32px;
+    padding: 0 16px;
+  }
+
+  .menu-button-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .menu-button-icon div {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .menu-button.active {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .menu-button.active .menu-button-icon div {
+    background-color: #ffffff;
+  }
+
+  .menu-button.active .menu-button-icon {
+    gap: 0;
+  }
+
+  .menu-button-icon div {
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .menu-button.active .menu-button-icon div:nth-child(1) {
+    top: 1px;
+    transform: rotate(30deg);
+  }
+
+  .menu-button.active .menu-button-icon div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-button.active .menu-button-icon div:nth-child(3) {
+    top: -1px;
+    transform: rotate(-30deg);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+    height: calc(100vh - 48px);
+    padding: 20px 8px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 16px 0;
+  }
+
+  .nav-item:has(.contact-button) {
+    margin-top: 16px;
+  }
 }
