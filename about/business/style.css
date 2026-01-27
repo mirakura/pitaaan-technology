@@ -92,8 +92,9 @@ ul {
 .category {
   font-size: 24px;
   font-weight: 700;
-  margin: 24px 0px 25px 8px;
+  margin: 24px 0px 25px 0px;
   background-color: #f5f5f5;
+  padding-left: 8px;
 }
 
 /* 当初は40pxだったが、調整の結果74pxに落ち着いた */
