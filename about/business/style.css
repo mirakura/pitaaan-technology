@@ -64,7 +64,7 @@ body {
 
 .service-item h3 {
   margin: 16px 0 13px 0;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -153,7 +153,7 @@ ul {
   align-items: center;
   font-size: 32px;
   margin: 0px auto 0;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .flow-item h4 {
