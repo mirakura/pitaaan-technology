@@ -17,22 +17,22 @@ footer {
   font-weight: 500;
 }
 
-.nav-list {
+footer .nav-list {
   display: flex;
   align-items: center;
 }
 
-.nav-item a {
+footer .nav-item a {
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
 }
 
-.nav-item a:hover {
+footer .nav-item a:hover {
   color: #cc4100;
 }
 
-.nav-item .contact-button {
+footer .nav-item .contact-button {
   background-color: #ffffff;
   color: #333333;
   padding: 8px 20px;
@@ -42,7 +42,7 @@ footer {
   transition: 0.3s ease;
 }
 
-.nav-item .contact-button:hover {
+footer .nav-item .contact-button:hover {
   color: #ffffff;
   background-color: #cc4100;
   transition: 0.3s ease;
@@ -58,22 +58,22 @@ footer {
     gap: 24px;
   }
 
-  .nav-list {
+  footer .nav-list {
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
 
-  .nav-item a {
+  footer .nav-item a {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
   }
 
-  .nav-item .contact-button {
+  footer .nav-item .contact-button {
     margin-left: 0;
   }
-  .nav-item:has(.contact-button) {
+  footer .nav-item:has(.contact-button) {
     margin-top: 16px;
   }
 }

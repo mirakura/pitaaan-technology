@@ -20,14 +20,14 @@ header {
   text-decoration: none;
 }
 
-.nav-list {
+header .nav-list {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 20px;
 }
 
-.nav-item a {
+header .nav-item a {
   text-decoration: none;
   color: #333333;
   font-size: 16px;
@@ -36,15 +36,15 @@ header {
   transition: color 0.3s ease;
 }
 
-.nav-item a:hover {
+header .nav-item a:hover {
   color: #cc4100;
 }
 
-.nav-item a.current-page {
+header .nav-item a.current-page {
   color: #cc4100;
 }
 
-.nav-item .contact-button {
+header .nav-item .contact-button {
   background-color: #333333;
   color: #ffffff;
   padding: 8px 20px;
@@ -53,7 +53,7 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.nav-item .contact-button:hover {
+header .nav-item .contact-button:hover {
   color: #ffffff;
   background-color: #cc4100;
 }
@@ -146,30 +146,30 @@ header {
     transform: rotate(-30deg);
   }
 
-  .nav {
+  header .nav {
     display: none;
   }
 
-  .nav.active {
+  header .nav.active {
     display: block;
     height: calc(100vh - 48px);
     padding: 20px 8px;
   }
 
-  .nav-list {
+  header .nav-list {
     flex-direction: column;
     align-items: flex-end;
     gap: 32px;
   }
 
-  .nav-item a {
+  header .nav-item a {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
     padding: 16px 0;
   }
 
-  .nav-item:has(.contact-button) {
+  header .nav-item:has(.contact-button) {
     margin-top: 16px;
   }
 }
