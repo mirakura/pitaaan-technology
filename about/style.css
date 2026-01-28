@@ -1,3 +1,8 @@
+:root {
+  --content-padding: 40px;
+  --content-width: 1100px;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.8;
@@ -5,6 +10,32 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* =========================
+   共通コンテンツ幅（PC）
+   ========================= */
+.intro,
+.theme,
+.history,
+.company-info {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.theme .mission,
+.theme .vision,
+.theme .value,
+.history ul,
+.company-info table {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+  box-sizing: border-box;
+}
+/* =============================== */
 
 .about-container {
   padding: 40px 0;
@@ -27,29 +58,28 @@ body {
 }
 
 .intro {
-  align-items : center;
-  display: flex;
-  flex-direction: column;
   background-color: #f0f0f0;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
 }
-.intro-body{
+.intro-body {
+  max-width: var(--content-width);
+  margin: auto;
   display: flex;
   align-items: flex-start;
-  padding: 40px;
+  padding: 40px var(--content-padding);
 }
 
 .intro-img {
   width: 300px;
   height: auto;
-  padding: 30px;
   border-radius: 6px;
+  margin-right: 40px;
 }
 
 .president-text {
   flex: 1;
-  margin-top: 30px;
-  min-width: 200px;
-  max-width: 512px;
+  max-width: none;
 }
 
 .president-name {
@@ -59,19 +89,20 @@ body {
 }
 
 .theme {
-  display: flex;
-  flex-direction: column;
-  align-items : center;
-  padding: 40px;
+  padding-top: var(--content-padding);
+  padding-bottom: var(--content-padding);
 }
 
 .mission,
 .vision,
 .value {
-  width: 610px;
-  display : flex;
-  align-items : center;
+  height: 180px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
   margin: 20px 0;
+  padding-left: var(--content-padding);
+  box-sizing: border-box;
 }
 
 /* 円の表示 */
@@ -79,7 +110,7 @@ body {
   width: 130px;
   height: 130px;
   margin-right: 40px;
-  background: #D0D0D0;
+  background: #d0d0d0;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -111,9 +142,9 @@ body {
   font-size: 1.4em;
 }
 
-.vision-text{
+.vision-text {
   margin: 0;
-  list-style-type: disc;    /* ● を有効化 */
+  list-style-type: disc; /* ● を有効化 */
   list-style-position: outside;
   padding-left: 20px;
   font-size: 0.9em;
@@ -121,9 +152,9 @@ body {
 
 .value-text {
   margin: 0;
-  list-style-type: decimal;    /* 1. 2. 3. を有効化 */
+  list-style-type: decimal; /* 1. 2. 3. を有効化 */
   list-style-position: outside;
-  padding-left : 20px;
+  padding-left: 20px;
   font-size: 1em;
 }
 
@@ -139,17 +170,16 @@ body {
 
 /* history レイアウト */
 .history {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-color: #F0F0F0;
-  height: 400px;
+  background-color: #f0f0f0;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .history ul {
-  list-style: none;
-  margin-left: 20px;
+  width: 100%;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+  box-sizing: border-box;
 }
 
 .history li {
@@ -163,7 +193,7 @@ body {
 /* ●（丸マーク） */
 .history .separator {
   position: relative;
-  width: 16px;  /* 行間調整のための横幅 */
+  width: 16px; /* 行間調整のための横幅 */
   height: 16px;
   display: inline-block;
 }
@@ -171,7 +201,7 @@ body {
 .history .separator::before {
   content: "";
   position: absolute;
-  top: 10px;  /* 丸の上下位置 */
+  top: 10px; /* 丸の上下位置 */
   left: 50%;
   width: 8px;
   height: 8px;
@@ -182,13 +212,12 @@ body {
 
 /* ●の下に縦棒（最終行は付けない） */
 .history li:not(:last-child) .separator::after {
-  /* :not(:last-child)で最終行には付加しない */
   content: "";
   position: absolute;
-  top: 26px;                 /* ●の(12pxで)すぐ下+14px=26pxから開始 */
+  top: 26px; /* ●の(12pxで)すぐ下+14px=26pxから開始 */
   left: 50%;
-  width: 2px;                /* 縦棒の太さ */
-  height: calc(100% + 6px);  /* 行間を調整可能 */
+  width: 2px; /* 縦棒の太さ */
+  height: calc(100% + 6px); /* 行間を調整可能 */
   background: #e74c3c;
   transform: translateX(-50%);
 }
@@ -205,22 +234,29 @@ body {
 
 /* 会社情報 */
 .company-info {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+  box-sizing: border-box;
+}
+
+.company-info-inner {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+  box-sizing: border-box;
 }
 
 .company-info table {
-  width: 90%;
-  margin: 50px;
+  width: 100%;
+  margin: 50px 0;
   border-collapse: collapse;
 }
 
 .company-info th,
 .company-info td {
-  border-top: 1px solid #ccc;    /* 行の区切り線として水平線 */
+  border-top: 1px solid #ccc; /* 行の区切り線として水平線 */
   border-bottom: 1px solid #ccc; /* 行の区切り線として水平線 */
   padding: 10px;
   text-align: left;
@@ -230,15 +266,14 @@ body {
    スマートフォン対応
    ========================= */
 @media screen and (max-width: 768px) {
-
   /* ===== 共通 ===== */
   body {
     line-height: 1.6;
   }
 
   section {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* ===== About ===== */
@@ -249,6 +284,17 @@ body {
 
   .about-text-jpn {
     font-size: 14pt;
+  }
+
+  .intro-body,
+  .theme .mission,
+  .theme .vision,
+  .theme .value,
+  .history ul,
+  .company-info table {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: auto;
   }
 
   /* ===== Intro ===== */
@@ -296,14 +342,14 @@ body {
   .text-block {
     width: 100%;
   }
-/* ====================================
+  /* ====================================
    Mission / Vision / Value のリスト修正
    ==================================== */
 
-/* 共通 */
+  /* 共通 */
 
   .mission-text {
-    text-align: center;  /* 中央寄せ */
+    text-align: left;
     font-size: 1.1em;
   }
 
@@ -313,22 +359,21 @@ body {
 
   .vision-text,
   .value-text {
-    list-style-position: outside;  /* マーカーを内側に */
-    margin: 0 auto;                /* 中央配置 */
-    padding-left: 1.4em;           /* 行頭を揃えるための余白 */
-    text-align: left;              /* テキスト中央寄せ */
-    display: inline-block;         /* 中央寄せのため */
+    list-style-position: outside;
+    margin: 0 auto;
+    padding-left: var(content-padding);
+    text-align: left;
     font-size: 0.95em;
   }
 
   /* Vision（・） */
   .vision-text {
-    list-style-type: disc;  /* ● を表示 */
+    list-style-type: disc; /* ● を表示 */
   }
 
   /* Value（番号） */
   .value-text {
-    list-style-type: decimal;  /* 1. 2. 3. を表示 */
+    list-style-type: decimal; /* 1. 2. 3. を表示 */
   }
 
   /* li の微調整 */
@@ -362,6 +407,14 @@ body {
   /* ===== Company Info（テーブルを縦並び化） ===== */
   .company-info {
     margin: 40px 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .company-info-inner {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .company-info table,
@@ -369,13 +422,11 @@ body {
   .company-info tr,
   .company-info th,
   .company-info td {
-  /*    display: block; */ /* 縦並び化 */
     width: 100%;
   }
 
   .company-info table {
     width: 100%;
-    margin: 0;
   }
 
   .company-info th,
@@ -387,7 +438,7 @@ body {
   }
 
   .company-info th {
-    white-space: nowrap;  /* 見出しを1行に */
+    white-space: nowrap; /* 見出しを1行に */
     width: 35%;
   }
 
