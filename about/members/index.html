@@ -7,123 +7,144 @@
     <title>メンバー紹介 | PITAAAN テクノロジー株式会社</title>
 
     <!-- リセットCSS（全体のリセット） -->
-    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/reset.css">
 
     <!-- グローバルCSS（共通デザイン） -->
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../../styles/global.css">
 
-    <!-- ページ固有のCSS（members専用） -->
+    <!-- ページ固有CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- フォント読み込み -->
+
     <!-- tajima -->
+
+    <script src="/components/header/script.js" defer></script>
+
   </head>
 
   <body>
 
-    <!-- 01. 役員 -->
-    <section id="executives">
-      <h2>役員</h2>
-      <div class="executive-list">
+    <header></header>
 
+    <!-- ▼▼ 追加：デザイン上部のタイトル部分 ▼▼ -->
+    <section class="page-header members-header">
+      <h1>Members</h1>
+      <p class="subtitle">メンバー紹介</p>
+    </section>
+
+    <!-- ===============================
+     01. 役員（3列固定・中央寄せ）
+================================= -->
+    <section id="executives" class="section-block">
+      <h2>役員</h2>
+
+      <div class="executive-list fixed-grid-3">
         <article class="executive">
-          <img src="exec1.jpg" alt="役員写真">
-          <h3>八重樫 蓮太郎</h3>
+          <img src="../../images/exec0.JPG" alt="八重樫 蓮太郎の写真">
           <p class="position">代表取締役社長</p>
-          <p><span class="label">出身地:</span> 北海道美唄市</p>
-          <p><span class="label">経歴:</span> 東京のIT企業で10年間のキャリアを積んだ後、地元美唄に戻り会社を創業
+          <h3>八重樫 蓮太郎</h3>
+          <p><span class="label">出身地</span> 北海道美唄市</p>
+          <p><span class="label">経歴</span>
+            東京のIT企業で10年間のキャリアを積んだ後、地元美唄に戻りPITAAANテクノロジー株式会社を創業
           </p>
-          <p><span class="label">メッセージ:</span> 地方から世界に通用するクリエイティブを発信したい</p>
-          <p><span class="label">趣味:</span> 美唄の自然散策、地域イベントの企画</p>
+          <p><span class="label">趣味</span> 美唄の自然散策、地域イベントの企画</p>
         </article>
 
         <article class="executive">
-          <img src="exec2.jpg" alt="役員写真">
-          <h3>ベック 大沼</h3>
+          <img src="../../images/exec2.jpg" alt="ベック 大沼の写真">
           <p class="position">代表取締役副社長</p>
-          <p><span class="label">出身地:</span> アメリカ合衆国</p>
-          <p><span class="label">経歴:</span> 海外での事業開発経験を活かし、会社の成長戦略を牽引</p>
-          <p><span class="label">専門分野:</span> 事業企画・海外展開</p>
-          <p><span class="label">趣味:</span> スノーボード、海外の建築見学</p>
+          <h3>ベック 大沼</h3>
+          <p><span class="label">出身地</span> アメリカ合衆国</p>
+          <p><span class="label">経歴</span>
+            海外での事業開発経験を活かし、PITAAANテクノロジー株式会社の成長戦略を牽引</p>
+          <p><span class="label">専門分野</span> 事業企画・海外展開</p>
+          <p><span class="label">趣味</span> スノーボード、海外の建築見学</p>
         </article>
 
       </div>
     </section>
 
-    <!-- 02. チームメンバー -->
-    <section id="team">
-      <h2>チームメンバー</h2>
-      <div class="team-list">
+
+
+    <!-- ===============================
+     02. メンバー（3列固定）
+================================= -->
+    <section id="team" class="section-block">
+      <h2>メンバー</h2>
+
+      <div class="team-list fixed-grid-3">
 
         <article class="member">
-          <img src="member1.jpg" alt="チームメンバー写真">
-          <h3>れんれん</h3>
+          <img src="../../images/member1.jpg" alt="千葉さんの写真">
           <p class="position">デザインリーダー</p>
-          <p><span class="label">出身地:</span> 北海道美唄市</p>
-          <p><span class="label">経歴:</span> 東京の制作会社で5年間デザイン経験を経て参画</p>
-          <p><span class="label">専門分野:</span> グラフィックデザイン、UI/UX</p>
-          <p><span class="label">携わった案件:</span> モバイルアプリ、音楽系Webサイト</p>
-          <p><span class="label">趣味:</span> 英国の街歩き</p>
+          <h3>Ｈ・チーバ</h3>
+          <p><span class="label">出身地</span> 北海道美唄市</p>
+          <p><span class="label">経歴</span> 東京の制作会社で5年間グラフィックデザインを経験<br>後、Ｕターン
+          </p>
+          <p><span class="label">専門分野</span> Webデザイン、グラフィックデザイン、UIとその体験</p>
+          <p><span class="label">趣味</span> 美唄の四季を撮影</p>
         </article>
 
         <article class="member">
-          <img src="member2.jpg" alt="チームメンバー写真">
-          <h3>****</h3>
+          <img src="../../images/member2.jpg" alt="久源さんの写真">
           <p class="position">開発リーダー</p>
-          <p><span class="label">出身地:</span> 北海道札幌市</p>
-          <p><span class="label">経歴:</span> フリーランスエンジニアを経て、参画</p>
-          <p><span class="label">専門分野:</span> フロントエンド・バックエンド・システム設計</p>
-          <p><span class="label">得意言語:</span> React, Node.js, Python, AWS</p>
-          <p><span class="label">趣味:</span> 最新技術キャッチアップ、北海道の温泉巡り</p>
+          <h3>ひさ★げん</h3>
+          <p><span class="label">出身地</span> 北海道札幌市</p>
+          <p><span class="label">経歴</span> フリーランスエンジニアを経て、PITAAANテクノロジー株式会社に参画
+          </p>
+          <p><span class="label">専門分野</span> フロントエンド・バックエンド開発、システム設計</p>
+          <p><span class="label">趣味</span> 最新技術のキャッチアップ</p>
         </article>
 
         <article class="member">
-          <img src="member3.jpg" alt="チームメンバー写真">
-          <h3>****</h3>
+          <img src="../../images/member3.jpg" alt="木村さんの写真">
           <p class="position">営業リーダー</p>
-          <p><span class="label">出身地:</span> 北海道函館市</p>
-          <p><span class="label">経歴:</span> 大手企業での営業を経て、参画</p>
-          <p><span class="label">専門分野:</span> 営業戦略、プロジェクト管理</p>
-          <p><span class="label">実績:</span> 6年間の新規顧客開拓、成約率90％</p>
-          <p><span class="label">趣味:</span> 地域のお祭り参加、ゴルフ</p>
+          <h3>ふーみん</h3>
+          <p><span class="label">出身地</span> 北海道函館市</p>
+          <p><span class="label">経歴</span> 地域密着型営業で数々の案件を成功に導く</p>
+          <p><span class="label">専門分野</span> 顧客開拓、提案営業、プロジェクト管理</p>
+          <p><span class="label">趣味</span> 地域のお祭り参加、ゴルフ</p>
         </article>
 
         <article class="member">
-          <img src="member4.jpg" alt="チームメンバー写真">
-          <h3>****</h3>
+          <img src="../../images/member4.jpg" alt="吉田さんの写真">
           <p class="position">広報リーダー</p>
-          <p><span class="label">出身地:</span> 北海道札幌市</p>
-          <p><span class="label">経歴:</span> メディア業界出身。SNS運用・広報戦略を担当</p>
-          <p><span class="label">専門分野:</span> PR戦略、SNS運用</p>
-          <p><span class="label">趣味:</span> ブログ作成、発信イベント企画</p>
+          <h3>吉田miku</h3>
+          <p><span class="label">出身地</span> 北海道帯広市</p>
+          <p><span class="label">経歴</span>
+            メディア業界出身、PITAAANテクノロジー株式会社のブランド価値向上を担当</p>
+          <p><span class="label">専門分野</span> PR戦略、コンテンツマーケティング、SNS運用</p>
+          <p><span class="label">趣味</span> ブログ執筆、美唄グルメ探索</p>
         </article>
 
         <article class="member">
-          <img src="member5.jpg" alt="チームメンバー写真">
-          <h3>たじまる</h3>
+          <img src="../../images/member5.jpg" alt="田島の写真">
           <p class="position">フォトグラファー</p>
-          <p><span class="label">出身地:</span> 北海道美唄市</p>
-          <p><span class="label">経歴:</span> カメラマンとして活動後、参画</p>
-          <p><span class="label">専門分野:</span> 撮影、編集、ポートレート</p>
-          <p><span class="label">携わった案件:</span> 音楽イベント、広告撮影</p>
-          <p><span class="label">趣味:</span> そば打ち</p>
+          <h3>たじまる</h3>
+          <p><span class="label">出身地</span> 北海道美唄市</p>
+          <p><span class="label">経歴</span>
+            地元愛溢れるフォトグラファーとして活動、PITAAANテクノロジー株式会社の撮影全般を担当</p>
+          <p><span class="label">専門分野</span> 商品撮影、ポートレート、風景写真</p>
+          <p><span class="label">趣味</span> そば打ち</p>
         </article>
 
         <article class="member">
-          <img src="member6.jpg" alt="チームメンバー写真">
-          <h3>Take1</h3>
+          <img src="../../images/member6.jpg" alt="武市さんの写真">
           <p class="position">3D・CADリーダー</p>
-          <p><span class="label">出身地:</span> 北海道美唄市</p>
-          <p><span class="label">経歴:</span> 建築設計分野での3D業務を経て参画</p>
-          <p><span class="label">専門分野:</span> 3D設計、CAD設計、3Dプリンティング</p>
-          <p><span class="label">携わった案件:</span> 住宅模型設計、カフェインテリア設計</p>
-          <p><span class="label">趣味:</span> 美唄の温泉探索</p>
+          <h3>Take1</h3>
+          <p><span class="label">出身地</span> 北海道美唄市</p>
+          <p><span class="label">経歴</span>
+            建築設計事務所で経験を積み、3D技術のスペシャリストとしてPITAAANテクノロジー株式会社に参画</p>
+          <p><span class="label">専門分野</span> 3D建築模型、CAD設計、3Dプリント</p>
+          <p><span class="label">趣味</span> 美唄の歴史探索</p>
         </article>
 
       </div>
     </section>
 
     <!-- 03. チームの特徴 -->
-    <section id="features">
+    <section id="features" class="section-block">
       <h2>チームの特徴</h2>
       <div class="feature-list">
         <div class="feature">
@@ -146,7 +167,7 @@
     </section>
 
     <!-- CTA -->
-    <section id="cta">
+    <section id="cta" class="section-block">
       <p>私たちと一緒に、美唄から新しいクリエイティブを発信しませんか？</p>
     </section>
 
