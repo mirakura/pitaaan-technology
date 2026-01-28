@@ -56,8 +56,9 @@ body {
 }
 
 .service-item img {
-  width: 360px;
-  height: 210px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 210;
   object-fit: cover;
   background: #ccc;
 }
