@@ -194,16 +194,3 @@ ul {
   cursor: pointer;
 }
 
-/* モバイルでガターを小さくする例 */
-@media (max-width: 600px) {
-  .inner {
-    padding: 0 16px;
-  }
-}
-
-@media (max-width: 900px) {
-  .service-item {
-    flex: 0 1 100%;
-    width: 100%;
-  }
-}
