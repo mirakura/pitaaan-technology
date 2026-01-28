@@ -28,5 +28,12 @@ fetch("/components/header/index.html")
     menuButton.addEventListener("click", () => {
       menuButton.classList.toggle("active");
       nav.classList.toggle("active");
+      
+      // メニュー開閉時にbodyのスクロールを制御
+      if (nav.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
     });
   });

@@ -154,6 +154,7 @@ header .nav-item .contact-button:hover {
     display: block;
     height: calc(100vh - 48px);
     padding: 20px 8px;
+    overflow-y: auto;
   }
 
   header .nav-list {
