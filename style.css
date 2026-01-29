@@ -5,6 +5,12 @@ body {
   background: #fff;
 }
 
+header,
+footer {
+  background-color: aqua;
+  height: 90px;
+}
+
 /* 共通セクション */
 .section {
   text-align: center;
@@ -65,7 +71,7 @@ button {
   text-align: center; /* 文字位置   */
   cursor: pointer; /* カーソル   */
   padding: 12px 12px; /* 余白       */
-  background: #ffffff; /* 背景色     */
+  /* background: #ffffff; 背景色     */
   color: #333; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
   transition: 0.3s; /* なめらか変化 */
@@ -124,7 +130,8 @@ button {
   height: 500px;
   overflow-y: visible;
   position: relative;
-  padding: 25px 0;
+  /* position: absolute; */
+  /* left: 50%; */
 }
 
 .swiper-wrapper {
