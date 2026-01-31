@@ -37,9 +37,10 @@ body {
 }
 
 .section-title {
+  max-width: 1152px;
   font-size: 32px;
   font-weight: 700;
-  margin: 30px 144px 22px 144px;
+  margin: 30px auto 22px;
 }
 
 .service-grid {
