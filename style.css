@@ -5,18 +5,23 @@ body {
   background: #fff;
 }
 
-header,
+header {
+  /* background-color: aqua; */
+  height: 95px;
+}
+
 footer {
-  background-color: aqua;
-  height: 90px;
+  background-color: #333333;
+  height: 294px;
 }
 
 /* 共通セクション */
 .section {
   text-align: center;
   padding: 80px 20px;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
 }
+
 .section-title {
   font-size: 48px;
   margin-bottom: 8px;
@@ -30,6 +35,8 @@ footer {
 
 .icon {
   font-size: 2.5rem;
+  height: 20px;
+  width: 20px;
 }
 
 .arrow {
@@ -89,14 +96,14 @@ button {
 .btn-large {
   display: inline-block;
   width: 720px; /* 横幅       */
-  height: 160px; /* 高さ       */
+  height: 155px; /* 高さ       */
   border-radius: 80px; /* 角丸       */
 
-  font-size: 18pt; /* 文字サイズ */
+  font-size: 19pt; /* 文字サイズ */
   text-align: center; /* 文字位置   */
   cursor: pointer; /* カーソル   */
   padding: 60px 40px; /* 余白       */
-  background: #333; /* 背景色     */
+  background: #333333; /* 背景色     */
   color: #ffffff; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
   transition: 0.3s; /* なめらか変化 */
@@ -104,7 +111,7 @@ button {
 }
 
 .btn-large:hover {
-  background: #ffffff; /* 背景色     */
+  background: #e0d9d9; /* 背景色     */
   color: #333; /* 文字色     */
   box-shadow: none; /* 影の設定   */
   border: 0.5px solid #000066; /* 枠の指定 */
@@ -208,6 +215,7 @@ button {
 .slide-caption h3 {
   font-size: 20px;
   margin-bottom: 4px;
+  font-weight: 700;
 }
 
 .slide-caption p {
