@@ -1,348 +1,197 @@
-/* ================================
-   ベース
-================================ */
-* {
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+
+.inner {
+  max-width: 1152px; /* コンテンツの最大幅 */
+  width: 100%;
+  margin: 0 auto; /* 中央寄せ */
+  padding: 0; /* 両端のガター */
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* 固定幅ラッパー（1440px） */
-.page {
-  display: block;
-}
-
-.section-box {
-  width: 1440px;
-  margin: 48px auto;
-  padding: 48px 64px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-/* 共通見出し */
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #222;
+/* main title */
+.main-visual {
+  padding: 137px 0 158px 0;
   text-align: center;
-  margin: 0 0 28px 0;
 }
 
-/* ================================
-   Services
-================================ */
-.services-container {
-  display: flex;
-  gap: 24px;
-  margin-top: 10px;
+.main-visual h1 {
+  font-size: 79px;
+  font-weight: 400;
 }
 
-.service-box {
-  flex: 1;
-  background: #fbfbfb;
-  border: 1px solid #e6e6e6;
-  padding: 14px;
-  /* 28px -> 36px: 内側の余白を広げる */
-  border-radius: 6px;
-  min-height: 540px;
-  /* カードの最低高さを確保（調整可） */
-  display: flex;
-  flex-direction: column;
-}
-
-/* カード内を縦方向の flex コンテナにして下揃えを可能にする */
-
-
-.service-box h3 {
-  font-size: 18px;
-  margin: 0 0 12px 0;
-  line-height: 1.1;
-}
-
-/* サービスタイトル下の区切り線 */
-.service-box h3 {
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.service-box h3::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #e0e0e0;
-  /* 薄いグレー */
-  margin: 8px auto 0;
-}
-
-.service-box .service-name {
-  display: block;
-  font-weight: 600;
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-.service-box .lead {
-  color: #555;
-  margin-bottom: 16px;
-}
-
-.service-box h4 {
-  font-size: 15px;
-  margin: 0 0 8px 0;
-  /* 上の余白は auto にして下揃え */
-  display: block;
-  padding-bottom: 6px;
-  margin-top: auto;
-  /* この見出し以降をカード下部に揃える */
-}
-
-/* h4（特徴）の上に中央揃えの区切り線を追加 */
-.service-box h4 {
-  position: relative;
-}
-
-.service-box h4::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #e0e0e0;
-  margin: 0 auto 8px;
-}
-
-.service-box ul {
-  padding-left: 18px;
-  margin: 0;
-  color: #555;
-}
-
-.service-box li {
-  margin-bottom: 8px;
-  font-size: 16px;
-}
-
-/* 14px -> 16px に変更 */
-
-/* ================================
-   Portfolio
-================================ */
-.sub-title h3 {
-  height: 34px;
+.main-visual p {
   font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  background-color: #ddd;
-  margin-bottom: 28px;
-  padding-left: 8px;
-  border-left: 6px solid #333;
+  font-weight: 500;
+  margin-top: -14px;
 }
 
-.portfolio-category {
-  margin-bottom: 36px;
+/* サービス概要 */
+.services.section {
+  padding: 130px 0 160px 0;
+  background-color: #f5f5f5;
 }
 
-.portfolio-category h4 {
-  font-size: 18px;
-  background-color: #eee;
-  margin: 0 0 18px 0;
+.section-title {
+  max-width: 1152px;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px auto 22px;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center; /* 中央寄せして3つ並べる */
+}
+
+/* 各サービスを制作実績カードと同じ幅に固定（360px）して横並びにする */
+.service-item {
+  flex: 0 0 360px; /* 固定幅 */
+  box-sizing: border-box;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 210;
+  object-fit: cover;
+  background: #ccc;
+}
+
+.service-item h3 {
+  margin: 16px 0 13px 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+ul {
+  list-style: disc;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+.service-item ul {
+  margin-top: 8px;
+  padding-left: 25px;
+  font-size: 16px;
+  border-top: 0.5px solid #333; /* 従前の p+ul::before を置換 */
+  padding-top: 7px;
+}
+
+/* 制作実績 */
+.portfolio.section {
+  padding: 130px 0 126px 0;
+}
+
+.category {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 24px 0px 25px 0px;
+  background-color: #f5f5f5;
   padding-left: 8px;
-  border-left: 4px solid #333;
+}
+
+/* 当初は40pxだったが、調整の結果74pxに落ち着いた */
+.mt40 {
+  margin-top: 74px;
 }
 
 .portfolio-grid {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 9px 36px;
 }
 
-.portfolio-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  background: #fbfbfb;
-  border: 1px solid #e6e6e6;
-  padding: 14px;
-  width: calc(50% - 12px);
-  /* 2列レイアウト */
-  border-radius: 6px;
-}
-
-.thumb {
-  width: 240px;
-  height: 160px;
+.card img {
+  width: 360px;
+  height: 210px;
+  margin: 0 0px 22px;
   object-fit: cover;
-  border: 1px dashed #bbb;
-  background: #f2f2f2;
-  flex-shrink: 0;
+  background: #ccc;
 }
 
-.portfolio-text h5 {
+.card .title {
+  font-size: 19px;
+  font-weight: 400;
+  margin: -2px 0 13px 2px;
+}
+
+.card .sub {
   font-size: 16px;
-  margin: 0 0 6px 0;
-  font-weight: 700;
+  color: #333;
+  margin: -1px 16px 32px 2px;
 }
 
-.portfolio-text p {
-  margin: 0;
-  color: #666;
-  font-size: 14px;
+/* 制作の流れ */
+.flow.section {
+  padding: 130px 0 160px 0;
+  background-color: #f5f5f5;
 }
-
-.portfolio-more-note {
-  margin-top: 18px;
-  color: #777;
-  font-size: 13px;
-  text-align: center;
-}
-
-/* ================================
-   Flow
-================================ */
 .flow-steps {
   display: flex;
-  align-items: center;
-  gap: 18px;
   justify-content: space-between;
-  margin-bottom: 28px;
-  flex-wrap: nowrap;
+  text-align: center;
 }
 
-.step {
-  width: 180px;
-  text-align: center;
+.flow-item {
+  width: 200px;
 }
 
 .circle {
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  border: 2px solid #333;
-  display: inline-flex;
-  align-items: center;
+  background: #cc4100; /* 円の内部をオレンジに */
+  color: #ffffff; /* 文字を白に */
+  display: flex;
   justify-content: center;
-  font-weight: 700;
-  margin-bottom: 10px;
+  align-items: center;
+  font-size: 32px;
+  margin: 0px auto 0;
+  font-weight: 400;
 }
 
-.step-title {
-  font-weight: 700;
-  margin-bottom: 6px;
+.flow-item h4 {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
-.step-text {
-  color: #666;
-  font-size: 13px;
-  margin: 0;
-  font-style: italic;
+.flow-item p {
+  font-size: 12px;
+  margin-top: -1px;
 }
 
-.arrow {
-  font-size: 1.5rem;
-  color: #555;
+/* 料金体系 */
+.price.section {
+  padding: 130px 0 154px 0;
 }
-
-
-/* ================================
-   Pricing
-================================ */
-.pricing {
-  margin-top: 10px;
-  text-align: center;
-  padding: 28px;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 6px;
-}
-
-.pricing .section-title.small {
-  font-size: 20px;
-  margin-bottom: 18px;
-}
-
 .price-text {
-  font-size: 15px;
-  margin-bottom: 8px;
-  color: #444;
+  font-size: 16px;
+  margin: 0px 14px 30px 0px;
 }
 
-.price-sub {
-  color: #666;
-  font-size: 13px;
-  margin-bottom: 18px;
-  font-style: italic;
-}
-
-.contact-btn {
-  border: 1px solid #333;
-  background: #fff;
-  padding: 12px 28px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-.contact-btn:hover {
+.price-btn {
+  width: 720px;
+  height: 155px;
   background: #333;
   color: #fff;
+  border-radius: 80px;
+  margin: -4px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16.9px;
+  gap: 20px;
+  cursor: pointer;
 }
 
-/* ================================
-   レスポンシブ（簡易）
-================================ */
-@media (max-width: 1200px) {
-  .section-box {
-    width: 100%;
-    margin: 20px 12px;
-    padding: 28px;
-  }
-
-  .flow-steps {
-    overflow-x: auto;
-    gap: 12px;
-    padding-bottom: 8px;
-  }
-
-  .portfolio-item {
-    width: 100%;
-  }
-
-  .services-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .service-box h4,
-  .portfolio-category h4 {
-    font-size: 16px;
-  }
-
-  .service-box h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .service-box {
-    min-height: auto;
-    /* モバイル時は高さ固定を解除 */
-    padding: 28px;
-    /* 元の余白に戻す */
-  }
-}
