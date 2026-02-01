@@ -195,3 +195,18 @@ ul {
   cursor: pointer;
 }
 
+/* 小画面調整 */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+    margin: 24px auto 16px;
+  }
+
+  .inner {
+    padding: 0 16px;
+  }
+  .service-item {
+    flex: 0 1 100%;
+    width: 100%;
+  }
+}
