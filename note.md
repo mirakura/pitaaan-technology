@@ -42,3 +42,75 @@
 ## [a]アンカーをボタンにする
 
 - https://webparts.cman.jp/button/a/
+
+## レスポンシブ対応
+
+/_ ===========================
+📱 スマホ対応
+=========================== _/
+@media screen and (max-width: 768px) {
+/_ 全体調整 _/
+body {
+font-size: 14px;
+}
+
+/_ セクション共通 _/
+.section {
+padding: 40px 10px;
+}
+
+.section h2 {
+font-size: 1.3rem;
+margin-bottom: 20px;
+}
+
+/_ 会社概要 _/
+.about-container {
+/_ background-color: aqua; _/
+flex-direction: column;
+align-items: center;
+}
+
+.about-photo {
+width: 90%;
+height: 180px;
+}
+
+.about-text {
+width: 90%;
+text-align: center;
+}
+
+/_ 事業内容 _/
+.service-container {
+flex-direction: column;
+align-items: center;
+}
+
+.service-item {
+width: 90%;
+}
+
+/_ お問い合わせ _/
+.contact p {
+margin: 0 0 10px;
+}
+
+.contact-btn {
+width: 90%;
+}
+}
+
+/_ スマホ時のメニュー非表示・開閉動作 _/
+@media screen and (max-width: 768px) {
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+}

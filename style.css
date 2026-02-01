@@ -137,14 +137,16 @@ button {
   height: 500px;
   overflow-y: visible;
   position: relative;
-  /* position: absolute; */
-  /* left: 50%; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-wrapper {
   /* background-color: seagreen; */
   height: 95%;
-  width: 80%;
+  width: 100%;
 }
 
 .swiper-slide {
@@ -224,11 +226,11 @@ button {
   margin-bottom: 5px;
 }
 
-.swiper-controls-bottom {
+.swiper-controls-button {
   position: absolute;
-  bottom: 20px;
+  bottom: 15%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%);
   z-index: 10;
 
   display: flex;
@@ -242,8 +244,8 @@ button {
   display: none;
 }
 
-.swiper-controls-bottom .swiper-button-next,
-.swiper-controls-bottom .swiper-button-prev,
+.swiper-controls-button .swiper-button-next,
+.swiper-controls-button .swiper-button-prev,
 .swiper-button-pause {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -261,8 +263,8 @@ button {
   margin-top: initial;
 }
 
-.swiper-controls-bottom .swiper-button-next:hover,
-.swiper-controls-bottom .swiper-button-prev:hover,
+.swiper-controls-button .swiper-button-next:hover,
+.swiper-controls-button .swiper-button-prev:hover,
 .swiper-button-pause:hover {
   background-color: #0044cc;
   color: white;
@@ -346,73 +348,3 @@ button {
 }
 
 /* お問い合わせ */
-
-/* ===========================
-   📱 スマホ対応
-   =========================== */
-@media screen and (max-width: 768px) {
-  /* 全体調整 */
-  body {
-    font-size: 14px;
-  }
-
-  /* セクション共通 */
-  .section {
-    padding: 40px 10px;
-  }
-
-  .section h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-
-  /* 会社概要 */
-  .about-container {
-    /* background-color: aqua; */
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-photo {
-    width: 90%;
-    height: 180px;
-  }
-
-  .about-text {
-    width: 90%;
-    text-align: center;
-  }
-
-  /* 事業内容 */
-  .service-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-item {
-    width: 90%;
-  }
-
-  /* お問い合わせ */
-  .contact p {
-    margin: 0 0 10px;
-  }
-
-  .contact-btn {
-    width: 90%;
-  }
-}
-
-/* スマホ時のメニュー非表示・開閉動作 */
-@media screen and (max-width: 768px) {
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
