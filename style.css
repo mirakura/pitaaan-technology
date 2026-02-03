@@ -5,38 +5,38 @@ body {
   background: #fff;
 }
 
-header {
-  /* background-color: aqua; */
-  height: 95px;
-}
-
-footer {
-  background-color: #333333;
-  height: 294px;
-}
-
 /* 共通セクション */
 .section {
   text-align: center;
-  padding: 80px 20px;
+  padding: 160px 20px;
+  /* height: 888px; */
   /* border-bottom: 1px solid #ccc; */
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 77px;
   margin-bottom: 8px;
   font-weight: 500;
 }
+
 .section-subtitle {
-  font-size: 14px;
+  font-size: 24px;
   color: #666;
   margin-bottom: 40px;
 }
 
 .icon {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   height: 20px;
   width: 20px;
+  margin: 10px;
+}
+
+.icon-img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin: 0px 10px;
 }
 
 .arrow {
@@ -77,7 +77,7 @@ button {
   font-size: 15pt; /* 文字サイズ */
   text-align: center; /* 文字位置   */
   cursor: pointer; /* カーソル   */
-  padding: 12px 12px; /* 余白       */
+  padding: 13px 13px 13px 25px; /* 余白       */
   /* background: #ffffff; 背景色     */
   color: #333; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
@@ -99,10 +99,10 @@ button {
   height: 155px; /* 高さ       */
   border-radius: 80px; /* 角丸       */
 
-  font-size: 19pt; /* 文字サイズ */
+  font-size: 17px; /* 文字サイズ */
   text-align: center; /* 文字位置   */
   cursor: pointer; /* カーソル   */
-  padding: 60px 40px; /* 余白       */
+  padding: 65px 40px; /* 余白       */
   background: #333333; /* 背景色     */
   color: #ffffff; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
@@ -118,12 +118,21 @@ button {
 }
 
 #business {
-  background: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  /* background: -webkit-linear-gradient(top, #ffffff, #f5f5f5); */
+  height: 1240px;
+  background-color: #f5f5f5;
+  padding: 159px 160px;
 }
 
-#about,
+#about {
+  background-color: #ffffff;
+  height: 888px;
+  padding: 160px 160px;
+}
+
 #contact {
   background-color: #ffffff;
+  height: 643px;
 }
 
 #service {
@@ -134,7 +143,7 @@ button {
 /* Swiper 横並びスライダー用 */
 .swiper-container {
   max-width: 1152px;
-  height: 500px;
+  height: 640px;
   overflow-y: visible;
   position: relative;
   margin: 0 auto;
