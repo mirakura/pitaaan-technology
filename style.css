@@ -357,3 +357,61 @@ button {
 }
 
 /* お問い合わせ */
+
+/*
+ ===========================
+📱 スマホ対応
+  ===========================
+  */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #business,
+  #about {
+    background: #0044cc;
+    padding: 80px 20px;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .btn-large {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    font-size: 15px;
+  }
+
+  .btn-medium {
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo,
+  .about-text {
+    width: 100%;
+    max-width: none;
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: none;
+  }
+}
