@@ -296,9 +296,11 @@ body {
   }
 
   /* ===== Intro ===== */
+  .intro {
+    padding: 0;
+  }
+
   .intro-body {
-    padding-left: 16px;
-    padding-right: 16px;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -306,14 +308,14 @@ body {
 
   .intro-img {
     width: 100%;
-    max-width: 280px;
-    padding: 20px 0;
+    height: 80%;
   }
 
   .president-text {
     margin-top: 10px;
     max-width: 100%;
     padding-left: 8px;
+    font-size: large;
   }
 
   .president-name {
@@ -351,7 +353,7 @@ body {
 
   .text-block {
     width: 100%;
-    font-size: 20px;
+    font-size: 20x;
   }
 
   /* ====================================
@@ -362,6 +364,7 @@ body {
 
   .mission-text {
     text-align: left;
+    font-size: 24px;
   }
 
   .mission-text br {
@@ -381,12 +384,14 @@ body {
   .vision-text {
     list-style-type: disc;
     /* ● を表示 */
+    font-size: 18px;
   }
 
   /* Value（番号） */
   .value-text {
     list-style-type: decimal;
     /* 1. 2. 3. を表示 */
+    font-size: 18px;
   }
 
   /* li の微調整 */
@@ -413,11 +418,11 @@ body {
   }
 
   .history .date {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .history .desc {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   /* ===== Company Info（テーブルを縦並び化） ===== */
@@ -456,18 +461,18 @@ body {
     display: table-cell;
     /* 横並びに戻す */
     padding: 8px 6px;
-    font-size: 20px;
+    font-size: 16px;
     vertical-align: top;
   }
 
   .company-info th {
     white-space: nowrap;
     /* 見出しを1行に */
-    width: 35%;
+    width: 40%;
   }
 
   .company-info td {
-    width: 65%;
+    width: 60%;
   }
 
   /* ===== Google Map ===== */
