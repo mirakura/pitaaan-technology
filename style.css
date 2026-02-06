@@ -156,6 +156,7 @@ button {
   /* background-color: seagreen; */
   height: 95%;
   width: 100%;
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -165,6 +166,17 @@ button {
   justify-content: center;
   align-items: center;
   /* 必要に応じてpaddingやborderを調整 */
+  transition: opacity 0.8s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+.swiper-slide-active {
+  opacity: 1;
+  /* transform: scale(1.05); */
+  /* transition: transform 0.3s; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .swiper-slide img {
@@ -177,12 +189,6 @@ button {
 }
 
 /* ↓↓ スライドキャプションのフェードインアニメーション ↓↓ */
-
-.swiper-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .slide-caption {
   position: absolute;
