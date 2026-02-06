@@ -282,11 +282,13 @@ body {
 
   .members-header h1 {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 39px;
   }
 
   .members-header .subtitle {
     font-size: 16px;
+    line-height: 23px;
+
   }
 
   /* =============================
@@ -295,7 +297,6 @@ body {
 
   .section-block h2 {
     padding: 0 0 24px;
-    font-size: 24px;
   }
 
   /* =============================
@@ -342,7 +343,7 @@ body {
   ============================= */
 
   #cta {
-    margin: 80px 16px;
+    margin: 24px 16px 80px;
     text-align: center;
   }
 
