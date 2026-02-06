@@ -245,3 +245,115 @@ body {
   font-weight: 700;
   line-height: 23px;
 }
+
+/* =================================
+   レスポンシブ（スマホ）
+================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* =============================
+     共通余白
+  ============================= */
+
+  .section-block {
+    padding: 80px 16px;
+  }
+
+  #executives {
+    padding-top: 80px;
+  }
+
+  #team {
+    padding-bottom: 80px;
+  }
+
+  #features {
+    padding-top: 80px;
+    padding-right: 0;
+  }
+
+  #features.section-block {
+    padding-bottom: 24px;
+  }
+
+  #cta {
+    margin-top: 24px;
+  }
+
+  /* =============================
+     ページタイトル
+  ============================= */
+
+  .members-header {
+    padding: 80px 16px;
+  }
+
+  .members-header h1 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .members-header .subtitle {
+    font-size: 16px;
+    line-height: 23px;
+
+  }
+
+  /* =============================
+     見出し
+  ============================= */
+
+  .section-block h2 {
+    padding: 0 0 24px;
+  }
+
+  /* =============================
+     グリッド → 1列
+  ============================= */
+
+  .fixed-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .executive,
+  .member {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  /* =============================
+     画像サイズの変更
+  ============================= */
+
+  .executive img,
+  .member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* =============================
+     チームの特徴（2×2）
+  ============================= */
+
+  #features .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .feature {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  /* =============================
+     CTA
+  ============================= */
+
+  #cta {
+    margin: 24px 16px 80px;
+    text-align: center;
+  }
+
+}
