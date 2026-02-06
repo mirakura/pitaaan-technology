@@ -270,6 +270,15 @@ body {
 
   #features {
     padding-top: 80px;
+    padding-right: 0;
+  }
+
+  #features.section-block {
+    padding-bottom: 24px;
+  }
+
+  #cta {
+    margin-top: 24px;
   }
 
   /* =============================
