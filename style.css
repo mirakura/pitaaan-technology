@@ -368,6 +368,13 @@ button {
   body {
     font-size: 14px;
   }
+  .section {
+    padding: 40px 10px;
+  }
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 
   #business,
   #about {
