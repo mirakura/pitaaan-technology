@@ -372,8 +372,16 @@ button {
 
   .section {
     width: 100%;
-    padding: 40px 10px;
+    padding: 0px 0px;
   }
+
+  .section-title {
+    font-size: 32px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+
   .section h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -423,5 +431,10 @@ button {
   .service-item {
     width: 100%;
     max-width: none;
+  }
+  /* スライダー調整 */
+  .swiper-container {
+    width: 100%;
+    height: auto;
   }
 }
