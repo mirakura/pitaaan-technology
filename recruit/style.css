@@ -200,3 +200,84 @@ section.page-title {
 .flow-list li {
   margin-left: 20px;
 }
+
+/* =========================
+   スマホ対応（768pxはipadを縦にしたときのサイズ）
+========================= */
+@media screen and (max-width: 768px) {
+
+  /* セクション（共通） */
+  section {
+    padding: 80px 0;
+  }
+
+  /* ページタイトルのスタイル（仮） */
+  section.page-title {
+    padding: 80px 0;
+  }
+
+  .english {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .japanese {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  /* セクションタイトル(共通） */
+  .section-title {
+    max-width: 358px;
+    margin: 0 auto 24px;
+  }
+
+  .container {
+    max-width: 358px;
+    flex-direction: column;
+  }
+
+  /* セクション 02 の各種設定 */
+  .job .container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 8px;
+    padding: 8px 0;
+  }
+
+  .job-list {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* セクション 03 の各種設定 */
+  .flow .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .flow-box:first-child :is(.flow-text, .flow-list) {
+    width: 282px;
+    margin: 0 auto;
+  }
+
+  .flow-box:nth-child(2) .flow-list {
+    width: 186px;
+    margin: 0 auto;
+  }
+
+  .flow-box:nth-child(3) .flow-text {
+    text-align: center;
+  }
+
+  .flow-list li {
+    margin-left: 18px;
+  }
+
+}
