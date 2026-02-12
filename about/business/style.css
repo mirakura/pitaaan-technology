@@ -135,6 +135,7 @@ ul {
   padding: 130px 0 160px 0;
   background-color: #f5f5f5;
 }
+
 .flow-steps {
   display: flex;
   justify-content: space-between;
@@ -175,6 +176,7 @@ ul {
 .price.section {
   padding: 130px 0 154px 0;
 }
+
 .price-text {
   font-size: 16px;
   margin: 0px 14px 30px 0px;
@@ -196,14 +198,32 @@ ul {
 }
 
 /* 小画面調整 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .main-visual {
+    padding: 74px 0 80px 0;
+  }
+
+  .main-visual h1 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .services.section {
+    padding: 50px 0 50px 0;
+  }
   .section-title {
     font-size: 24px;
+    font-weight: 700;
     margin: 24px auto 16px;
+    padding-left: 16px;
   }
 
   .inner {
     padding: 0 16px;
+  }
+
+  .portfolio.section {
+    padding: 50px 0 50px 0;
   }
 
   .service-item {
@@ -211,8 +231,14 @@ ul {
     width: 100%;
   }
 
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 24px;
+  }
+
   .card {
-    flex: 1 0 300px;
+    flex: 1 0 120px;
     width: 100%;
   }
 
@@ -224,10 +250,34 @@ ul {
     background: #ccc;
   }
 
+  .card .sub {
+    font-size: 16px;
+    color: #333;
+    margin: -1px 2px 32px 2px;
+  }
+
+  .flow.section {
+    padding: 50px 0 50px 0;
+  }
+
   .flow-steps {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
+  }
+
+  .price.section {
+    padding: 50px 0 50px 0;
+  }
+
+  .price-text {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .price-btn {
+    width: 390px;
+    height: 155px;
+    margin: -4px 0px 0px -16px;
   }
 }
