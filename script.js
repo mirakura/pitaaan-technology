@@ -4,10 +4,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const mySwiper = new Swiper(".swiper-container", {
-    loop: true,
-    spacebetween: 10,
     slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 10,
     speed: 800,
+    loop: true,
 
     // centeredSlides: true,
     // slidesPerView: "auto",
