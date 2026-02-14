@@ -374,37 +374,29 @@ button {
 
   .section {
     width: 100%;
-    padding: 0px 0px;
+    padding: 0px;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 36px;
+    margin-bottom: 0px;
   }
+
   .section-subtitle {
-    font-size: 16px;
+    font-size: 23px;
+    margin-bottom: 20px;
   }
 
   .section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 39px;
   }
 
   #business,
   #about {
     background: #0044cc;
-    padding: 80px 20px;
+    padding: 80px 0px;
     height: auto;
   }
-
-  .section-title {
-    font-size: 36px;
-  }
-
-  .section-subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
   .btn-large {
     width: 100%;
     height: auto;
@@ -438,5 +430,8 @@ button {
   .swiper-container {
     width: 100%;
     height: auto;
+  }
+  .slide-caption {
+    width: 90%;
   }
 }
