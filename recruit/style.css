@@ -120,7 +120,7 @@ section.page-title {
 .job-item {
   display: grid;
   grid-template-columns: 100px 1fr;
-  column-gap: clamp(16px, 2vw, 28px);
+  column-gap: 28px;
   border-bottom: 1px solid #333333;
   padding: 20px 0;
 }
@@ -142,9 +142,13 @@ section.page-title {
 }
 
 .job-list {
-  list-style-type: none;
+  list-style-type: "・";
   font-size: 16px;
   line-height: 1.6;
+}
+
+.job-list li {
+  margin-left: 20px;
 }
 
 /* セクション 03 の各種設定 */
@@ -250,10 +254,8 @@ section.page-title {
     padding: 8px 0;
   }
 
-  .job-list {
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 1.6;
+  .job-list li {
+    margin-left: 18px;
   }
 
   /* セクション 03 の各種設定 */
