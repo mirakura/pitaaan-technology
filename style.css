@@ -81,13 +81,13 @@ button {
   /* background: #ffffff; 背景色     */
   color: #333; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
-  transition: 0.3s; /* なめらか変化 */
+  transition: background-color 0.3s ease; /* なめらか変化 */
   /* box-shadow: 6px 6px 3px #666666; 影の設定 */
   border: 0.5px solid #333; /* 枠の指定 */
 }
 
 .btn-medium:hover {
-  background: #333; /* 背景色     */
+  background: #cc4100; /* 背景色     */
   color: #ffffff; /* 文字色     */
   box-shadow: none; /* 影の設定   */
   border: 1px solid #000066; /* 枠の指定 */
@@ -106,13 +106,13 @@ button {
   background: #333333; /* 背景色     */
   color: #ffffff; /* 文字色     */
   line-height: 1em; /* 1行の高さ  */
-  transition: 0.3s; /* なめらか変化 */
+  transition: background-color 0.3s ease; /* なめらか変化 */
   border: 1px solid #333; /* 枠の指定 */
 }
 
 .btn-large:hover {
-  background: #e0d9d9; /* 背景色     */
-  color: #333; /* 文字色     */
+  background: #cc4100;
+  /* color: #333; 文字色     */
   box-shadow: none; /* 影の設定   */
   border: 0.5px solid #000066; /* 枠の指定 */
 }
