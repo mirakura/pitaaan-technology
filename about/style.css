@@ -28,9 +28,9 @@ body {
 .theme .value,
 .company-info table {
   max-width: var(--content-width);
-  margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  padding: var(--content-padding);
 }
 
 /* ================
@@ -186,8 +186,7 @@ body {
   position: relative;
   list-style: none;
   max-width: var(--content-width);
-  margin-left: var(--content-padding);
-  margin-right: 0;
+  padding: var(--content-padding);
   box-sizing: border-box;
 }
 
@@ -201,7 +200,6 @@ body {
 .timeline {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
   max-width: var(--content-width);
   position: relative;
 }
@@ -472,6 +470,7 @@ body {
 
   .history ul {
     margin-left: 0;
+    padding: 0;
   }
 
   .timeline {
