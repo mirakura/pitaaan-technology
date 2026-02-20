@@ -193,7 +193,6 @@ button {
 
 .slide-caption {
   position: absolute;
-  color: white;
   /* background: rgba(0, 0, 0, 0.2); */
   opacity: 0; /* 初期状態では非表示 */
   text-align: left;
@@ -206,6 +205,14 @@ button {
   /* bottom: 13.75%; */
   /* bottom: 95%; */
   /* padding: 10px; */
+}
+
+.slide-caption.white-text {
+  color: white;
+}
+
+.slide-caption.gray-text {
+  color: #4d0aeba2;
 }
 
 .slide-caption h3 {
