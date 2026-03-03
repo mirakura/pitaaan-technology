@@ -238,8 +238,7 @@ ul {
   }
 
   .card {
-    flex: 1 0 120px;
-    width: 100%;
+    flex: 0 0 calc(50% - 12px);
   }
 
   .card img {
