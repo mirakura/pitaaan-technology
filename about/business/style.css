@@ -243,8 +243,9 @@ ul {
   }
 
   .card img {
-    width: 167px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 360 / 210;
     margin: 0 auto 22px;
     object-fit: cover;
     background: #ccc;
