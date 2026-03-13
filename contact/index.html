@@ -2,154 +2,137 @@
 <html lang="ja">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>お問い合わせフォーム</title>
-
-    <!-- CSSファイルの読み込み -->
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="style.css" />
-
-    <script src="/components/header/script.js" defer></script>
-    <script src="/components/footer/script.js" defer></script>
-    <link rel="stylesheet" href="../styles/global.css">
+    <meta charset="UTF-8">
+    <title>Contact | お問い合わせ</title>
+    <!-- レスポンシブ対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header></header>
-    <!-- ▼ お問い合わせフォーム全体のコンテナ ▼ -->
-    <section class="contact-wrapper">
 
-      <!-- タイトル -->
-      <h1>お問い合わせフォーム</h1>
+    <!-- ===== ヘッダー ===== -->
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>お問い合わせ</p>
+    </header>
 
-      <!-- ▼ フォーム本体 ▼ -->
-      <form id="contactForm" class="contact-form">
+    <!-- ===== お問い合わせフォーム ===== -->
+    <section class="contact-section">
+      <h2>お問い合わせフォーム</h2>
+
+      <form class="contact-form">
 
         <!-- お名前 -->
-        <div class="form-group">
-          <label>お名前</label>
-          <div class="field-box">
-            <input type="text" placeholder="名字 名前" required />
-          </div>
-        </div>
+        <label>お名前</label>
+        <input type="text" placeholder="名字 名前">
 
         <!-- ふりがな -->
-        <div class="form-group">
-          <label>ふりがな</label>
-          <div class="field-box">
-            <input type="text" placeholder="みょうじ なまえ" required />
-          </div>
-        </div>
+        <label>ふりがな</label>
+        <input type="text" placeholder="みょうじ なまえ">
 
         <!-- メールアドレス -->
-        <div class="form-group">
-          <label>メールアドレス</label>
-          <div class="field-box">
-            <input type="email" placeholder="name@example.com" required />
-          </div>
-        </div>
+        <label>メールアドレス</label>
+        <input type="email" placeholder="name@example.com">
 
         <!-- 電話番号 -->
-        <div class="form-group">
-          <label>電話番号（任意）</label>
-          <div class="field-box">
-            <input type="tel" placeholder="000-0000-0000" />
-          </div>
-        </div>
+        <label>電話番号（任意）</label>
+        <input type="tel" placeholder="000-0000-0000">
 
-        <!-- 会社名・団体名 -->
-        <div class="form-group">
-          <label>会社名・団体名（任意）</label>
-          <div class="field-box">
-            <input type="text" placeholder="PITAAANテクノロジー株式会社" />
-          </div>
-        </div>
+        <!-- 会社名 -->
+        <label>会社名・団体名（任意）</label>
+        <input type="text" placeholder="PITAAANテクノロジー株式会社">
 
         <!-- お問い合わせ種別 -->
-        <div class="form-group">
-          <label>お問い合わせ種別</label>
-          <div class="field-box">
-            <select required>
-              <option value="">選択してください ▼</option>
-              <option>Web制作について</option>
-              <option>システム開発について</option>
-              <option>デザインについて</option>
-              <option>採用について</option>
-              <option>その他</option>
-            </select>
-          </div>
-        </div>
+        <label>お問い合わせ種別</label>
+        <select>
+          <option>選択してください</option>
+          <option>制作のご相談</option>
+          <option>お見積もり</option>
+          <option>その他</option>
+        </select>
 
         <!-- お問い合わせ内容 -->
-        <div class="form-group">
-          <label>お問い合わせ内容</label>
-          <div class="field-box textarea-box">
-            <textarea placeholder="お問い合わせ内容をご記入ください" required></textarea>
-          </div>
-        </div>
+        <label>お問い合わせ内容</label>
+        <textarea placeholder="お問い合わせ内容をご記入ください"></textarea>
 
         <!-- 送信ボタン -->
-        <button type="submit" class="submit-btn">送信する</button>
-
+        <button type="submit">送信</button>
       </form>
     </section>
 
-    <!-- ▼ 今回追加の "新FAQデザイン" ▼ -->
-    <section class="faq-new-wrapper">
-
+    <!-- ===== よくある質問 ===== -->
+    <section class="faq-section">
       <h2>よくある質問</h2>
 
-      <!-- PDFセクション １ -->
-      <div class="faq-block">
-        <h3>サービス全般について</h3>
 
-        <div class="faq-item">Q. 個人用ホームページの制作も可能ですか？ <span
-            class="arrow">◀</span>
-        </div>
-        <div class="faq-item">Q. 美唄市以外でも対応していますか？ <span class="arrow">◀</span>
-        </div>
-        <div class="faq-item">Q. 制作期間はどのくらいかかりますか？ <span class="arrow">◀</span>
-        </div>
+      <!-- サービス全般について -->
+      <div class="faq-category">サービス全般について</div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 個人用ホームページの制作も可能ですか？</button>
+        <div class="faq-answer">はい、可能です。個人・法人を問わず対応しております。</div>
       </div>
 
-      <!-- PDFセクション ２ -->
-      <div class="faq-block">
-        <h3>料金について</h3>
-
-        <div class="faq-item">Q. 見積もりは無料ですか？ <span class="arrow">◀</span></div>
-        <div class="faq-item">Q. 分割払いは可能ですか？ <span class="arrow">◀</span></div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 美唄市以外でも対応していますか？</button>
+        <div class="faq-answer">はい、全国対応しております。</div>
       </div>
 
-      <!-- PDFセクション ３ -->
-      <div class="faq-block">
-        <h3>制作について</h3>
-
-        <div class="faq-item">Q. 途中で仕様変更は可能ですか？ <span class="arrow">◀</span>
-        </div>
-        <div class="faq-item">Q. 制作後の修正・更新は依頼できますか？ <span class="arrow">◀</span>
-        </div>
-        <div class="faq-item">Q. スマートフォン対応は標準で含まれていますか？ <span
-            class="arrow">◀</span>
-        </div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 制作期間はどのくらいかかりますか？</button>
+        <div class="faq-answer">内容により異なりますが、通常は1〜2か月程度です。</div>
       </div>
 
-      <!-- PDFセクション ４ -->
-      <div class="faq-block">
-        <h3>その他</h3>
+      <!-- 料金について -->
+      <div class="faq-category">料金について</div>
 
-        <div class="faq-item">Q. 急ぎの案件にも対応できますか？ <span class="arrow">◀</span>
-        </div>
-        <div class="faq-item">Q. 他社で製作したサイトの修正・リニューアルも可能ですか？ <span
-            class="arrow">◀</span></div>
+      <div class="faq-item">
+        <button class="faq-question">Q. 見積もりは無料ですか？</button>
+        <div class="faq-answer">はい、お見積もりは無料です。</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 分割払いは可能ですか？</button>
+        <div class="faq-answer">案件内容により対応可能です。ご相談ください。</div>
+      </div>
+
+      <!-- 制作について -->
+      <div class="faq-category">制作について</div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 途中で仕様変更は可能ですか？</button>
+        <div class="faq-answer">可能ですが、内容により追加費用が発生する場合があります。</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 制作後の修正・更新は依頼できますか？</button>
+        <div class="faq-answer">はい、保守・更新対応も承っております。</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. スマートフォン対応は標準で含まれていますか？</button>
+        <div class="faq-answer">はい、すべてのサイトでスマートフォン対応を行っています。</div>
+      </div>
+
+      <!-- その他 -->
+      <div class="faq-category">その他</div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 急ぎの案件にも対応できますか？</button>
+        <div class="faq-answer">スケジュール次第で対応可能です。まずはご相談ください。</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Q. 他社で制作したサイトの修正・リニューアルは可能ですか？</button>
+        <div class="faq-answer">はい、既存サイトの修正やリニューアルも対応可能です。</div>
       </div>
 
     </section>
 
-    <!-- JSファイルの読み込み -->
+    <!-- JS読み込み -->
     <script src="script.js"></script>
-
-    <footer></footer>
   </body>
 
 </html>
