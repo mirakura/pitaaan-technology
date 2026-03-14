@@ -7,16 +7,30 @@
     <!-- レスポンシブ対応 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS読み込み -->
+    <!-- リセットCSS(全体のリセット) -->
+    <link rel="stylesheet" href="../styles/reset.css">
+
+    <!-- グローバルCSS(共通デザイン) -->
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <!-- ページ固有CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ヘッダーとフッター -->
+    <script src="/components/header/script.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
+
   </head>
 
   <body>
 
+    <header></header>
+
     <!-- ===== ヘッダー ===== -->
-    <header class="page-header">
+    <section class="page-header">
       <h1>Contact</h1>
       <p>お問い合わせ</p>
-    </header>
+    </section>
 
     <!-- ===== お問い合わせフォーム ===== -->
     <section class="contact-section">
@@ -133,6 +147,9 @@
 
     <!-- JS読み込み -->
     <script src="script.js"></script>
+
+    <footer></footer>
+
   </body>
 
 </html>
