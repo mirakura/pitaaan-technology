@@ -1,48 +1,51 @@
 /* ===== 全体共通 ===== */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   background: #f3f3f3;
   /* 画像に近い薄いグレー */
   color: #333;
 }
 
-/* ===== ヘッダー ===== */
+/* ===== ページのヘッダー ===== */
 .page-header {
+  width: 100%;
   text-align: center;
-  padding: 72px 0 56px;
+  padding: 159px 0 160.01px;
   /* 上下余白を拡大 */
   background: #fff;
 }
 
 .page-header h1 {
   margin: 0;
-  font-size: 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 76.8px;
   /* 画像に近い大きさ */
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  line-height: 77px;
 }
 
 .page-header p {
-  margin-top: 0px;
-  font-size: 13px;
-  color: #666;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /* ===== フォームセクション ===== */
-/* ===== フォームセクション ===== */
 .contact-section {
 
-  margin: 56px auto;
-
-
-  padding: 48px;
+  padding: 160px 0;
+  width: 800px;
+  margin: 0 auto;
+  gap: 24px;
 }
 
 
 .contact-section h2 {
-  margin-bottom: 32px;
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
 }
 
 /* ===== フォーム ===== */
@@ -60,6 +63,12 @@ body {
   box-sizing: border-box;
 }
 
+/* プレースホルダー文字を薄くする */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  opacity: 0.5;
+}
+
 /* select専用デザイン（▼位置・色を画像に近づける） */
 .contact-form select {
   width: 100%;
@@ -69,8 +78,14 @@ body {
   border: none;
   background: #ffffff;
   font-size: 14px;
+  color: #999;
   box-sizing: border-box;
   /* 他の入力欄と幅を完全に揃える */
+
+
+  .contact-form select:valid {
+    color: #333;
+  }
 
   /* デフォルト矢印を消す */
   appearance: none;
@@ -97,7 +112,7 @@ body {
 
 .contact-form textarea {
   min-height: 180px;
-  resize: nertical;
+  resize: vertical;
 }
 
 /* ===== 送信ボタン ===== */
@@ -114,18 +129,29 @@ body {
   font-size: 15px;
   letter-spacing: 0.1em;
   cursor: pointer;
+
+  /* 追加 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===== FAQ ===== */
-.faq-section {
 
-  margin: 70px auto;
-  background: #fff;
-  padding: 48px;
+.faq-section {
+  background-color: #fff;
+  padding: 160px 0;
+}
+
+.faq-container {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .faq-section h2 {
-  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
 }
 
 .faq-category {

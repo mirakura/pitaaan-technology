@@ -60,8 +60,8 @@
 
         <!-- お問い合わせ種別 -->
         <label>お問い合わせ種別</label>
-        <select>
-          <option>選択してください</option>
+        <select required>
+          <option value="" disabled selected>選択してください</option>
           <option>制作のご相談</option>
           <option>お見積もり</option>
           <option>その他</option>
@@ -78,70 +78,71 @@
 
     <!-- ===== よくある質問 ===== -->
     <section class="faq-section">
-      <h2>よくある質問</h2>
+      <div class="faq-container">
+        <h2>よくある質問</h2>
 
 
-      <!-- サービス全般について -->
-      <div class="faq-category">サービス全般について</div>
+        <!-- サービス全般について -->
+        <div class="faq-category">サービス全般について</div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 個人用ホームページの制作も可能ですか？</button>
-        <div class="faq-answer">はい、可能です。個人・法人を問わず対応しております。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 個人用ホームページの制作も可能ですか？</button>
+          <div class="faq-answer">はい、可能です。個人・法人を問わず対応しております。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 美唄市以外でも対応していますか？</button>
-        <div class="faq-answer">はい、全国対応しております。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 美唄市以外でも対応していますか？</button>
+          <div class="faq-answer">はい、全国対応しております。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 制作期間はどのくらいかかりますか？</button>
-        <div class="faq-answer">内容により異なりますが、通常は1〜2か月程度です。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 制作期間はどのくらいかかりますか？</button>
+          <div class="faq-answer">内容により異なりますが、通常は1〜2か月程度です。</div>
+        </div>
 
-      <!-- 料金について -->
-      <div class="faq-category">料金について</div>
+        <!-- 料金について -->
+        <div class="faq-category">料金について</div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 見積もりは無料ですか？</button>
-        <div class="faq-answer">はい、お見積もりは無料です。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 見積もりは無料ですか？</button>
+          <div class="faq-answer">はい、お見積もりは無料です。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 分割払いは可能ですか？</button>
-        <div class="faq-answer">案件内容により対応可能です。ご相談ください。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 分割払いは可能ですか？</button>
+          <div class="faq-answer">案件内容により対応可能です。ご相談ください。</div>
+        </div>
 
-      <!-- 制作について -->
-      <div class="faq-category">制作について</div>
+        <!-- 制作について -->
+        <div class="faq-category">制作について</div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 途中で仕様変更は可能ですか？</button>
-        <div class="faq-answer">可能ですが、内容により追加費用が発生する場合があります。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 途中で仕様変更は可能ですか？</button>
+          <div class="faq-answer">可能ですが、内容により追加費用が発生する場合があります。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 制作後の修正・更新は依頼できますか？</button>
-        <div class="faq-answer">はい、保守・更新対応も承っております。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 制作後の修正・更新は依頼できますか？</button>
+          <div class="faq-answer">はい、保守・更新対応も承っております。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. スマートフォン対応は標準で含まれていますか？</button>
-        <div class="faq-answer">はい、すべてのサイトでスマートフォン対応を行っています。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. スマートフォン対応は標準で含まれていますか？</button>
+          <div class="faq-answer">はい、すべてのサイトでスマートフォン対応を行っています。</div>
+        </div>
 
-      <!-- その他 -->
-      <div class="faq-category">その他</div>
+        <!-- その他 -->
+        <div class="faq-category">その他</div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 急ぎの案件にも対応できますか？</button>
-        <div class="faq-answer">スケジュール次第で対応可能です。まずはご相談ください。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 急ぎの案件にも対応できますか？</button>
+          <div class="faq-answer">スケジュール次第で対応可能です。まずはご相談ください。</div>
+        </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Q. 他社で制作したサイトの修正・リニューアルは可能ですか？</button>
-        <div class="faq-answer">はい、既存サイトの修正やリニューアルも対応可能です。</div>
-      </div>
+        <div class="faq-item">
+          <button class="faq-question">Q. 他社で制作したサイトの修正・リニューアルは可能ですか？</button>
+          <div class="faq-answer">はい、既存サイトの修正やリニューアルも対応可能です。</div>
+        </div>
 
     </section>
 
