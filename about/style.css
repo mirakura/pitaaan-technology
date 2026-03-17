@@ -26,18 +26,18 @@ body {
 .theme .mission,
 .theme .vision,
 .theme .value,
-.history ul,
 .company-info table {
   max-width: var(--content-width);
-  margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  padding: var(--content-padding);
 }
-/* =============================== */
 
+/* ================
+   Caption
+   ================ */
 .about-container {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding: 100px 0;
 }
 
 .about {
@@ -56,11 +56,15 @@ body {
   line-height: 1;
 }
 
+/* ===============
+   Greeting
+   =============== */
 .intro {
   background-color: #f0f0f0;
   padding-left: var(--content-padding);
   padding-right: var(--content-padding);
 }
+
 .intro-body {
   max-width: var(--content-width);
   margin: auto;
@@ -88,6 +92,9 @@ body {
   font-weight: bold;
 }
 
+/* ===============
+   テーマ
+   =============== */
 .theme {
   padding: var(--content-padding);
 }
@@ -121,13 +128,13 @@ body {
 
 /* 円内テキスト */
 .circle-text-eng {
-  font-size: 28px;
-  line-height: 20px;
+  font-size: 1.6em;
+  line-height: 1.4em;
 }
 
 .circle-text-jpn {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.8em;
+  line-height: 1.4em;
 }
 
 /* テキストラッパー(ここがポイント) */
@@ -167,59 +174,119 @@ body {
   margin-bottom: 6px;
 }
 
-/* history レイアウト */
+/* ==================
+   history レイアウト
+   ================== */
 .history {
   background-color: #f0f0f0;
-  padding-left: var(--content-padding);
-  padding-right: var(--content-padding);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 60px var(--content-padding);
 }
 
 .history ul {
-  width: 100%;
+  position: relative;
+  list-style: none;
+  max-width: var(--content-width);
+  padding: var(--content-padding);
   box-sizing: border-box;
 }
 
 .history li {
   position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 8px 0;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
-/* ●（丸マーク） */
-.history .separator {
+.timeline {
+  list-style: none;
+  padding: 0;
+  max-width: var(--content-width);
   position: relative;
-  width: 16px; /* 行間調整のための横幅 */
-  height: 16px;
-  display: inline-block;
-  padding: 12px 12px;
 }
 
-.history .separator::before {
+/* 各行*/
+/* 行の定義 */
+.timeline li {
+  display: grid;
+  grid-template-columns: 100px 30px 1fr;
+  align-items: start;
+  position: relative;
+}
+
+/* 年月 */
+.timeline .date {
+  font-weight: bold;
+  grid-column: 1;
+  white-space: nowrap;
+}
+
+/* ====================
+   縦線（各行に描画）
+   ==================== */
+/* セパレータ列 */
+.timeline .separator {
+  position: relative;
+}
+
+/* 縦線( li基準 ) */
+.timeline li::before {
   content: "";
   position: absolute;
-  top: 10px; /* 丸の上下位置 */
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  background: #e74c3c;
+  left: calc(100px + 15px);
+  top: -30px;
+  bottom: -30px;
+  width: 3px;
+  background: #cc4100;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* 先頭行 : 上半分だけ消す */
+.timeline li:first-child::before {
+  top: 50%;
+}
+
+/* 最終行 : 下半分だけ消す */
+.timeline li:last-child::before {
+  bottom: 50%;
+}
+
+/* ====================
+   二重丸
+   ==================== */
+/* 大きい丸(白抜き) */
+.timeline .separator::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 1.4em;
+  height: 1.4em;
+  background: #f0f0f0;
+  border: 0.3em solid #f0f0f0;
   border-radius: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
-/* ●の下に縦棒（最終行は付けない） */
-.history li:not(:last-child) .separator::after {
+/* 小さい丸 */
+.timeline .separator::after {
   content: "";
   position: absolute;
-  top: 26px; /* ●の(12pxで)すぐ下+14px=26pxから開始 */
-  left: 50%;
-  width: 2px; /* 縦棒の太さ */
-  height: calc(100% + 6px); /* 行間を調整可能 */
-  background: #e74c3c;
-  transform: translateX(-50%);
+  left: 15px;
+  top: 15px;
+  width: 0.6em;
+  height: 0.6em;
+  background: #cc4100;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* 説明文 */
+.timeline .desc {
+  grid-column: 3;
+  padding-left: 15px;
 }
 
 /* 各テキストの調整 */
@@ -229,28 +296,28 @@ body {
 }
 
 .history .desc {
-  flex: 1;
+  font-size: 18px;
 }
 
-/* 会社情報 */
+/* ==========
+   会社情報
+   ========== */
 .company-info {
   box-sizing: border-box;
   padding-left: var(--content-padding);
   padding-right: var(--content-padding);
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .company-info-inner {
   max-width: var(--content-width);
-  margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
 }
 
 .company-info table {
   width: 100%;
-  /*  margin: 50px 0; */
+  margin: 50px 0;
+  margin-left: var(--content-padding);
   border-collapse: collapse;
 }
 
@@ -360,38 +427,32 @@ body {
   /* ====================================
    Mission / Vision / Value のリスト修正
    ==================================== */
-
   /* 共通 */
-
   .mission-text {
     text-align: left;
     font-size: 24px;
   }
 
   .mission-text br {
-    display: none;
-    /* スマートフォン対応時 <br> を無効化 */
+    display: none; /* スマートフォン対応時 <br> を無効化 */
   }
 
   .vision-text,
   .value-text {
     list-style-position: outside;
     margin: 0 auto;
-    padding-left: var(content-padding);
     text-align: left;
   }
 
   /* Vision（・） */
   .vision-text {
-    list-style-type: disc;
-    /* ● を表示 */
+    list-style-type: disc; /* ● を表示 */
     font-size: 18px;
   }
 
   /* Value（番号） */
   .value-text {
-    list-style-type: decimal;
-    /* 1. 2. 3. を表示 */
+    list-style-type: decimal; /* 1. 2. 3. を表示 */
     font-size: 18px;
   }
 
@@ -404,18 +465,60 @@ body {
   /* ===== History ===== */
   .history {
     height: auto;
-    padding: 40px 0;
+    padding: 15px;
   }
 
   .history ul {
-    padding-left: 16px;
-    padding-right: 16px;
-    height: auto;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .timeline {
     margin-left: 0;
   }
 
-  .history li {
-    gap: 6px;
+  .timeline li {
+    grid-template-columns: 80px 30px 1fr;
+    padding: 10px 0;
+  }
+
+  .timeline .date::before,
+  .timeline .date::after {
+    left: calc(100% + 10px);
+  }
+
+  /* 縦棒 */
+  .timeline li::before {
+    transform: none;
+    left: 95px;
+  }
+
+  .timeline li:first-child::before {
+    top: 30%;
+  }
+
+  /* 大きい丸 */
+  .timeline li .separator::before {
+    left: 55%;
+    top: 0.8em;
+    transform: translate(-50%, -50%);
+  }
+
+  /* 小さい丸 */
+  .timeline li .separator::after {
+    left: 55%;
+    top: 0.8em;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline .date .separator::after {
+    top: calc(line-height / 2);
+    left: calc(25%);
+  }
+
+  .timeline .date .separator::before {
+    top: calc(line-height / 2);
+    left: calc(25%);
   }
 
   .history .date {
@@ -428,7 +531,6 @@ body {
 
   /* ===== Company Info（テーブルを縦並び化） ===== */
   .company-info {
-    /*  margin: 40px 0; */
     padding-left: 0;
     padding-right: 0;
   }
@@ -443,9 +545,10 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     height: auto;
+    margin-left: 0;
+    width: 100%;
   }
 
-  .company-info table,
   .company-info tbody,
   .company-info tr,
   .company-info th,
@@ -453,27 +556,17 @@ body {
     width: 100%;
   }
 
-  .company-info table {
-    width: 100%;
-  }
-
   .company-info th,
   .company-info td {
-    display: table-cell;
-    /* 横並びに戻す */
+    display: table-cell; /* 横並びに戻す */
     padding: 8px 6px;
     font-size: 16px;
     vertical-align: top;
   }
 
   .company-info th {
-    white-space: nowrap;
-    /* 見出しを1行に */
+    white-space: nowrap; /* 見出しを1行に */
     width: 40%;
-  }
-
-  .company-info td {
-    width: 60%;
   }
 
   /* ===== Google Map ===== */
