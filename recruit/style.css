@@ -1,8 +1,4 @@
 body {
-  /* ↓いらないかも↓ */
-  margin: 0 auto;
-  display: block;
-  /* ↑いらないかも↑ */
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-feature-settings: "palt";
   color: #333333;
@@ -120,7 +116,7 @@ section.page-title {
 .job-item {
   display: grid;
   grid-template-columns: 100px 1fr;
-  column-gap: clamp(16px, 2vw, 28px);
+  column-gap: 28px;
   border-bottom: 1px solid #333333;
   padding: 20px 0;
 }
@@ -142,9 +138,13 @@ section.page-title {
 }
 
 .job-list {
-  list-style-type: none;
+  list-style-type: "・";
   font-size: 16px;
   line-height: 1.6;
+}
+
+.job-list li {
+  margin-left: 20px;
 }
 
 /* セクション 03 の各種設定 */
@@ -206,12 +206,12 @@ section.page-title {
 ========================= */
 @media screen and (max-width: 768px) {
 
-  /* セクション（共通） */
+  /* セクション（共通）_SP */
   section {
     padding: 80px 0;
   }
 
-  /* ページタイトルのスタイル（仮） */
+  /* ページタイトルのスタイル（仮）_SP */
   section.page-title {
     padding: 80px 0;
   }
@@ -226,18 +226,18 @@ section.page-title {
     line-height: 23px;
   }
 
-  /* セクションタイトル(共通） */
+  /* セクションタイトル(共通）_SP */
   .section-title {
-    max-width: 358px;
+    padding:0 16px;
     margin: 0 auto 24px;
   }
 
   .container {
-    max-width: 358px;
+    padding:0 16px;
     flex-direction: column;
   }
 
-  /* セクション 02 の各種設定 */
+  /* セクション 02 の各種設定 _SP*/
   .job .container {
     display: flex;
     gap: 40px;
@@ -250,13 +250,11 @@ section.page-title {
     padding: 8px 0;
   }
 
-  .job-list {
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 1.6;
+  .job-list li {
+    margin-left: 18px;
   }
 
-  /* セクション 03 の各種設定 */
+  /* セクション 03 の各種設定_SP */
   .flow .container {
     padding-left: 0;
     padding-right: 0;
