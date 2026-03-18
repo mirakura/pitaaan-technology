@@ -364,13 +364,18 @@ body {
   }
 
   /* ===== About ===== */
+  .about-container {
+    padding: 80px 16px;
+  }
+
   .about-text-eng {
-    font-size: clamp(32px, 8vw, 40px);
-    height: auto;
+    font-size: 32px;
+    line-height: 39px;
   }
 
   .about-text-jpn {
-    font-size: 14pt;
+    font-size: 16px;
+    line-height: 23px;
   }
 
   /* ===== Intro ===== */

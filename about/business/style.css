@@ -211,12 +211,17 @@ ul {
 /* 小画面調整 */
 @media screen and (max-width: 768px) {
   .main-visual {
-    padding: 74px 0 80px 0;
+    padding: 80px 16px;
   }
 
   .main-visual h1 {
     font-size: 32px;
-    font-weight: 400;
+    line-height: 39px;
+  }
+
+  .main-visual p {
+    font-size: 16px;
+    line-height: 23px;
   }
 
   .services.section {
