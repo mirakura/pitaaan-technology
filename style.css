@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   margin: 0;
   color: #333;
   background: #fff;
@@ -14,6 +14,7 @@ body {
 }
 
 .section-title {
+  font-family: "Inter", sans-serif;
   font-size: 77px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -59,51 +60,80 @@ button {
 
 .btn-medium {
   display: inline-block;
-  width: 210px; /* 横幅       */
-  height: 48px; /* 高さ       */
-  border-radius: 100px; /* 角丸       */
+  width: 210px;
+  /* 横幅       */
+  height: 48px;
+  /* 高さ       */
+  border-radius: 100px;
+  /* 角丸       */
 
-  font-size: 15pt; /* 文字サイズ */
-  text-align: center; /* 文字位置   */
-  cursor: pointer; /* カーソル   */
-  padding: 13px 13px 13px 25px; /* 余白       */
+  font-size: 15pt;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 13px 13px 13px 25px;
+  /* 余白       */
   /* background: #ffffff; 背景色     */
-  color: #333; /* 文字色     */
-  line-height: 1em; /* 1行の高さ  */
-  transition: background-color 0.3s ease; /* なめらか変化 */
+  color: #333;
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  transition: background-color 0.3s ease;
+  /* なめらか変化 */
   /* box-shadow: 6px 6px 3px #666666; 影の設定 */
-  border: 0.5px solid #333; /* 枠の指定 */
+  border: 0.5px solid #333;
+  /* 枠の指定 */
 }
 
 .btn-medium:hover {
-  background: #cc4100; /* 背景色     */
-  color: #ffffff; /* 文字色     */
-  box-shadow: none; /* 影の設定   */
-  border: 1px solid #000066; /* 枠の指定 */
+  background: #cc4100;
+  /* 背景色     */
+  color: #ffffff;
+  /* 文字色     */
+  box-shadow: none;
+  /* 影の設定   */
+  border: 1px solid #000066;
+  /* 枠の指定 */
 }
 
 .btn-large {
   display: inline-block;
-  width: 720px; /* 横幅       */
-  height: 155px; /* 高さ       */
-  border-radius: 80px; /* 角丸       */
+  width: 720px;
+  /* 横幅       */
+  height: 155px;
+  /* 高さ       */
+  border-radius: 80px;
+  /* 角丸       */
 
-  font-size: 17px; /* 文字サイズ */
-  text-align: center; /* 文字位置   */
-  cursor: pointer; /* カーソル   */
-  padding: 65px 40px; /* 余白       */
-  background: #333333; /* 背景色     */
-  color: #ffffff; /* 文字色     */
-  line-height: 1em; /* 1行の高さ  */
-  transition: background-color 0.3s ease; /* なめらか変化 */
-  border: 1px solid #333; /* 枠の指定 */
+  font-size: 17px;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 65px 40px;
+  /* 余白       */
+  background: #333333;
+  /* 背景色     */
+  color: #ffffff;
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  transition: background-color 0.3s ease;
+  /* なめらか変化 */
+  border: 1px solid #333;
+  /* 枠の指定 */
 }
 
 .btn-large:hover {
   background: #cc4100;
   /* color: #333; 文字色     */
-  box-shadow: none; /* 影の設定   */
-  border: 0.5px solid #000066; /* 枠の指定 */
+  box-shadow: none;
+  /* 影の設定   */
+  border: 0.5px solid #000066;
+  /* 枠の指定 */
 }
 
 #business {
@@ -183,7 +213,8 @@ button {
 .slide-caption {
   position: absolute;
   /* background: rgba(0, 0, 0, 0.2); */
-  opacity: 0; /* 初期状態では非表示 */
+  opacity: 0;
+  /* 初期状態では非表示 */
   text-align: left;
 
   width: 86%;
@@ -227,6 +258,7 @@ button {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -349,6 +381,7 @@ button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .service-item p {
   font-size: 14px;
   line-height: 1.4;
@@ -365,7 +398,6 @@ button {
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
-    width: 390px;
     /* min-width: 390px; */
   }
 
@@ -409,6 +441,7 @@ button {
     /* background-color: #f5f5f5; */
     height: 1276px;
   }
+
   #contact {
     /* background-color: #ffffff; */
     height: 402px;
@@ -431,6 +464,7 @@ button {
     width: 100%;
     height: 352px;
   }
+
   .slide-image {
     width: 100%;
     height: 50%;
@@ -446,6 +480,7 @@ button {
     font-size: 39px;
     font-weight: 700;
   }
+
   .slide-caption p {
     font-size: 15px;
   }
