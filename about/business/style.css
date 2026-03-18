@@ -6,28 +6,34 @@ body {
 }
 
 .inner {
-  max-width: 1152px; /* コンテンツの最大幅 */
+  max-width: 1152px;
+  /* コンテンツの最大幅 */
   width: 100%;
-  margin: 0 auto; /* 中央寄せ */
-  padding: 0; /* 両端のガター */
+  margin: 0 auto;
+  /* 中央寄せ */
+  padding: 0;
+  /* 両端のガター */
   box-sizing: border-box;
 }
 
 /* main title */
 .main-visual {
-  padding: 137px 0 158px 0;
+  padding: 159px 0 160.01px;
   text-align: center;
 }
 
 .main-visual h1 {
-  font-size: 79px;
+  font-family: "Inter", sans-serif;
+  font-size: 76.8px;
   font-weight: 400;
+  line-height: 77px;
 }
 
 .main-visual p {
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  margin-top: -14px;
+  line-height: 24px;
 }
 
 /* サービス概要 */
@@ -47,12 +53,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
-  justify-content: center; /* 中央寄せして3つ並べる */
+  justify-content: center;
+  /* 中央寄せして3つ並べる */
 }
 
 /* 各サービスを制作実績カードと同じ幅に固定（360px）して横並びにする */
 .service-item {
-  flex: 0 0 360px; /* 固定幅 */
+  flex: 0 0 360px;
+  /* 固定幅 */
   box-sizing: border-box;
 }
 
@@ -82,7 +90,8 @@ ul {
   margin-top: 8px;
   padding-left: 25px;
   font-size: 16px;
-  border-top: 0.5px solid #333; /* 従前の p+ul::before を置換 */
+  border-top: 0.5px solid #333;
+  /* 従前の p+ul::before を置換 */
   padding-top: 7px;
 }
 
@@ -150,8 +159,10 @@ ul {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #cc4100; /* 円の内部をオレンジに */
-  color: #ffffff; /* 文字を白に */
+  background: #cc4100;
+  /* 円の内部をオレンジに */
+  color: #ffffff;
+  /* 文字を白に */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,17 +211,23 @@ ul {
 /* 小画面調整 */
 @media screen and (max-width: 768px) {
   .main-visual {
-    padding: 74px 0 80px 0;
+    padding: 80px 16px;
   }
 
   .main-visual h1 {
     font-size: 32px;
-    font-weight: 400;
+    line-height: 39px;
+  }
+
+  .main-visual p {
+    font-size: 16px;
+    line-height: 23px;
   }
 
   .services.section {
     padding: 50px 0 50px 0;
   }
+
   .section-title {
     font-size: 24px;
     font-weight: 700;

@@ -29,14 +29,14 @@ body {
 }
 
 .members-header h1 {
-  margin: 0;
+  font-family: "Inter", sans-serif;
   font-size: 76.8px;
   font-weight: 400;
   line-height: 77px;
 }
 
 .members-header .subtitle {
-  margin-top: 3.99px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
