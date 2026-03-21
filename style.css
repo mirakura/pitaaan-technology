@@ -54,7 +54,6 @@ body {
 
 button {
   cursor: pointer;
-  margin-top: 20px;
   border: 1px solid #333;
 }
 
@@ -163,7 +162,7 @@ button {
 .swiper-container {
   max-width: 1152px;
   height: 640px;
-  overflow-y: visible;
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   display: flex;
