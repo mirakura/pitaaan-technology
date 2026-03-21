@@ -103,7 +103,7 @@ body {
   padding-right: 16px;
 }
 
-/* textarea高さ */
+/* textarea高さ固定*/
 .contact-form textarea {
   min-height: 180px;
   resize: none;
@@ -112,7 +112,7 @@ body {
 
 .contact-form textarea {
   min-height: 180px;
-  resize: vertical;
+  resize: none;
 }
 
 /* ===== 送信ボタン ===== */
