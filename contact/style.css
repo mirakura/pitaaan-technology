@@ -39,6 +39,8 @@ body {
   width: 800px;
   margin: 0 auto;
   gap: 24px;
+  box-sizing: border-box;
+  /* 他の入力欄と幅を完全に揃える */
 }
 
 
@@ -101,6 +103,11 @@ body {
 
   /* 矢印分の余白を確保して入力幅を揃える */
   padding-right: 16px;
+}
+
+.contact-form select:valid {
+  min-height: 180px;
+  resize: noneS;
 }
 
 /* textarea高さ固定*/
@@ -220,99 +227,101 @@ body {
     font-size: 16px;
     line-height: 23px;
   }
-}
-
-/* ===== フォームセクション ===== */
-.contact-section {
-
-  padding: 80px 16px;
-  width: 100%;
-  margin: 0 auto;
-  gap: 0px;
-  box-sizing: border-box;
-  /* はみ出し防止 */
-}
-
-.contact-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 46px;
-}
-
-/* ===== FAQ ===== */
-
-.faq-section {
-  font-weight: 700;
-  padding: 0 16px;
-  width: 100%;
-  margin: 0 auto;
-  gap: 0px;
-  background-color: #fff;
-  box-sizing: border-box;
-  /* はみ出し防止 */
-
-}
-
-.faq-container {
-  padding: 80px 16px;
-  width: 100%;
-  margin: 0 auto;
-  gap: 0px;
-  background-color: #fff;
-  box-sizing: border-box;
-  /* はみ出し防止 */
-}
-
-.faq-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 46px;
-}
-
-.faq-category {
-  background: #f6f6f6;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 780;
-  margin-top: 32px;
-  width: 100%;
-  box-sizing: border-box;
-  /* はみ出し防止 */
-}
-
-.faq-item {
-  border-bottom: 1px none;
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
-  /* padding: 上　右　左　下；　の順番で、左の余白を56pxに指定 */
-  padding: 16px 56px 16px 14px;
-  background: none;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  /* デフォルト矢印を消す */
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  /* カスタム矢印 */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='%23666'><path d='M15 18l-6-6 6-6z'/></svg>");
 
 
+  /* ===== フォームセクション ===== */
+  .contact-section {
 
-  /* 矢印位置（入力欄と同じ幅バランスに調整） */
-  background-repeat: no-repeat;
-  background-position: right 16px center;
-  box-sizing: border-box;
-  /* はみ出し防止 */
-}
+    padding: 80px 16px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0px;
+    box-sizing: border-box;
+    /* はみ出し防止 */
+  }
 
-.faq-answer {
-  display: none;
-  padding: 0 14px 16px;
-  font-size: 13px;
-  color: #555;
+  .contact-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+
+  /* ===== FAQ ===== */
+
+  .faq-section {
+    font-weight: 700;
+    padding: 0 16px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0px;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* はみ出し防止 */
+
+  }
+
+  .faq-container {
+    padding: 80px 16px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0px;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* はみ出し防止 */
+  }
+
+  .faq-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+
+  .faq-category {
+    background: #f6f6f6;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 780;
+    margin-top: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    /* はみ出し防止 */
+  }
+
+  .faq-item {
+    border-bottom: 1px none;
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    /* padding: 上　右　左　下；　の順番で、左の余白を56pxに指定 */
+    padding: 16px 56px 16px 14px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    /* デフォルト矢印を消す */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* カスタム矢印 */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='%23666'><path d='M15 18l-6-6 6-6z'/></svg>");
+
+
+
+    /* 矢印位置（入力欄と同じ幅バランスに調整） */
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    box-sizing: border-box;
+    /* はみ出し防止 */
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 0 14px 16px;
+    font-size: 13px;
+    color: #555;
+  }
+
 }
