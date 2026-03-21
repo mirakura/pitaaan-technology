@@ -34,7 +34,6 @@ body {
 
 /* ===== フォームセクション ===== */
 .contact-section {
-
   padding: 160px 0;
   width: 800px;
   margin: 0 auto;
@@ -43,7 +42,6 @@ body {
   /* 他の入力欄と幅を完全に揃える */
 }
 
-
 .contact-section h2 {
   font-size: 32px;
   font-weight: 700;
@@ -51,6 +49,11 @@ body {
 }
 
 /* ===== フォーム ===== */
+.contact-form {
+  padding: 16px 0;
+  font-weight: 700;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -65,6 +68,11 @@ body {
   box-sizing: border-box;
 }
 
+.contact-form ::placeholder,
+.contact-form :required {
+  font-weight: 400;
+}
+
 /* プレースホルダー文字を薄くする */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
@@ -74,7 +82,10 @@ body {
 /* select専用デザイン（▼位置・色を画像に近づける） */
 .contact-form select {
   width: 100%;
-  padding: 16px;
+  height: 54px;
+  /* ★巨大化防止のため高さを固定 */
+  padding: 16px 16px;
+  /* ★高さを固定したので上下の余白を0に変更 */
   margin-top: 8px;
   margin-bottom: 24px;
   border: none;
@@ -82,12 +93,6 @@ body {
   font-size: 14px;
   color: #999;
   box-sizing: border-box;
-  /* 他の入力欄と幅を完全に揃える */
-
-
-  .contact-form select:valid {
-    color: #333;
-  }
 
   /* デフォルト矢印を消す */
   appearance: none;
@@ -100,23 +105,15 @@ body {
   /* 矢印位置（入力欄と同じ幅バランスに調整） */
   background-repeat: no-repeat;
   background-position: right 16px center;
-
-  /* 矢印分の余白を確保して入力幅を揃える */
   padding-right: 16px;
 }
 
+/* ★選択されたら文字を濃くする */
 .contact-form select:valid {
-  min-height: 180px;
-  resize: noneS;
+  color: #333;
 }
 
 /* textarea高さ固定*/
-.contact-form textarea {
-  min-height: 180px;
-  resize: none;
-}
-
-
 .contact-form textarea {
   min-height: 180px;
   resize: none;
@@ -144,10 +141,10 @@ body {
 }
 
 /* ===== FAQ ===== */
-
 .faq-section {
   background-color: #fff;
   padding: 160px 0;
+  font-weight: 700;
 }
 
 .faq-container {
@@ -165,7 +162,6 @@ body {
   background: #f6f6f6;
   padding: 14px;
   font-size: 14px;
-  font-weight: 500;
   margin-top: 32px;
   width: 100%;
 }
@@ -190,15 +186,12 @@ body {
   /* カスタム矢印 */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='%23666'><path d='M15 18l-6-6 6-6z'/></svg>");
 
-
-
   /* 矢印位置（入力欄と同じ幅バランスに調整） */
   background-repeat: no-repeat;
   background-position: right 16px center;
 
   /* 矢印分の余白を確保して入力幅を揃える */
   padding-right: 16px;
-
 }
 
 .faq-answer {
@@ -209,11 +202,9 @@ body {
 }
 
 /* =====レスポンシブ（スマホ）========*/
-
 @media screen and (max-width: 768px) {
 
   /*ページタイトル*/
-
   .page-header {
     padding: 80px 16px;
   }
@@ -228,10 +219,8 @@ body {
     line-height: 23px;
   }
 
-
   /* ===== フォームセクション ===== */
   .contact-section {
-
     padding: 80px 16px;
     width: 100%;
     margin: 0 auto;
@@ -247,7 +236,6 @@ body {
   }
 
   /* ===== FAQ ===== */
-
   .faq-section {
     font-weight: 700;
     padding: 0 16px;
@@ -257,7 +245,6 @@ body {
     background-color: #fff;
     box-sizing: border-box;
     /* はみ出し防止 */
-
   }
 
   .faq-container {
@@ -294,7 +281,7 @@ body {
   .faq-question {
     width: 100%;
     text-align: left;
-    /* padding: 上　右　左　下；　の順番で、左の余白を56pxに指定 */
+    /* padding: 上　右　下　左；　の順番で、右の余白を56pxに指定 */
     padding: 16px 56px 16px 14px;
     background: none;
     border: none;
@@ -307,8 +294,6 @@ body {
 
     /* カスタム矢印 */
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='%23666'><path d='M15 18l-6-6 6-6z'/></svg>");
-
-
 
     /* 矢印位置（入力欄と同じ幅バランスに調整） */
     background-repeat: no-repeat;
@@ -323,5 +308,4 @@ body {
     font-size: 13px;
     color: #555;
   }
-
 }
