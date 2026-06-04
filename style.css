@@ -1,42 +1,43 @@
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   margin: 0;
   color: #333;
   background: #fff;
 }
 
-header {
-  /* background-color: aqua; */
-  height: 95px;
-}
-
-footer {
-  background-color: #333333;
-  height: 294px;
-}
-
 /* 共通セクション */
 .section {
   text-align: center;
-  padding: 80px 20px;
+  padding: 160px 20px;
+  /* height: 888px; */
   /* border-bottom: 1px solid #ccc; */
 }
 
 .section-title {
-  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-size: 77px;
   margin-bottom: 8px;
   font-weight: 500;
 }
+
 .section-subtitle {
-  font-size: 14px;
+  font-size: 24px;
   color: #666;
   margin-bottom: 40px;
 }
 
 .icon {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   height: 20px;
   width: 20px;
+  margin: 10px;
+}
+
+.icon-img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin: 0px 10px;
 }
 
 .arrow {
@@ -53,77 +54,103 @@ footer {
 
 button {
   cursor: pointer;
-  margin-top: 20px;
   border: 1px solid #333;
-}
-
-.contact-btn {
-  background-color: #333;
-  color: #ffffff;
-  border-radius: 999px;
-}
-
-.contact-btn:hover {
-  background-color: #ffffff;
-  color: #333;
 }
 
 .btn-medium {
   display: inline-block;
-  width: 210px; /* 横幅       */
-  height: 48px; /* 高さ       */
-  border-radius: 100px; /* 角丸       */
+  width: 210px;
+  /* 横幅       */
+  height: 48px;
+  /* 高さ       */
+  border-radius: 100px;
+  /* 角丸       */
 
-  font-size: 15pt; /* 文字サイズ */
-  text-align: center; /* 文字位置   */
-  cursor: pointer; /* カーソル   */
-  padding: 12px 12px; /* 余白       */
+  font-size: 15pt;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 13px 13px 13px 25px;
+  /* 余白       */
   /* background: #ffffff; 背景色     */
-  color: #333; /* 文字色     */
-  line-height: 1em; /* 1行の高さ  */
-  transition: 0.3s; /* なめらか変化 */
+  color: #333;
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  transition: background-color 0.3s ease;
+  /* なめらか変化 */
   /* box-shadow: 6px 6px 3px #666666; 影の設定 */
-  border: 0.5px solid #333; /* 枠の指定 */
+  border: 0.5px solid #333;
+  /* 枠の指定 */
 }
 
 .btn-medium:hover {
-  background: #333; /* 背景色     */
-  color: #ffffff; /* 文字色     */
-  box-shadow: none; /* 影の設定   */
-  border: 1px solid #000066; /* 枠の指定 */
+  background: #cc4100;
+  /* 背景色     */
+  color: #ffffff;
+  /* 文字色     */
+  box-shadow: none;
+  /* 影の設定   */
+  border: 1px solid #000066;
+  /* 枠の指定 */
 }
 
 .btn-large {
   display: inline-block;
-  width: 720px; /* 横幅       */
-  height: 155px; /* 高さ       */
-  border-radius: 80px; /* 角丸       */
+  width: 720px;
+  /* 横幅       */
+  height: 155px;
+  /* 高さ       */
+  border-radius: 80px;
+  /* 角丸       */
 
-  font-size: 19pt; /* 文字サイズ */
-  text-align: center; /* 文字位置   */
-  cursor: pointer; /* カーソル   */
-  padding: 60px 40px; /* 余白       */
-  background: #333333; /* 背景色     */
-  color: #ffffff; /* 文字色     */
-  line-height: 1em; /* 1行の高さ  */
-  transition: 0.3s; /* なめらか変化 */
-  border: 1px solid #333; /* 枠の指定 */
+  font-size: 17px;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 65px 40px;
+  /* 余白       */
+  background: #333333;
+  /* 背景色     */
+  color: #ffffff;
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  transition: background-color 0.3s ease;
+  /* なめらか変化 */
+  border: 1px solid #333;
+  /* 枠の指定 */
 }
 
 .btn-large:hover {
-  background: #e0d9d9; /* 背景色     */
-  color: #333; /* 文字色     */
-  box-shadow: none; /* 影の設定   */
-  border: 0.5px solid #000066; /* 枠の指定 */
+  background: #cc4100;
+  /* color: #333; 文字色     */
+  box-shadow: none;
+  /* 影の設定   */
+  border: 0.5px solid #000066;
+  /* 枠の指定 */
 }
 
 #business {
-  background: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  /* background: -webkit-linear-gradient(top, #ffffff, #f5f5f5); */
+  height: 1240px;
+  background-color: #f5f5f5;
+  padding: 159px 160px;
 }
 
-#about,
+#about {
+  background-color: #ffffff;
+  height: 888px;
+  padding: 160px 160px;
+}
+
 #contact {
   background-color: #ffffff;
+  height: 643px;
 }
 
 #service {
@@ -134,8 +161,8 @@ button {
 /* Swiper 横並びスライダー用 */
 .swiper-container {
   max-width: 1152px;
-  height: 500px;
-  overflow-y: visible;
+  height: 640px;
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -147,6 +174,7 @@ button {
   /* background-color: seagreen; */
   height: 95%;
   width: 100%;
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -156,6 +184,18 @@ button {
   justify-content: center;
   align-items: center;
   /* 必要に応じてpaddingやborderを調整 */
+  transition: opacity 0.8s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  /* transform: scale(1.05); */
+  /* transition: transform 0.3s; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .swiper-slide img {
@@ -169,61 +209,59 @@ button {
 
 /* ↓↓ スライドキャプションのフェードインアニメーション ↓↓ */
 
-.swiper-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .slide-caption {
   position: absolute;
-  top: 75%;
+  /* background: rgba(0, 0, 0, 0.2); */
+  opacity: 0;
+  /* 初期状態では非表示 */
+  text-align: left;
+
+  width: 86%;
+  height: 81px;
+
+  top: 70%;
   left: 10%;
-  bottom: 20px;
-  opacity: 0; /* 初期状態では非表示 */
+  /* bottom: 13.75%; */
+  /* bottom: 95%; */
+  /* padding: 10px; */
+}
+
+.slide-caption.white-text {
+  color: white;
+}
+
+.slide-caption.gray-text {
+  color: #4d0aeba2;
+}
+
+.slide-caption h3 {
+  font-size: 40px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.slide-caption p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 5px;
 }
 
 .slide-caption.fade-in-active {
   animation: fade-in-caption 0.8s ease-out forwards;
 }
 
+/* ↑↑ スライドキャプションのフェードインアニメーション ↑↑ */
+
 @keyframes fade-in-caption {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* ↑↑ スライドキャプションのフェードインアニメーション ↑↑ */
-
-.slide-caption {
-  max-width: 300px;
-  position: absolute;
-  color: white;
-  background: rgba(0, 0, 0, 0.2);
-  /* text-align: left; */
-  padding: 10px;
-  height: auto;
-
-  /* top: 75%; */
-  /* left: 10%; */
-  /* bottom: 95%; */
-}
-
-.slide-caption h3 {
-  font-size: 20px;
-  margin-bottom: 4px;
-  font-weight: 700;
-}
-
-.slide-caption p {
-  font-size: 14px;
-  line-height: 1.4;
-  margin-bottom: 5px;
 }
 
 .swiper-controls-button {
@@ -342,9 +380,141 @@ button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .service-item p {
   font-size: 14px;
   line-height: 1.4;
 }
 
 /* お問い合わせ */
+
+/*
+ ===========================
+📱 スマホ対応
+  ===========================
+  */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* min-width: 390px; */
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+
+  .section-subtitle {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    font-size: 39px;
+  }
+
+  #business,
+  #about,
+  #service,
+  #contact {
+    padding: 80px 0px;
+  }
+
+  #business {
+    /* background: #0044cc; */
+    background: #f5f5f5;
+    height: 655px;
+  }
+
+  #about {
+    /* background-color: #ffffff; */
+    height: 629px;
+  }
+
+  #service {
+    /* background-color: #f5f5f5; */
+    height: 1276px;
+  }
+
+  #contact {
+    /* background-color: #ffffff; */
+    height: 402px;
+  }
+
+  .btn-large {
+    width: 100%;
+    height: 152px;
+    font-size: 15px;
+  }
+
+  .btn-medium {
+    width: 174px;
+    height: 49px;
+    font-size: 16px;
+  }
+
+  /* スライダー調整 */
+  .swiper-container {
+    width: 100%;
+    height: 352px;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .slide-caption {
+    width: 90%;
+    height: 81px;
+    top: 50%;
+  }
+
+  .slide-caption h3 {
+    font-size: 39px;
+    font-weight: 700;
+  }
+
+  .slide-caption p {
+    font-size: 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 200px;
+  }
+
+  .about-text {
+    width: 92%;
+    max-width: none;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .about-text .btn-medium {
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: none;
+  }
+
+  #service .btn-medium {
+    width: 176px;
+  }
+}

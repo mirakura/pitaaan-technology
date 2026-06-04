@@ -1,303 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PITAAAN テクノロジー株式会社について</title>
-    <!-- Hisashi  -->
-    <style>
-      body {
-        font-family: "Segoe UI", "ヒラギノ角ゴ ProN", "メイリオ", sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.7;
-        color: #333;
-      }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - PITAAAN Technology</title>
 
-      .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-      }
+    <!-- Hisashi -->
 
-      h2 {
-        text-align: center;
-        margin-top: 40px;
-        color: #003366;
-      }
+    <!-- リセットCSS（全体のリセット） -->
+    <link rel="stylesheet" href="../styles/reset.css" />
 
-      h3 {
-        margin-bottom: 5px;
-        color: #444;
-      }
+    <!-- グローバルCSS（共通デザイン） -->
+    <link rel="stylesheet" href="../styles/global.css" />
 
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-top: 20px;
-      }
-
-      /* 代表挨拶 */
-      .president {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 20px;
-      }
-
-      .president img {
-        max-width: 320px;
-        height: auto;
-      }
-
-      .president-text {
-        flex: 1;
-        min-width: 250px;
-      }
-
-      /* テーブル要素共通 */
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      td,
-      th {
-        padding: 8px;
-        vertical-align: top;
-      }
-
-      hr {
-        border: none;
-        border-top: 1px solid #ccc;
-        margin: 0.2em;
-      }
-
-      .philosophy ul {
-        padding-left: 1.2em;
-      }
-
-      .philosophy ol {
-        padding-left: 1.6em;
-      }
-
-      .value li {
-        margin-top: 0.6em;
-      }
-
-      /* 会社沿革 */
-      .history-table tr {
-        border: 0px solid #000;
-        height: 43px;
-        /* 行の高さはこれ以上小さくならない */
-      }
-
-      .history-table th {
-        border: 0px solid #000;
-        font-weight: bold;
-        width: 100px;
-        text-align: left;
-      }
-
-      /* 会社プロフィール */
-      .profile-table th {
-        border: 1px solid #888;
-        background-color: #d0d0d0;
-        font-weight: bold;
-        width: 150px;
-        text-align: left
-      }
-
-      .profile-table td {
-        border: 1px solid #888;
-      }
-
-      .profile-table tr:nth-child(odd) td:nth-child(2) {
-        background-color: #ffffff;
-      }
-
-      .profile-table tr:nth-child(even) td:nth-child(2) {
-        background-color: #f0f0f0;
-      }
-
-      /* アクセス */
-      .access {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5em;
-        margin-top: 1em;
-        align-items: flex-start;
-      }
-
-      .access-info {
-        flex: 1;
-        min-width: 260px;
-      }
-
-      iframe {
-        width: 400px;
-        height: 300px;
-        border: 0;
-        border-radius: 8px;
-      }
-
-      /* モバイル調整 */
-      @media (max-width: 768px) {
-        h2 {
-          font-size: 1.3em;
-        }
-
-        .president img {
-          width: 40%;
-        }
-
-        .history-table th:first-child {
-          font-size: 40%;
-          width: 40%;
-        }
-
-        .profile-table td:first-child {
-          font-size: 40%;
-          width: 40%;
-        }
-
-        .profile-table th {
-          font-size: 40%;
-          width: 40%;
-        }
-
-        .profile-table td {
-          font-size: 40%;
-          width: 40%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="/components/header/script.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
   </head>
 
   <body>
-    <div class="container">
-      <h2>代表挨拶</h2>
-      <div class="president">
-        <img src="president.png" alt="代表写真">
+    <header></header>
+
+    <section class="about-container">
+      <div class="about">
+        <span class="about-text-eng">About</span>
+        <span class="about-text-jpn">会社概要</span>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-body">
+        <img src="../images/exec0.jpg" alt="intro image" class="intro-img" />
         <div class="president-text">
-          <h3>代表取締役社長　八重樫蓮太郎</h3>
-          <p>私たちPITAAANテクノロジー株式会社は、北海道美唄市を拠点に、デジタル技術と創造性を融合させたサービスを提供する会社です。</p>
           <p>
-            地方だからこそできる、お客様一人ひとりに寄り添ったきめ細かなサービスを心がけています。Webサイト制作から建築模型まで、幅広い分野でお客様のビジョンを形にすることが私たちの使命です。
+            私たちPITAAANテクノロジー株式会社は、北海道美唄市を拠点に、デジタル技術と創造性を融合させたサービスを提供する会社です。
           </p>
-          <p>美唄から全国へ、そして世界へ。地域に根ざしながらも、常に新しい技術と発想で挑戦し続けます。</p>
+          <p>
+            地方だからこそできる、お客様一人ひとりに寄り添ったきめ細かなサービスを心がけております。Webサイト制作から建築模型まで、幅広い分野でお客様のビジョンを形にすることが私たちの使命です。
+          </p>
+          <p>
+            美唄から全国へ、そして世界へ。地域に根ざしながらも、常に新しい技術と発想で挑戦し続けます。
+          </p>
+          <div class="president-name">
+            <h3>代表取締役社長　八重樫 蓮太郎</h3>
+          </div>
         </div>
       </div>
+    </section>
 
-      <h2>企業理念</h2>
-      <section class="philosophy">
-        <h3>Mission (私たちの使命)</h3>
-        <hr>
-        <p class="mission">「地域とテクノロジーの懸け橋となり、創造的な未来を共に築く」</p>
-
-        <h3>Vision (未来への目標)</h3>
-        <hr>
-        <ul class="vision">
-          <li>お客様の思いを形にする最高品質のクリエイティブサービスの提供</li>
-          <li>地域の活性化に貢献するデジタルソリューションの創造</li>
-          <li>多様な人材が活躍できる働きやすい環境の実現</li>
-        </ul>
-
-        <h3>Value (私たちの価値観)</h3>
-        <hr>
-        <ol class="value">
-          <li><b>創造性</b> — 常に新しいアイデアと技術で挑戦する</li>
-          <li><b>誠実性</b> — お客様との信頼関係を最優先にする</li>
-          <li><b>地域愛</b> — 美唄市と北海道の発展に貢献する</li>
-          <li><b>成長性</b> — 個人と組織の継続的な成長を追求する</li>
-          <li><b>多様性</b> — 年齢や経験に関係なく、多様な人材を活かす</li>
-        </ol>
-      </section>
-
-      <h2>会社沿革</h2>
-      <table class="history-table">
-        <tr>
-          <th>2020年4月</th>
-          <td>代表取締役社長 八重樫蓮太郎により、美唄市にて創業</td>
-        </tr>
-        <tr>
-          <th>2021年3月</th>
-          <td>Webサイト制作事業を本格化</td>
-        </tr>
-        <tr>
-          <th>2022年6月</th>
-          <td>パンフレット制作事業を開始</td>
-        </tr>
-        <tr>
-          <th>2023年8月</th>
-          <td>副社長にベック大沼氏が就任</td>
-        </tr>
-        <tr>
-          <th>2024年1月</th>
-          <td>建築模型・CAD制作事業を開始</td>
-        </tr>
-        <tr>
-          <th>2025年8月</th>
-          <td>従業員20名に成長</td>
-        </tr>
-      </table>
-
-      <h2>会社プロフィール</h2>
-      <table class="profile-table">
-        <tr>
-          <th>会社名 </th>
-          <td>PITAAANテクノロジー株式会社</td>
-        </tr>
-        <tr>
-          <th>代表取締役社長 </th>
-          <td>八重樫蓮太郎</td>
-        </tr>
-        <tr>
-          <th>代表取締役副社長</th>
-          <td>ベック大沼</td>
-        </tr>
-        <tr>
-          <th>所在地 </th>
-          <td>〒072-0000 北海道美唄市西２条南２丁目５番１号</td>
-        </tr>
-        <tr>
-          <th>創立 </th>
-          <td>2020年4月1日</td>
-        </tr>
-        <tr>
-          <th>資本金 </th>
-          <td>3,000万円</td>
-        </tr>
-        <tr>
-          <th>従業員数 </th>
-          <td>20名 (2025年8月現在)</td>
-        </tr>
-        <tr>
-          <th>事業内容 </th>
-          <td>Webサイト制作、パンフレット制作、建築模型・CAD制作</td>
-        </tr>
-      </table>
-
-      <h2>アクセス</h2>
-      <div class="access">
-        <div class="access-info">
-          <p><b>本社</b></p>
-          <p><b>住所：</b>〒072-0000 北海道美唄市西2条南2丁目5番1号 (コアびばい内)</p>
-          <p><b>電話：</b>0126-99-9999</p>
-          <p><b>FAX：</b>0126-00-0000</p>
-          <p><b>最寄り駅：</b>ＪＲ函館本線 美唄駅より徒歩 10分</p>
-          <p><b>駐車場：</b>あり (20台完備)</p>
+    <section class="theme">
+      <div class="mission">
+        <div class="circle">
+          <span class="circle-text-eng">Mission</span>
+          <span class="circle-text-jpn">私たちの使命</span>
         </div>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.265635700388!2d141.85813431961836!3d43.33089392806181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1759734931702!5m2!1sja!2sjp"
-            allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="text-block">
+          <p class="mission-text">
+            地域とテクノロジーの架け橋となり、<br />
+            創造的な未来を共に築く
+          </p>
         </div>
       </div>
-    </div>
+      <div class="vision">
+        <div class="circle">
+          <span class="circle-text-eng">Vision</span>
+          <span class="circle-text-jpn">未来への目標</span>
+        </div>
+        <div class="text-block">
+          <ul class="vision-text">
+            <li>お客様の想いを形にする高品質なクリエイティブサービスの提供</li>
+            <li>地域の活性化に貢献するデジタルソリューションの創造</li>
+            <li>多様な人材が活躍できる働きやすい環境の実現</li>
+          </ul>
+        </div>
+      </div>
+      <div class="value">
+        <div class="circle">
+          <span class="circle-text-eng">Value</span>
+          <span class="circle-text-jpn">私たちの価値観</span>
+        </div>
+        <div class="text-block">
+          <ol class="value-text">
+            <li><b>創造性</b>：常に新しいアイデアと技術で挑戦する</li>
+            <li><b>誠実性</b>：お客様との信頼関係を最も大切にする</li>
+            <li><b>地域愛</b>：美唄市と北海道の発展に貢献する</li>
+            <li><b>成長性</b>：個人と組織の継続的な成長を追求する</li>
+            <li><b>多様性</b>：年齢や経験に関係なく、多様な人材を活かす</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="history">
+      <ul class="timeline">
+        <li>
+          <span class="date">2020年4月</span><span class="separator"></span
+          ><span class="desc"
+            >代表取締役社長 八重樫蓮太朗により、美唄市にて創業</span
+          >
+        </li>
+        <li>
+          <span class="date">2021年3月</span><span class="separator"></span
+          ><span class="desc">Webサイト制作事業を本格開始</span>
+        </li>
+        <li>
+          <span class="date">2022年6月</span><span class="separator"></span
+          ><span class="desc">パンフレット制作事業を開始</span>
+        </li>
+        <li>
+          <span class="date">2023年8月</span><span class="separator"></span
+          ><span class="desc">副社長にベック大沼氏が就任</span>
+        </li>
+        <li>
+          <span class="date">2024年4月</span><span class="separator"></span
+          ><span class="desc">建築模型・CAD制作事業を開始</span>
+        </li>
+        <li>
+          <span class="date">2025年8月</span><span class="separator"></span
+          ><span class="desc">従業員数20名に成長</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="company-info">
+      <div class="company-info-inner">
+        <table>
+          <tr>
+            <th>会社名</th>
+            <td>PITAAANテクノロジー株式会社</td>
+          </tr>
+          <tr>
+            <th>代表取締役社長</th>
+            <td>八重樫 蓮太朗</td>
+          </tr>
+          <tr>
+            <th>代表取締役副社長</th>
+            <td>ベック 大沼</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒072-0000 北海道美唄市</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>0126-00-0000</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>2020年4月1日</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>3,000万円</td>
+          </tr>
+          <tr>
+            <th>従業員数</th>
+            <td>20名（2025年8月現在）</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>Webサイト制作、パンフレット制作、建築模型・CAD制作</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <!--                                                                                                                                                                              ↓5e0=地図 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.265635700388!2d141.85813431961836!3d43.33089392806181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1759734931702!5m2!1sja!2sjp"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+      <!--        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2506.265635700388!2d141.85813431961836!3d43.33089392806181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1759734931702!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe> -->
+      <!--                                                                                                                                                                              ↑5e1=航空写真 -->
+    </section>
+
+    <footer></footer>
   </body>
-
 </html>

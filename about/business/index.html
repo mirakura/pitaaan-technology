@@ -1,259 +1,227 @@
+<!-- prettier-ignore -->
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>business | サービス概要・制作実績・制作フロー・料金体系</title>
 
-  <!-- リセットCSS（全体のリセット） -->
-  <link rel="stylesheet" href="../business/styles/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- グローバルCSS（共通デザイン） -->
-  <link rel="stylesheet" href="../business/styles/global.css">
+    <!-- ひさげん -->
+    <title>Business</title>
 
-  <!-- ページ固有のCSS（business専用） -->
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- hisagen -->
+    <script src="/components/header/script.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- 任意の日本語表示に適したWebフォント（必要に応じて差し替え可） -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header></header>
 
-<body>
-  <main class="page">
+    <!-- ページタイトル section -->
+    <section class="main-visual">
+      <h1>Business</h1>
+      <p>事業内容</p>
+    </section>
 
-    <!-- Services Section -->
-    <section class="services section-box">
+    <!-- サービス概要 section -->
+    <section id="services" class="services section">
+      <h2 class="section-title">サービス概要</h2>
+
+      <div class="inner service-grid">
+        <!-- Webサイト制作 -->
+        <div class="service-item">
+          <img src="../../images/website.jpg" alt="" />
+          <h3>Webサイト制作</h3>
+          <p>
+            お客様のビジネスを成功に導くWeb
+            サイトを企画から運用まで一貫してサポートします。
+          </p>
+          <ul>
+            <li>
+              レスポンシブデザインで、PC、スマホ等ご希望の端末に合わせたデザインに対応
+            </li>
+            <li>SEO対策で検索結果の順位を上げ、集客を促します</li>
+            <li>CMS導入でお客様自身での記事更新も可能</li>
+            <li>地域密着型の集客戦略をご提案</li>
+          </ul>
+        </div>
+
+        <!-- パンフレット制作 -->
+        <div class="service-item">
+          <img src="../../images/brochure.jpg" alt="" />
+          <h3>パンフレット制作</h3>
+          <p>印象に残るデザインで、お客様の魅力を最大限に引き出します。</p>
+          <ul>
+            <li>企画・デザイン・印刷まで一貫対応</li>
+            <li>豊富なデザインパターン</li>
+            <li>小ロットから大量印刷まで対応</li>
+            <li>短納期にも対応可能</li>
+          </ul>
+        </div>
+
+        <!-- 建築模型・CAD -->
+        <div class="service-item">
+          <img src="../../images/architectural-model.jpg" alt="" />
+          <h3>建築模型 ・CAD制作</h3>
+          <p>設計図面を立体的に表現し、プロジェクトの成功をサポートします。</p>
+          <ul>
+            <li>高精度な3D建築模型</li>
+            <li>図面作成・修正</li>
+            <li>プレゼンテーション用模型</li>
+            <li>短期間での制作が可能</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 制作実績 section -->
+    <section id="portfolio" class="portfolio section">
+      <h2 class="section-title">制作実績</h2>
       <div class="inner">
-        <h2 class="section-title">サービス概要</h2>
-
-        <div class="services-container">
-          <div class="service-box">
-            <h3>01.<span class="service-name">Webサイト制作</span></h3>
-            <p class="lead">お客様のビジネスを成功に導くWebサイトを企画から運用まで一貫してサポートします。</p>
-            <h4>特徴</h4>
-            <ul>
-              <li>レスポンシブデザインで、PC、スマホ等ご希望の端末に合わせたデザインに対応</li>
-              <li>SEO対策で検索結果の順位を上げ、集客を促します</li>
-              <li>CMS導入でお客様自身での記事更新も可能</li>
-              <li>地域密着型の集客戦略もご提案</li>
-            </ul>
+        <!-- Webサイト -->
+        <h3 class="category">Webサイト</h3>
+        <div class="portfolio-grid">
+          <div class="card">
+            <img src="../../images/bibain.png" alt="" />
+            <p class="title">ホテル ビバイン</p>
+            <p class="sub">宿泊予約システム付きコーポレートサイト</p>
           </div>
 
-          <div class="service-box">
-            <h3>02.<span class="service-name">パンフレット制作</span></h3>
-            <p class="lead">印象に残るデザインで、お客様の魅力を最大限に引き出します。</p>
-            <h4>特徴</h4>
-            <ul>
-              <li>企画・デザイン・印刷まで一貫対応</li>
-              <li>豊富なデザインパターン</li>
-              <li>小ロットから大量印刷まで対応</li>
-              <li>短納期にも対応可能</li>
-            </ul>
+          <div class="card">
+            <img src="../../images/govtech.jpg" alt="" />
+            <p class="title">一般社団法人 GovTech 美唄</p>
+            <p class="sub">行政DX推進サイト</p>
           </div>
 
-          <div class="service-box">
-            <h3>03.<span class="service-name">建築模型・図面制作</span></h3>
-            <p class="lead">設計図面を立体的に表現し、プロジェクトの成功をサポートします。</p>
-            <h4>特徴</h4>
-            <ul>
-              <li>高精度な3D建築模型</li>
-              <li>図面作成・修正</li>
-              <li>プレゼンテーション用模型</li>
-              <li>短期間での制作が可能</li>
-            </ul>
+          <div class="card">
+            <img src="../../images/aff7e7cc7e36c33d.jpg" alt="" />
+            <p class="title">音楽教室メロディ</p>
+            <p class="sub">生徒募集特化型サイト</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/fbe99fdee5a89cfc.jpg" alt="" />
+            <p class="title">カフェ ビバーヴ</p>
+            <p class="sub">メニュー紹介・予約システム付きサイト</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/2e42b4c1dfe3dad9.jpg" alt="" />
+            <p class="title">ヘアサロン ビーバー</p>
+            <p class="sub">スタイリスト紹介・オンライン予約サイト</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/bdda1bde09a8a8f2.jpg" alt="" />
+            <p class="title">美唄俳句俱楽部</p>
+            <p class="sub">作品投稿・イベント告知サイト</p>
+          </div>
+        </div>
+
+        <!-- パンフレット -->
+        <h3 class="category mt40">パンフレット</h3>
+        <div class="portfolio-grid">
+          <div class="card">
+            <img src="../../images/bibain.png" alt="" />
+            <p class="title">ホテル ビバイン</p>
+            <p class="sub">旅館案内・宿泊プラン紹介パンフレット</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/237d5501ce8f8f17.jpg" alt="" />
+            <p class="title">KABURA ロックフェス 2025</p>
+            <p class="sub">イベント告知・スポンサー紹介パンフレット</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/153bbb23f1c0b77b.jpg" alt="" />
+            <p class="title">特別養護老人ホーム 美ノ唄</p>
+            <p class="sub">施設案内・サービス紹介パンフレット</p>
+          </div>
+        </div>
+
+        <!-- 建築模型・CAD -->
+        <h3 class="category mt40">建築模型・CAD</h3>
+        <div class="portfolio-grid">
+          <div class="card">
+            <img src="../../images/b04bc291754c255e.jpg" alt="" />
+            <p class="title">黒炭建設</p>
+            <p class="sub">美唄小児クリニック設計模型・CAD図面作成</p>
+          </div>
+
+          <div class="card">
+            <img src="../../images/cc339ffd124ed50a.jpg" alt="" />
+            <p class="title">我路工務店</p>
+            <p class="sub">カフェ ビバーヴ店舗設計模型制作</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio section-box">
+    <!-- 制作の流れ section -->
+    <section class="flow section">
+      <h2 class="section-title">制作の流れ</h2>
       <div class="inner">
-        <h2 class="section-title">制作実績</h2>
-
-        <div class="sub-title">
-          <h3>Webサイト制作実績</h3>
-        </div>
-
-        <div class="portfolio-category">
-          <h4>企業・団体</h4>
-          <div class="portfolio-grid">
-            <article class="portfolio-item">
-              <img class="thumb" src="../images/dummy.png" alt="ホテル ビバイン">
-              <div class="portfolio-text">
-                <h5>ホテル ビバイン</h5>
-                <p>宿泊予約システム付きコーポレートサイト</p>
-              </div>
-            </article>
-
-            <article class="portfolio-item">
-              <img class="thumb" src="../images/dummy.png" alt="一般社団法人 GovTech 美唄">
-              <div class="portfolio-text">
-                <h5>一般社団法人 GovTech 美唄</h5>
-                <p>行政 DX 推進サイト</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="portfolio-category">
-          <h4>店舗・サービス</h4>
-          <div class="portfolio-grid">
-            <article class="portfolio-item">
-              <img class="thumb" src="../images/dummy.png" alt="音楽教室メロディ">
-              <div class="portfolio-text">
-                <h5>音楽教室メロディ</h5>
-                <p>生徒募集特化型サイト</p>
-              </div>
-            </article>
-
-            <article class="portfolio-item">
-              <img class="thumb" src="../images/dummy.png" alt="カフェ ビバーヴ">
-              <div class="portfolio-text">
-                <h5>カフェ ビバーヴ</h5>
-                <p>メニュー紹介・予約システム付きサイト</p>
-              </div>
-            </article>
-
-            <article class="portfolio-item">
-              <img class="thumb" src="../images/dummy.png" alt="ヘアサロン ビーバー">
-              <div class="portfolio-text">
-                <h5>ヘアサロン ビーバー</h5>
-                <p>スタイリスト紹介・オンライン予約サイト</p>
-              </div>
-            </article>
-          </div>
-
-          <div class="inner">
-            <div class="portfolio-category">
-              <h4>コミュニティ</h4>
-              <article class="portfolio-item">
-                <img class="thumb" src="../images/dummy.png" alt="美唄俳句倶楽部">
-                <div class="portfolio-text">
-                  <h5>美唄俳句倶楽部</h5>
-                  <p>作品投稿・イベント告知サイト</p>
-                </div>
-              </article>
-
-              <div class="sub-title">
-                <h3>パンフレット制作実績</h3>
-              </div>
-
-              <div class="portfolio-grid">
-                <article class="portfolio-item">
-                  <img class="thumb" src="../images/dummy.png" alt="ホテル ビバイン">
-                  <div class="portfolio-text">
-                    <h5>ホテル ビバイン</h5>
-                    <p>施設案内・宿泊プラン紹介パンフレット</p>
-                  </div>
-                </article>
-
-                <article class="portfolio-item">
-                  <img class="thumb" src="../images/dummy.png" alt="KABURA ロックフェス 2025">
-                  <div class="portfolio-text">
-                    <h5>KABURA ロックフェス 2025</h5>
-                    <p>イベント告知・スポンサー紹介パンフレット</p>
-                    <p>（開催済み）</p>
-                  </div>
-                </article>
-
-                <article class="portfolio-item">
-                  <img class="thumb" src="../images/dummy.png" alt="特別養護老人ホーム 美ノ唄">
-                  <div class="portfolio-text">
-                    <h5>特別養護老人ホーム 美ノ唄</h5>
-                    <p>施設案内・サービス紹介パンフレット</p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="sub-title">
-                <h3>建築模型・CAD 制作実績</h3>
-              </div>
-
-              <div class="portfolio-grid">
-                <article class="portfolio-item">
-                  <img class="thumb" src="../images/dummy.png" alt="黒炭建設">
-                  <div class="portfolio-text">
-                    <h5>黒炭建設</h5>
-                    <p>美唄小児クリニック設計模型・CAD図面作成</p>
-                  </div>
-                </article>
-
-                <article class="portfolio-item">
-                  <img class="thumb" src="../images/dummy.png" alt="我路工務店">
-                  <div class="portfolio-text">
-                    <h5>我路工務店</h5>
-                    <p>カフェ ビバーヴ店舗設計模型制作</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- Flow -->
-    <section class="flow section-box">
-      <div class="inner">
-        <h2 class="section-title">制作フロー</h2>
-
         <div class="flow-steps">
-          <div class="step">
+          <!-- 01 -->
+          <div class="flow-item">
             <div class="circle">01</div>
-            <p class="step-title">ヒアリング</p>
-            <p class="step-text">お客様のご要望や課題を詳しくお聞かせください。</p>
+            <h4>ヒアリング</h4>
+            <p>お客様のご要望や課題を</p>
+            <p>詳しくお聞かせください。</p>
           </div>
 
-          <div class="arrow">→</div>
-
-          <div class="step">
+          <!-- 02 -->
+          <div class="flow-item">
             <div class="circle">02</div>
-            <p class="step-title">企画・提案</p>
-            <p class="step-text">最適な制作物を企画し、ご提案いたします。</p>
+            <h4>企画・提案</h4>
+            <p>最適な制作物を企画し、</p>
+            <p>ご提案いたします。</p>
           </div>
 
-          <div class="arrow">→</div>
-
-          <div class="step">
+          <!-- 03 -->
+          <div class="flow-item">
             <div class="circle">03</div>
-            <p class="step-title">制作</p>
-            <p class="step-text">経験豊富なスタッフが丁寧に制作いたします。</p>
+            <h4>制作</h4>
+            <p>経験豊富なスタッフが</p>
+            <p>丁寧に制作いたします。</p>
           </div>
 
-          <div class="arrow">→</div>
-
-          <div class="step">
+          <!-- 04 -->
+          <div class="flow-item">
             <div class="circle">04</div>
-            <p class="step-title">確認・修正</p>
-            <p class="step-text">お客様にご確認いただき、必要に応じて修正いたします。</p>
+            <h4>確認・修正</h4>
+            <p>お客様にご確認いただき、</p>
+            <p>必要に応じて修正いたします。</p>
           </div>
 
-          <div class="arrow">→</div>
-
-          <div class="step">
+          <!-- 05 -->
+          <div class="flow-item">
             <div class="circle">05</div>
-            <p class="step-title">納品・アフターサポート</p>
-            <p class="step-text">納品後も継続的にサポートいたします。</p>
+            <h4>納品・アフターサポート</h4>
+            <p>納品後も継続的にサポート</p>
+            <p>いたします。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing section-box">
+    <!-- 料金体系 section -->
+    <section class="price section">
       <h2 class="section-title">料金体系</h2>
-      <div class="pricing">
-        <p class="price-text">詳細な料金については、お客様のご要望に応じてお見積りいたします。</p>
-        <p class="price-sub">まずはお気軽にお問い合わせください。</p>
-        <button class="contact-btn">お問い合わせはこちら</button>
+      <div class="inner">
+        <p class="price-text">
+          詳細な料金については、お客様のご要望に応じてお見積もりいたします。<br />
+          まずはお気軽にお問い合わせください。
+        </p>
+
+        <div class="price-btn">✉<span>お問い合わせをする</span>→</div>
       </div>
     </section>
+    <footer></footer>
+  </body>
 
-  </main>
-
-</body>
 </html>

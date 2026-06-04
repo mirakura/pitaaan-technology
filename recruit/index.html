@@ -5,71 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Hisae kimura -->
+
+    <!-- ↓ ここから Hisae kimura 作業分 ↓ -->
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="style.css">
 
+    <!-- フォント読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <!-- ヘッダー・フッター読み込み -->
+    <script src="/components/header/script.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
   </head>
 
   <body>
+    <!-- ヘッダー表示 -->
+    <header></header>
+
+    <!-- ページタイトル -->
+    <section class="page-title">
+      <h1 class="english">Recruit</h1>
+      <p class="japanese">採用情報</p>
+    </section>
 
     <!-- セクション 01 -->
-    <section class="section">
-
-      <!-- 見出しラベル -->
-      <div class="section-label">
-        <span>01. PITAAANテクノロジー株式会社で働く魅力</span>
-      </div>
+    <section class="appeal">
 
       <!-- セクションタイトル -->
       <h1 class="section-title">PITAAANテクノロジー株式会社で働く魅力</h1>
 
-      <!-- アピール01～04 -->
-      <div class="appeal-container">
+      <!-- アピール 1～4 -->
+      <div class="container">
 
-        <!-- アピール01 -->
+        <!-- アピール 1 -->
         <div class="appeal-box">
-          <div class="appeal-number">01.</div>
           <h2 class="appeal-title">地方から世界へ挑戦できる環境</h2>
+
           <p class="appeal-text">
             美唄市を拠点に、全国・世界に向けてクリエイティブを発信する醍醐味を味わえます。
           </p>
         </div>
 
-        <!-- アピール02 -->
+        <!-- アピール 2 -->
         <div class="appeal-box">
-          <div class="appeal-number">02.</div>
-          <h2 class="appeal-title">ホワイト企業の働きやすさ</h2>
+          <h2 class="appeal-title">働きやすさ</h2>
+
           <ul class="appeal-list">
-            <li>定時退社・残業なし - ワークライフバランスを大切にします</li>
-            <li>週休２日制 - しっかり休んで、しっかり働く</li>
-            <li>フレックスタイム制 - 自分のペースで効率的に</li>
-            <li>テレワーク可 - 柔軟な働き方をサポート</li>
+            <li>定時退社・残業なし
+              <span class="list-desc">ワークライフバランスを大切にします</span>
+            </li>
+
+            <li>週休２日制
+              <span class="list-desc">しっかり休んで、しっかり働く</span>
+            </li>
+
+            <li>フレックスタイム制
+              <span class="list-desc">自分のペースで効率的に</span>
+            </li>
+
+            <li>テレワーク可
+              <span class="list-desc">柔軟な働き方をサポート</span>
+            </li>
+
           </ul>
         </div>
 
-        <!-- アピール03 -->
+        <!-- アピール 3 -->
         <div class="appeal-box">
-          <div class="appeal-number">03.</div>
           <h2 class="appeal-title">充実した福利厚生</h2>
+
           <ul class="appeal-list">
-            <li>男女育児休暇 - 子育てを全力サポート</li>
-            <li>介護休暇 - 家族を大切にする環境</li>
-            <li>農繁休暇 - 美唄ならではの特別休暇</li>
-            <li>お誕生日休暇 - 年に一度の特別な日をお祝い</li>
-            <li>冷暖房完備 - 快適な職場環境</li>
-            <li>フリースペース - リラックスできる空間</li>
+            <li>男女育児休暇
+              <span class="list-desc">子育てを全力サポート</span>
+            </li>
+
+            <li>介護休暇
+              <span class="list-desc">家族を大切にする環境</span>
+            </li>
+
+            <li>農繁休暇
+              <span class="list-desc">美唄ならではの特別休暇</span>
+            </li>
+
+            <li>お誕生日休暇
+              <span class="list-desc">年に一度の特別な日をお祝い</span>
+            </li>
+
+            <li>冷暖房完備
+              <span class="list-desc">快適な職場環境</span>
+            </li>
+
+            <li>フリースペース
+              <span class="list-desc">リラックスできる空間</span>
+            </li>
+
             <li>スキルアップ支援</li>
+
           </ul>
         </div>
 
-        <!-- アピール04 -->
+        <!-- アピール 4 -->
         <div class="appeal-box">
-          <div class="appeal-number">04.</div>
           <h2 class="appeal-title">多様な人材が活躍</h2>
+
           <p class="appeal-text">
-            少数精鋭の20名体制で、20代の若手から60代のベテランまで、年齢に関係なく一人ひとりが重要な役割を担える職場です。
+            少数精鋭の 20名体制で、20代の若手から60代のベテランまで、年齢に関係なく一人ひとりが重要な役割を担える職場です。
           </p>
         </div>
 
@@ -77,155 +123,195 @@
     </section>
 
     <!-- セクション 02 -->
-    <section class="section">
-      <!-- 見出しラベル -->
-      <div class="section-label">
-        <span>02. 募集中のポジション</span>
-      </div>
+    <section class="job">
 
       <!-- セクションタイトル -->
       <h1 class="section-title">募集中のポジション</h1>
 
-      <!-- ジョブ01～05 -->
-      <div class="job-container">
+      <!-- ジョブ 1～5 -->
+      <div class="container">
 
-        <!-- ジョブ01 -->
+        <!-- ジョブ 1 -->
         <div class="job-box">
-          <h2 class="job-title">Web デザイナー</h2>
-          <p class="job-subtitle">仕事内容</p>
-          <ul>
-            <li>Web サイトのデザイン・コーディング</li>
-            <li>UI/UX デザイン</li>
-            <li>クライアントとの打ち合わせ</li>
-          </ul>
-          <p class="job-subtitle">求める人材</p>
-          <ul>
-            <li>Photoshop、Illustrator、Figma の操作ができる方</li>
-            <li>HTML/CSS/JavaScript の基礎知識がある方</li>
-            <li>コミュニケーション能力の高い方</li>
-          </ul>
-          <p class="job-subtitle">歓迎スキル</p>
-          <ul>
-            <li>React、Vue.js の経験</li>
-            <li>WordPress の構築経験</li>
-            <li>SEO 知識</li>
-          </ul>
+          <h2 class="job-title">Webデザイナー</h2>
+
+          <div class="job-item">
+            <p class="job-label">仕事内容</p>
+            <ul class="job-list">
+              <li>Web サイトのデザイン・コーディング</li>
+              <li>UIとその体験のデザイン</li>
+              <li>クライアントとの打ち合わせ</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">求める人材</p>
+            <ul class="job-list">
+              <li>Photoshop、 Illustrator、Figma の操作ができる方</li>
+              <li>HTML/CSS/JavaScript の基礎知識がある方</li>
+              <li>コミュニケーション能力の高い方</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">歓迎スキル</p>
+            <ul class="job-list">
+              <li>React、Vue.jsの経験</li>
+              <li>WordPressの構築経験</li>
+              <li>SEO知識</li>
+            </ul>
+          </div>
+
         </div>
 
-        <!-- ジョブ02 -->
+        <!-- ジョブ 2 -->
         <div class="job-box">
           <h2 class="job-title">フロントエンド/バックエンドエンジニア</h2>
-          <p class="job-subtitle">仕事内容</p>
-          <ul>
-            <li>Web アプリケーションの開発</li>
-            <li>システム設計・構築</li>
-            <li>新技術の調査・導入</li>
-          </ul>
-          <p class="job-subtitle">求める人材</p>
-          <ul>
-            <li>プログラミング経験 2 年以上</li>
-            <li>チーム開発の経験がある方</li>
-            <li>新しい技術への学習意欲が高い方</li>
-          </ul>
-          <p class="job-subtitle">歓迎スキル</p>
-          <ul>
-            <li>React、Node.js、Python、AWS の経験</li>
-            <li>API 設計・開発経験</li>
-            <li>アジャイル開発経験</li>
-          </ul>
+
+          <div class="job-item">
+            <p class="job-label">仕事内容</p>
+            <ul class="job-list">
+              <li>Web アプリケーションの開発</li>
+              <li>システム設計・構築</li>
+              <li>新技術の調査・導入</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">求める人材</p>
+            <ul class="job-list">
+              <li>プログラミング経験2年以上</li>
+              <li>チーム開発の経験がある方</li>
+              <li>新しい技術への学習意欲が高い方</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">歓迎スキル</p>
+            <ul class="job-list">
+              <li>React、 Node.js、Python、AWS の経験</li>
+              <li>API 設計・開発経験</li>
+              <li>アジャイル開発経験</li>
+            </ul>
+          </div>
+
         </div>
 
-        <!-- ジョブ03 -->
+        <!-- ジョブ 3 -->
         <div class="job-box">
           <h2 class="job-title">営業・企画</h2>
-          <p class="job-subtitle">仕事内容</p>
-          <ul>
-            <li>新規顧客開拓</li>
-            <li>既存顧客のフォロー</li>
-            <li>企画提案・プレゼンテーション</li>
-          </ul>
-          <p class="job-subtitle">求める人材</p>
-          <ul>
-            <li>営業経験がある方</li>
-            <li>地域に密着がある方</li>
-            <li>積極的に行動できる方</li>
-          </ul>
-          <p class="job-subtitle">歓迎スキル</p>
-          <ul>
-            <li>Web 業界での営業経験</li>
-            <li>提案資料作成スキル</li>
-            <li>地域ネットワーク</li>
-          </ul>
+
+          <div class="job-item">
+            <p class="job-label">仕事内容</p>
+            <ul class="job-list">
+              <li>新規顧客開拓</li>
+              <li>既存顧客のフォロー</li>
+              <li>企画提案・プレゼンテーション</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">求める人材</p>
+            <ul class="job-list">
+              <li>営業経験がある方</li>
+              <li>地域に愛着がある方</li>
+              <li>積極的に行動できる方</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">歓迎スキル</p>
+            <ul class="job-list">
+              <li>Web業界での営業経験</li>
+              <li>提案資料作成スキル</li>
+              <li>地域ネットワーク</li>
+            </ul>
+          </div>
+
         </div>
 
-        <!-- ジョブ04 -->
+        <!-- ジョブ 4 -->
         <div class="job-box">
           <h2 class="job-title">3D・CAD オペレーター</h2>
-          <p class="job-subtitle">仕事内容</p>
-          <ul>
-            <li>建築模型の制作</li>
-            <li>CAD 図面の作成・修正</li>
-            <li>3D プリンティング</li>
-          </ul>
-          <p class="job-subtitle">求める人材</p>
-          <ul>
-            <li>CAD ソフトの操作経験がある方</li>
-            <li>建築・設計分野の知識がある方</li>
-            <li>細かい作業が得意な方</li>
-          </ul>
-          <p class="job-subtitle">歓迎スキル</p>
-          <ul>
-            <li>AutoCAD、SketchUp、Blender の経験</li>
-            <li>建築関連の資格</li>
-            <li>模型制作経験</li>
-          </ul>
+
+          <div class="job-item">
+            <p class="job-label">仕事内容</p>
+            <ul class="job-list">
+              <li>建築模型の制作</li>
+              <li>CAD図面の作成・修正</li>
+              <li>3Dプリンティング</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">求める人材</p>
+            <ul class="job-list">
+              <li>CAD ソフトの操作経験がある方</li>
+              <li>建築・設計分野の知識がある方</li>
+              <li>細かい作業が得意な方</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">歓迎スキル</p>
+            <ul class="job-list">
+              <li>AutoCAD、SketchUp、 Blender の経験</li>
+              <li>建築関連の資格</li>
+              <li>模型制作経験</li>
+            </ul>
+          </div>
+
         </div>
 
-        <!-- ジョブ05 -->
+        <!-- ジョブ 5 -->
         <div class="job-box">
           <h2 class="job-title">グラフィックデザイナー</h2>
-          <p class="job-subtitle">仕事内容</p>
-          <ul>
-            <li>パンフレット・ポスターのデザイン</li>
-            <li>ロゴ・ブランディングデザイン</li>
-            <li>印刷物の品質管理</li>
-          </ul>
-          <p class="job-subtitle">求める人材</p>
-          <ul>
-            <li>グラフィックデザインの実務経験</li>
-            <li>Adobe Creative Cloud の操作スキル</li>
-            <li>印刷知識がある方</li>
-          </ul>
-          <p class="job-subtitle">歓迎スキル</p>
-          <ul>
-            <li>ブランディング経験</li>
-            <li>撮影スキル</li>
-            <li>DTP 検定などの資格</li>
-          </ul>
-        </div>
 
-      </div>
+          <div class="job-item">
+            <p class="job-label">仕事内容</p>
+            <ul class="job-list">
+              <li>パンフレット・ポスターのデザイン</li>
+              <li>ロゴ・ブランディングデザイン</li>
+              <li>印刷物の品質管理</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">求める人材</p>
+            <ul class="job-list">
+              <li>グラフィックデザインの実務経験</li>
+              <li>Adobe Creative Cloud の操作スキル</li>
+              <li>印刷知識がある方</li>
+            </ul>
+          </div>
+
+          <div class="job-item">
+            <p class="job-label">歓迎スキル</p>
+            <ul class="job-list">
+              <li>ブランディング経験</li>
+              <li>撮影スキル</li>
+              <li>DTP 検定などの資格</li>
+            </ul>
+          </div>
+
+        </div>
     </section>
 
     <!-- セクション 03 -->
-    <section class="section">
-      <!-- 見出しラベル -->
-      <div class="section-label">
-        <span>03. 応募方法</span>
-      </div>
+    <section class="flow">
 
       <!-- セクションタイトル -->
       <h1 class="section-title">応募方法</h1>
 
-      <!-- フロー01～03 -->
-      <div class="flow-container">
+      <!-- フロー 1～3 -->
+      <div class="container">
 
-        <!-- フロー01 -->
+        <!-- フロー 1 -->
         <div class="flow-box">
           <div class="flow-number">01</div>
           <h3 class="flow-title">書類選考</h3>
           <p class="flow-text">
-            以下の書類をメールまたは郵送でお送りください。
+            書類をメールまたは郵送でお送りください。
           </p>
           <ul class="flow-list">
             <li>履歴書</li>
@@ -234,7 +320,7 @@
           </ul>
         </div>
 
-        <!-- フロー02 -->
+        <!-- フロー 2 -->
         <div class="flow-box">
           <div class="flow-number">02</div>
           <h3 class="flow-title">面接</h3>
@@ -245,62 +331,17 @@
           </ul>
         </div>
 
-        <!-- フロー03 -->
+        <!-- フロー 3 -->
         <div class="flow-box">
           <div class="flow-number">03</div>
           <h3 class="flow-title">内定</h3>
-          <p class="flow-text">面接から１週間以内にご連絡いたします。</p>
+          <p class="flow-text">面接から1週間以内にご連絡いたします。</p>
         </div>
 
       </div>
     </section>
 
-    <!-- セクション 04 -->
-    <section class="section">
-      <!-- 見出しラベル -->
-      <div class="section-label">
-        <span>04. 雇用条件</span>
-      </div>
-
-      <!-- セクションタイトル -->
-      <h1 class="section-title">雇用条件</h1>
-
-      <!-- コンディションズ01～04 -->
-      <div class="conditions-container">
-
-        <!-- コンディションズ01 -->
-        <div class="conditions-box">
-          <h2 class="conditions-title">給与</h2>
-          <ul class="conditions-list">
-            <li>新卒：月給22万円〜</li>
-          </ul>
-        </div>
-
-        <!-- コンディションズ02 -->
-        <div class="conditions-box">
-          <h2 class="conditions-title">勤務時間</h2>
-          <ul class="conditions-list">
-            <li>標準勤務時間：9:00〜18:00（休憩1時間）</li>
-          </ul>
-        </div>
-
-        <!-- コンディションズ03 -->
-        <div class="conditions-box">
-          <h2 class="conditions-title">休日・休暇</h2>
-          <ul class="conditions-list">
-            <li>休日・休暇：完全週休2日制（土日祝）</li>
-          </ul>
-        </div>
-
-        <!-- コンディションズ04 -->
-        <div class="conditions-box">
-          <h2 class="conditions-title">勤務地</h2>
-          <ul class="conditions-list">
-            <li>美唄市本社（リモート勤務応相談）</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
+    <!-- フッター表示 -->
+    <footer></footer>
 
   </body>
