@@ -1,4 +1,10 @@
-fetch("/components/header/index.html")
+// このscript.js自身のURLから、現在の公開場所（ローカル / GitHub Pagesのサブパス等）に
+// 依存しない基準パスを組み立てる。ページの階層（about/business/ など）が違っても壊れない。
+const headerScriptUrl = new URL(document.currentScript.src, document.baseURI);
+const headerComponentDir = headerScriptUrl.href.replace(/[^/]*$/, ""); // .../components/header/
+const siteRoot = headerComponentDir.replace(/components\/header\/$/, ""); // サイトのルート
+
+fetch(headerComponentDir + "index.html")
   .then(response => response.text())
   .then(htmlText => {
     console.log(htmlText);
@@ -12,8 +18,14 @@ fetch("/components/header/index.html")
 
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "/components/header/style.css";
+    link.href = headerComponentDir + "style.css";
     document.head.appendChild(link);
+
+    // ヘッダー内の href="/about/" のようなサイトルート起点のリンクを、
+    // 実際の公開パス（例: /pitaaan-technology/about/）に合わせて補正する
+    currentHeader.querySelectorAll('a[href^="/"]').forEach(a => {
+      a.setAttribute("href", siteRoot + a.getAttribute("href").slice(1));
+    });
 
     const currentUrl = window.location.href;
     const navButtons = document.querySelectorAll(".nav-item a");
